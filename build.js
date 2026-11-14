@@ -92,7 +92,7 @@ function head({ title, description, canonical, image, type = "website", jsonld =
 function header() {
   return `
 <header class="sticky top-0 z-50 bg-[#f7f6f2]/95 backdrop-blur border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-0 sm:h-20 flex flex-wrap items-center justify-between gap-y-2">
     <a href="/" class="flex items-center space-x-3" aria-label="Enigma Ciencia, inicio">
       <div class="flex items-center space-x-1 h-6">
         <div class="w-1.5 h-full bg-[#e05638] rounded-full -skew-x-12"></div>
@@ -101,12 +101,12 @@ function header() {
       </div>
       <span class="text-sm sm:text-xl font-black tracking-tight text-slate-900 font-mono uppercase">Enigma Ciencia</span>
     </a>
-    <nav class="flex items-center space-x-3 sm:space-x-6 text-xs sm:text-sm font-semibold text-slate-700">
+    <nav class="flex w-full sm:w-auto items-center justify-between sm:justify-end gap-x-4 sm:gap-x-6 text-xs sm:text-sm font-semibold text-slate-700">
       <a href="/#articulos" class="hover:text-[#e05638]">Artículos</a>
       <a href="/acerca" class="hover:text-[#e05638]">Acerca</a>
       <a href="/contacto" class="hover:text-[#e05638]">Contacto</a>
-      <a href="${FB}" target="_blank" rel="noopener noreferrer" class="text-[#1877F2] hover:underline hidden md:inline">Facebook</a>
-      <a href="${YT}" target="_blank" rel="noopener noreferrer" class="text-[#FF0000] hover:underline hidden md:inline">YouTube</a>
+      <a href="${FB}" target="_blank" rel="noopener noreferrer" class="text-[#1877F2] hover:underline">Facebook</a>
+      <a href="${YT}" target="_blank" rel="noopener noreferrer" class="text-[#FF0000] hover:underline">YouTube</a>
     </nav>
   </div>
 </header>`;
