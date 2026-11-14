@@ -99,11 +99,11 @@ function header() {
         <div class="w-1.5 h-full bg-[#0ea5e9] rounded-full -skew-x-12"></div>
         <div class="w-1.5 h-full bg-[#2563eb] rounded-full -skew-x-12"></div>
       </div>
-      <span class="text-lg sm:text-xl font-black tracking-tight text-slate-900 font-mono uppercase">Enigma Ciencia</span>
+      <span class="text-sm sm:text-xl font-black tracking-tight text-slate-900 font-mono uppercase">Enigma Ciencia</span>
     </a>
-    <nav class="flex items-center space-x-4 sm:space-x-6 text-sm font-semibold text-slate-700">
-      <a href="/#articulos" class="hover:text-[#e05638] hidden sm:inline">Artículos</a>
-      <a href="/acerca" class="hover:text-[#e05638] hidden sm:inline">Acerca</a>
+    <nav class="flex items-center space-x-3 sm:space-x-6 text-xs sm:text-sm font-semibold text-slate-700">
+      <a href="/#articulos" class="hover:text-[#e05638]">Artículos</a>
+      <a href="/acerca" class="hover:text-[#e05638]">Acerca</a>
       <a href="/contacto" class="hover:text-[#e05638]">Contacto</a>
       <a href="${FB}" target="_blank" rel="noopener noreferrer" class="text-[#1877F2] hover:underline hidden md:inline">Facebook</a>
       <a href="${YT}" target="_blank" rel="noopener noreferrer" class="text-[#FF0000] hover:underline hidden md:inline">YouTube</a>
