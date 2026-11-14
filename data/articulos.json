@@ -1,5 +1,17 @@
 [
   {
+    "id": 219,
+    "slug": "219-actualizacion-celulas-beta-azucar-evitan-ataque-inmunitario-diabetes-tipo-1",
+    "title": "Actualización: células del páncreas recubiertas con un azúcar evitan el ataque inmunitario en ratones con diabetes tipo 1",
+    "category": "Medicina y Biotecnología",
+    "date": "2026-11-14",
+    "summary": "Investigadores de Mayo Clinic recubrieron células productoras de insulina con un azúcar que frena el ataque inmunitario. En ratones redujo 90 % la incidencia de diabetes tipo 1. El estudio es de agosto de 2025 y aún no se ha probado en personas.",
+    "content": "<p>Investigadores de Mayo Clinic protegieron células productoras de insulina en ratones con diabetes tipo 1 al recubrirlas con un azúcar que algunos tumores usan para esconderse del sistema inmunitario. El estudio se publicó en el <em>Journal of Clinical Investigation</em> en agosto de 2025. Esta actualización recoge sus resultados.</p>\n<h3>Qué pasa en la diabetes tipo 1</h3>\n<p>En la diabetes tipo 1, el sistema inmunitario ataca las células beta del páncreas, las que fabrican insulina. Sin ellas, el cuerpo deja de regular el azúcar en la sangre.</p>\n<h3>Qué hicieron los investigadores</h3>\n<p>El equipo cubrió las células beta con un azúcar parecido al que usan algunos tumores para pasar desapercibidos. Ese azúcar se une a receptores del sistema inmunitario que suelen indicar que hay que calmar la respuesta de ataque.</p>\n<h3>Qué se observó</h3>\n<p>En ratones hembra con un modelo espontáneo de la enfermedad, solo el 6 % de las modificadas desarrolló diabetes, frente al 60 % del grupo de control. Es una reducción del 90 % en la incidencia. El estudio también probó un modelo de diabetes inducida con resultados protectores.</p>\n<h3>Rigor científico y estado de la investigación</h3>\n<p>Lo que sabemos: el efecto protector en ratones y el mecanismo de los receptores del sistema inmunitario. Lo que no sabemos: si el método funciona en personas, cuánto dura la protección y qué riesgos tendría reducir la respuesta inmunitaria a largo plazo. Los autores señalan que no evaluaron del todo esos riesgos.</p>\n<h3>Desenlace</h3>\n<p>Es un hallazgo prometedor, pero todavía se encuentra en modelos animales. Antes de pensar en un tratamiento para personas, hacen falta estudios de seguridad y ensayos clínicos.",
+    "sources": "Mayo Clinic, estudio publicado en Journal of Clinical Investigation el 1 de agosto de 2025 (artículo 181207). Comunicado de Mayo Clinic de septiembre de 2025 sobre la protección de células beta.",
+    "image": "https://www.enigmaciencia.com/img/celulas-beta-ilustracion.svg",
+    "imageCaption": "Ilustración original de Enigma Ciencia con fines explicativos. No muestra a pacientes ni células reales del estudio."
+  },
+  {
     "id": 218,
     "slug": "218-actualizacion-anticuerpo-ad-np1-fda-ensayo-humanos-corazon",
     "title": "Actualización: la FDA autoriza ensayos en humanos de un anticuerpo experimental para reparar el corazón tras un infarto",
