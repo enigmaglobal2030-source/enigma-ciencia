@@ -65,7 +65,10 @@
     <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Un módulo de IA mejora la marcha de robots humanoides y mantiene su ventaja al cambiar peso y fricción" class="w-full h-80 object-cover" loading="eager" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=Rob%C3%B3tica%20y%20Automatizaci%C3%B3n'"></div></figure>
     <div class="article-body"><p>Los robots humanoides caminan bien en entornos preparados, pero pierden el equilibrio con superficies resbaladizas, cargas cambiantes o empujones. El problema es que el controlador debe reaccionar a cambios que no estaban en sus datos de entrenamiento.</p>
 <p>Un equipo de la Universidad de Michigan presentó PRISM, un módulo que se conecta a la entrada de la red neuronal que controla al robot.</p>
-<h3>Cómo aprende</h3>
+<h3>Conceptos clave: cómo aprende un robot a caminar</h3>
+<p>Muchos controladores modernos se entrenan con aprendizaje por refuerzo: el robot prueba acciones en un simulador y recibe premios por avanzar sin caer. Luego se transfiere lo aprendido al robot real.</p>
+<p>La diferencia entre el simulador y el mundo real se llama brecha simulación-realidad. Es uno de los problemas centrales de la robótica, porque el fricción, la masa y el contacto nunca coinciden del todo.</p>
+<h3>Cómo aprende PRISM</h3>
 <p>PRISM son las siglas de Polynomial Representations for Interaction-Structured Motor Control. En lugar de dejar que la red aprenda por fuerza bruta las interacciones entre variables, las representa de forma explícita.</p>
 <p>Esas variables incluyen posiciones y velocidades de las articulaciones, las acciones previas y la velocidad deseada al caminar.</p>
 <h3>Qué resultados reporta</h3>
