@@ -6,7 +6,7 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = __dirname;
-const SITE = "https://enigmaciencia.com";
+const SITE = "https://www.enigmaciencia.com";
 const GOOGLE_VERIFICATION = "60OQwXNBe3P9nVm1IpDHfyjJXsXt2p-ibGQ8s8H_Hz8";
 const EMAIL = "enigmaglobal2030@gmail.com";
 const FB = "https://www.facebook.com/profile.php?id=61581561126366";
@@ -41,7 +41,7 @@ function fmtDate(iso) {
 }
 
 function articleUrl(a) {
-  return `/articulo/${a.slug}.html`;
+  return `/articulo/${a.slug}`;
 }
 
 function placeholder(category) {
@@ -99,8 +99,8 @@ function header() {
     </a>
     <nav class="flex items-center space-x-4 sm:space-x-6 text-sm font-semibold text-slate-700">
       <a href="/#articulos" class="hover:text-[#e05638] hidden sm:inline">Artículos</a>
-      <a href="/acerca.html" class="hover:text-[#e05638] hidden sm:inline">Acerca</a>
-      <a href="/contacto.html" class="hover:text-[#e05638]">Contacto</a>
+      <a href="/acerca" class="hover:text-[#e05638] hidden sm:inline">Acerca</a>
+      <a href="/contacto" class="hover:text-[#e05638]">Contacto</a>
       <a href="${FB}" target="_blank" rel="noopener noreferrer" class="text-[#1877F2] hover:underline hidden md:inline">Facebook</a>
       <a href="${YT}" target="_blank" rel="noopener noreferrer" class="text-[#FF0000] hover:underline hidden md:inline">YouTube</a>
     </nav>
@@ -122,9 +122,9 @@ function footer() {
       <p class="text-xs text-[#e05638] mt-1">Divulgación científica rigurosa y accesible.</p>
     </div>
     <nav class="flex justify-center md:justify-end space-x-6 text-sm text-slate-400">
-      <a href="/acerca.html" class="hover:text-white">Acerca</a>
-      <a href="/contacto.html" class="hover:text-white">Contacto</a>
-      <a href="/privacidad.html" class="hover:text-white">Privacidad</a>
+      <a href="/acerca" class="hover:text-white">Acerca</a>
+      <a href="/contacto" class="hover:text-white">Contacto</a>
+      <a href="/privacidad" class="hover:text-white">Privacidad</a>
     </nav>
   </div>
 </footer>`;
@@ -342,7 +342,7 @@ ${footer()}
 }
 
 function simplePage({ slug, title, description, body }) {
-  return `${head({ title: `${title} | Enigma Ciencia`, description, canonical: `${SITE}/${slug}.html`, image: articles[0].image })}
+  return `${head({ title: `${title} | Enigma Ciencia`, description, canonical: `${SITE}/${slug}`, image: articles[0].image })}
 <body class="min-h-screen flex flex-col">
 ${header()}
 <main class="max-w-3xl mx-auto px-4 sm:px-8 py-10 sm:py-14 w-full article-body">
@@ -384,9 +384,9 @@ function sitemap() {
   const urls = [
     { loc: `${SITE}/`, lastmod: today, priority: "1.0" },
     ...articles.map((a) => ({ loc: `${SITE}${articleUrl(a)}`, lastmod: a.date, priority: "0.8" })),
-    { loc: `${SITE}/acerca.html`, lastmod: today, priority: "0.3" },
-    { loc: `${SITE}/contacto.html`, lastmod: today, priority: "0.3" },
-    { loc: `${SITE}/privacidad.html`, lastmod: today, priority: "0.2" },
+    { loc: `${SITE}/acerca`, lastmod: today, priority: "0.3" },
+    { loc: `${SITE}/contacto`, lastmod: today, priority: "0.3" },
+    { loc: `${SITE}/privacidad`, lastmod: today, priority: "0.2" },
   ];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
