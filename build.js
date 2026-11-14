@@ -8,7 +8,8 @@ const path = require("path");
 const ROOT = __dirname;
 const SITE = "https://www.enigmaciencia.com";
 const GOOGLE_VERIFICATION = "60OQwXNBe3P9nVm1IpDHfyjJXsXt2p-ibGQ8s8H_Hz8";
-const EMAIL = "enigmaglobal2030@gmail.com";
+const EMAIL = process.env.CONTACT_EMAIL || "";
+if (!EMAIL) { console.error("Falta la variable CONTACT_EMAIL (correo de contacto del sitio)."); process.exit(1); }
 const FB = "https://www.facebook.com/profile.php?id=61581561126366";
 const YT = "https://www.youtube.com/channel/UC3ipBC64xkxwqhT9S4ZBRfA";
 
@@ -80,6 +81,8 @@ function head({ title, description, canonical, image, type = "website", jsonld =
     .article-body p { margin-bottom: 1.5rem; line-height: 1.85; font-size: 1.125rem; color: #334155; }
     .article-body h3 { font-family: 'Lora', serif; font-size: 1.5rem; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
     .article-body strong { color: #0f172a; }
+    img { max-width: 100%; height: auto; display: block; }
+    img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; width: 100%; object-fit: cover; }
   </style>
   ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
 </head>`;
