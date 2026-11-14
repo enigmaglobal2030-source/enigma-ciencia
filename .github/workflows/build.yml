@@ -6,6 +6,9 @@ on:
     paths:
       - "build.js"
       - "data/**"
+      - "tailwind.css"
+      - "tailwind.config.js"
+      - "package.json"
   workflow_dispatch:
 
 permissions:
@@ -23,6 +26,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Instalar dependencias
+        run: npm install --no-audit --no-fund
+      - name: Generar estilos
+        run: npm run css
       - name: Compilar
         env:
           CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}

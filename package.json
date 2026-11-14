@@ -1,0 +1,12 @@
+{
+  "name": "enigma-ciencia",
+  "private": true,
+  "description": "Sitio estático de Enigma Ciencia",
+  "scripts": {
+    "css": "tailwindcss -c tailwind.config.js -i tailwind.css -o styles.css --minify",
+    "build": "npm run css && node build.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
