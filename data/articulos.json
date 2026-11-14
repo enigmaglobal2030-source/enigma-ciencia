@@ -1,5 +1,17 @@
 [
   {
+    "id": 217,
+    "slug": "217-vacuna-arnm-personalizada-melanoma-fase-iib",
+    "title": "Una vacuna personalizada de ARNm reduce un 49 % el riesgo de recurrencia o muerte por melanoma en un ensayo de fase IIb",
+    "category": "Medicina y Biotecnología",
+    "date": "2026-11-14",
+    "summary": "Un seguimiento a cinco años de un ensayo de fase IIb muestra que la vacuna intismeran autogene, combinada con pembrolizumab, reduce el riesgo de recurrencia o muerte por melanoma. En agosto de 2026, un ensayo de fase III cumplió su objetivo principal según sus promotores.",
+    "content": "<p>Una vacuna personalizada de ARNm, combinada con pembrolizumab, redujo un 49 % el riesgo de que el melanoma reaparezca o provoque la muerte, frente a pembrolizumab solo. Así lo muestra el seguimiento a cinco años de un ensayo de fase IIb presentado en el congreso ASCO 2026.</p>\n<h3>Qué es la vacuna</h3>\n<p>Intismeran autogene es una terapia de ARNm que se diseña para cada paciente a partir de las mutaciones de su tumor. Se administra junto con pembrolizumab, un fármaco de inmunoterapia que ya se usa en melanoma.</p>\n<h3>Qué se observó</h3>\n<p>El ensayo incluyó pacientes con melanoma extirpado en estadios III y IV. La reducción del 49 % corresponde al seguimiento a cinco años. Los autores describen una tendencia positiva en la supervivencia global, pero no un beneficio estadísticamente establecido. El ensayo es pequeño y de fase temprana.</p>\n<h3>Ensayo de fase III</h3>\n<p>En agosto de 2026, Merck y Moderna anunciaron que el ensayo INTerpath-001 alcanzó su objetivo principal, la supervivencia libre de recurrencia, en melanoma extirpado en estadios IIB a IV. Según las empresas, es el primer estudio de fase III que muestra una mejora clínicamente relevante frente a pembrolizumab solo en esta situación. Todavía no han publicado las cifras de eficacia.</p>\n<h3>Rigor científico y estado de la investigación</h3>\n<p>Lo que sabemos: la reducción del 49 % en la fase IIb y que el ensayo de fase III cumplió su objetivo principal según las empresas. Lo que no sabemos: las cifras de eficacia de la fase III, si la supervivencia global mejora de forma concluyente y cuándo podría estar disponible.</p>\n<h3>Desenlace</h3>\n<p>Si las cifras de la fase III se confirman y las autoridades reguladoras las aprueban, la vacuna podría sumarse al tratamiento de melanoma extirpado en pacientes de alto riesgo. Por ahora, es una prueba prometedora con datos todavía incompletos.",
+    "sources": "Ensayo KEYNOTE-942, seguimiento a cinco años de intismeran autogene más pembrolizumab, presentado en ASCO 2026 y publicado como resumen en Journal of Clinical Oncology el 1 de junio de 2026. Anuncio de Merck y Moderna sobre el ensayo de fase III INTerpath-001, agosto de 2026, reportado por CancerNetwork el 19 de agosto de 2026.",
+    "image": "https://www.enigmaciencia.com/img/melanoma-ilustracion.svg",
+    "imageCaption": "Ilustración original de Enigma Ciencia con fines explicativos. No muestra a pacientes ni el producto del estudio."
+  },
+  {
     "id": 216,
     "slug": "216-gas-volcanico-grietas-recientes-alba-mons-marte",
     "title": "Gas de cloruro de hidrógeno escapa por grietas recientes en Alba Mons, un volcán de Marte",
