@@ -201,12 +201,22 @@ function indexPage() {
   })}
 <body class="min-h-screen flex flex-col">
 ${header()}
+<div class="border-b border-slate-200 bg-white/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 h-11 flex items-center gap-4">
+    <span class="flex items-center gap-2 text-[11px] font-bold tracking-widest text-[#e05638] whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-[#e05638]"></span>EN DIRECTO</span>
+    <div class="flex items-center gap-6 overflow-x-auto no-scrollbar font-mono text-[11px] uppercase text-slate-700 whitespace-nowrap">${articles.slice(0, 5).map((a) => `<span>${esc(a.title)}</span>`).join('<span class="text-[#e05638]">•</span>')}</div>
+  </div>
+</div>
 <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-12 w-full space-y-12">
-  <section class="space-y-6 max-w-4xl">
-    <p class="text-xs font-bold tracking-widest text-[#e05638] uppercase">Curiosidad con método · Edición oficial EnigmaGlobal</p>
-    <h1 class="editorial-serif text-4xl sm:text-7xl font-bold text-slate-900 tracking-tight leading-[1.08]">La ciencia, <span class="italic text-[#e05638] font-normal">en contexto.</span></h1>
-    <p class="text-slate-600 text-lg sm:text-xl leading-relaxed max-w-2xl">Te mantenemos informado de los avances científicos que están cambiando el mundo con rigor y claridad.</p>
-    <p class="text-xs text-slate-500">Última publicación: ${fmtDate(latest)}</p>
+  <section class="space-y-6">
+    <p class="font-mono text-xs tracking-widest text-[#e05638] uppercase">Curiosidad con método · Edición oficial EnigmaGlobal</p>
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+      <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-[-0.04em] leading-[0.95] text-[#0b1f3a]">La ciencia,<br><span class="italic font-normal text-[#e05638] editorial-serif tracking-normal">en contexto.</span></h1>
+      <div class="max-w-md space-y-3 lg:pb-3">
+        <p class="text-slate-600 text-lg leading-relaxed">Historias sobre el universo, la vida y las ideas que están cambiando nuestro futuro. Explicadas con método y contadas con claridad.</p>
+        <p class="text-xs text-slate-500">Última publicación: ${fmtDate(latest)}</p>
+      </div>
+    </div>
   </section>
 
   <!-- AdSense: colocar aquí el bloque superior cuando la cuenta esté aprobada -->
