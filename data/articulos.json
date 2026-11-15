@@ -1,5 +1,17 @@
 [
   {
+    "id": 241,
+    "slug": "241-china-autoriza-implante-cerebral-neuracle-neo-paralisis",
+    "title": "China autoriza el primer implante cerebral comercial del mundo, un dispositivo que se coloca sobre el cerebro sin penetrarlo",
+    "category": "Neurociencia",
+    "date": "2026-11-15",
+    "summary": "En marzo de 2026, China autorizó el implante NEO, de la empresa Neuracle, para ayudar a personas con parálisis parcial a sujetar objetos con la mano. Se coloca sobre el cerebro sin penetrarlo.",
+    "content": "<p>China autorizó en marzo de 2026 el NEO, un implante cerebral del fabricante Neuracle, de Shanghái, para adultos con parálisis parcial por lesión de médula. Según la prensa, es el primer dispositivo de interfaz cerebro-computadora invasiva aprobado para uso comercial en el mundo.</p>\n<h3>Qué autorizó la agencia china</h3>\n<p>La Administración Nacional de Productos Médicos (NMPA) aprobó el uso del dispositivo para ayudar a agarrar y sostener objetos con la mano. No es un control general de computadoras. En los ensayos clínicos, las personas con el implante mejoraron la capacidad de sujetar objetos.</p>\n<h3>Cómo se coloca</h3>\n<p>El implante se coloca sobre la duramadre, la membrana que cubre el cerebro, y no penetra el tejido cerebral. Según las fuentes, eso reduce el riesgo de hemorragia frente a los dispositivos que sí penetran. Aun así, requiere cirugía para abrir el cráneo, por lo que sigue siendo un procedimiento invasivo.</p>\n<h3>Comparación con Estados Unidos</h3>\n<p>La FDA, la agencia estadounidense, no ha aprobado un dispositivo similar para uso comercial en estas fuentes. Neuralink, la empresa de Elon Musk, sigue en ensayos clínicos en Estados Unidos. Por eso, China autorizó antes, pero no en el mismo marco regulatorio.</p>\n<h3>Rigor científico y estado de la investigación</h3>\n<p>Lo que sabemos: China autorizó el dispositivo en marzo de 2026 para un uso específico, y según reportes, ya está disponible en el sistema de salud. Lo que no sabemos: cuántos pacientes lo han recibido, cuánto tiempo dura el beneficio y cómo se compara con otros sistemas. Las fuentes no coinciden en los criterios de edad. La frase \"primer implante cerebral comercial del mundo\" es un encuadre de la prensa.</p>\n<h3>Desenlace</h3>\n<p>Es un paso regulatorio importante para las interfaces cerebro-computadora. Para personas con lesiones de médula, abre una posibilidad concreta de recuperar control de la mano. Sus alcances reales se verán con más pacientes y seguimiento a largo plazo.",
+    "sources": "Bloomberg y Reuters, aprobación de la NMPA (13 de marzo de 2026). Scientific American, sobre el alcance de la aprobación. IBTimes y Business Today, cobertura de 2026. MIT Technology Review, resumen del seguro médico chino.",
+    "image": "https://www.enigmaciencia.com/img/implante-cerebro-ia.jpg",
+    "imageCaption": "Ilustración generada con IA (Nano Banana), con fines ilustrativos. No es una fotografía del dispositivo ni de un paciente."
+  },
+  {
     "id": 240,
     "slug": "240-interfaces-cerebro-medula-personas-paralisis-volver-caminar",
     "title": "Interfaces cerebro-médula: cómo algunas personas con parálisis han vuelto a caminar",
