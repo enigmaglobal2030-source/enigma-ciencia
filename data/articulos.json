@@ -1,5 +1,17 @@
 [
   {
+    "id": 223,
+    "slug": "223-anixa-vacuna-preventiva-cancer-mama-fase-1",
+    "title": "Una vacuna preventiva contra el cáncer de mama, en fase 1, busca que el sistema inmunitario frene tumores antes de que sean invasivos",
+    "category": "Medicina y Biotecnología",
+    "date": "2026-11-15",
+    "summary": "Anixa Biosciences reporta que su vacuna preventiva contra el cáncer de mama fue segura en fase 1 y provocó respuestas inmunitarias en el 74 % de los participantes. Aún no hay pruebas de que evite tumores.",
+    "content": "<p>Anixa Biosciences y el Cleveland Clinic desarrollan una vacuna para entrenar al sistema inmunitario a reconocer y eliminar células de cáncer de mama antes de que formen tumores invasivos. En junio de 2026, la empresa presentó los resultados finales de su ensayo de fase 1 y reportó que la vacuna fue segura. Todavía no hay pruebas de que evite el cáncer.</p>\n<h3>Qué es la vacuna</h3>\n<p>La vacuna apunta a la alfa-lactalbúmina, una proteína que normalmente solo se expresa en el tejido mamario durante la lactancia, pero que reaparece en muchas formas de cáncer de mama.</p>\n<h3>Para quién es el ensayo</h3>\n<p>El ensayo incluye mujeres sin cáncer, pero con alto riesgo por mutaciones genéticas. El estudio está financiado por una subvención del Departamento de Defensa de Estados Unidos y comenzó en 2021.</p>\n<h3>Qué se observó</h3>\n<p>Según la empresa, la vacuna fue segura y bien tolerada a la dosis máxima tolerada. Las respuestas inmunitarias definidas en el protocolo ocurrieron en el 74 % de los participantes. Esa cifra mide la respuesta del sistema inmunitario, no la prevención de cáncer.</p>\n<h3>Próximo paso</h3>\n<p>Anixa firmó un acuerdo de fabricación para producir material clínico para un ensayo de fase 2, que aún no tiene fecha de inicio confirmada. La empresa planea combinarla con quimioterapia e inmunoterapia en pacientes con cáncer de mama.</p>\n<h3>Rigor científico y estado de la investigación</h3>\n<p>Lo que sabemos: la vacuna es segura en la fase 1 según la empresa, y provoca respuestas inmunitarias en la mayoría de los participantes. Lo que no sabemos: si evita tumores, cuánto dura la protección y si el beneficio se confirma en un grupo más grande. Los datos vienen de la propia empresa y no han sido verificados de forma independiente.</p>\n<h3>Desenlace</h3>\n<p>Es un primer paso para una vacuna preventiva, todavía en etapa temprana. Para saber si funciona, hacen falta ensayos más grandes que comparen a quienes la reciben con quienes no, y que midan la aparición de tumores durante años.",
+    "sources": "Anixa Biosciences, comunicados de prensa sobre los resultados de fase 1 (2025 y junio de 2026). Cleveland Clinic, socio del ensayo. Información de registros de ensayos clínicos sobre el estudio.",
+    "image": "https://www.enigmaciencia.com/img/sistema-inmunitario-entrenado-ilustracion.svg",
+    "imageCaption": "Ilustración original de Enigma Ciencia con fines explicativos. No muestra a pacientes ni células reales del estudio."
+  },
+  {
     "id": 222,
     "slug": "222-china-destino-pacientes-extranjeros-cart-cancer",
     "title": "China se convierte en destino para pacientes extranjeros con terapia CAR-T contra el cáncer",
