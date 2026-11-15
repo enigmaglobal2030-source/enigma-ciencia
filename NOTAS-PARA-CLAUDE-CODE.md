@@ -1,34 +1,18 @@
 # Notas de traspaso · Enigma Ciencia
 
-Estado al 14 de noviembre de 2026. Léelo antes de publicar cualquier cambio.
+## Cuentas y conexiones
 
-## Cómo compilar y publicar
+- **Vercel:** cuenta `willmoli48@gmail.com`, equipo `willmoli48-1187`, proyecto `enigmaciencia` (id `prj_8GmPwMIXErbbiPV7mspnSaG1L6do`). Dominios: `enigmaciencia.com` redirige a `www.enigmaciencia.com`.
+- **GitHub:** cuenta `enigmaglobal2030@gmail.com`, repositorio `enigmaglobal2030-source/enigma-ciencia`, rama `main`.
+- **Vercel ↔ GitHub:** conectado al repositorio `enigma-ciencia`. Cada push a `main` despliega en producción.
+- **Secreto de GitHub Actions:** `CONTACT_EMAIL` en el repositorio. Sin él, el flujo "Compilar sitio" falla.
+- **Identidad de commits:** `enigma-ciencia-site <site-bot@users.noreply.github.com>`. Un hook pide firma `noreply@anthropic.com`; se decidió mantener la identidad del sitio.
 
-- Compilar: `npm run build` (genera el CSS con Tailwind local y después ejecuta `node build.js`).
-- `build.js` necesita la variable `CONTACT_EMAIL`. No escribas el correo en el código ni en los commits.
-- El flujo de GitHub Actions (`.github/workflows/build.yml`) compila al hacer push a `main` si cambian `build.js`, `data/`, `tailwind.*` o `package.json`. Necesita el secreto `CONTACT_EMAIL` en GitHub.
-- Commits: identidad genérica (`enigma-ciencia-site`) y los trailers de la sesión.
+## Cómo compilar
 
-## Estado de la web
+- `npm run build` (genera `styles.css` y ejecuta `node build.js`).
+- `build.js` necesita `CONTACT_EMAIL`; en local: `CONTACT_EMAIL=... npm run build`.
 
-- 21 artículos publicados. La portada usa `styles.css` local; ya no depende de cdn.tailwindcss.com.
-- Imágenes verificadas en 205 (superconductividad), 209, 210 (LNP), 211 (EEG, ilustrativa), 213 (BepiColombo).
-- Recién publicados: 214 (Roman), 215 (clima 2026), 216 (Alba Mons).
+## Notas
 
-## Pendientes
-
-1. **Ivonescimab:** no publicar hasta la decisión de la FDA. Fecha PDUFA 14 nov 2026; no se encontró decisión.
-2. **Artículo 212 (emisiones de CO₂):** imagen provisional. Hay candidato en Commons (central Arnot, aérea), pero la licencia no se verificó en la ficha. Confirmar antes de usarla.
-3. **Artículo 213 (BepiColombo):** revisar la fecha "10 de marzo de 2027" de la órbita final de MPO. No aparece en las fuentes consultadas.
-4. **Imágenes 214 y 215:** tarjetas provisionales (Roman y clima). Buscar fotos verificadas.
-5. **Textos 201 y 203:** revisión pendiente acordada.
-6. **Reels:** están en el archivo `escaneo-reels-3-temas.md` (Marte, tumba siberiana con cannabis, robot ASTRA). Falta grabarlos o generarlos.
-7. **Pendientes generales:** Search Console (en aprobación), AdSense (sin iniciar), borrador de privacidad (revisar) y confirmar si el repo debe ser privado.
-
-## Reglas editoriales
-
-- Artículo: explicación de fondo, rigor científico y estado de la investigación casi al final, desenlace al cierre.
-- Fuentes en texto plano, sin enlaces.
-- Títulos con el nombre completo del tema, no la sigla.
-- Estado de laboratorio, animales o simulación: solo en el bloque final de rigor, no en el título.
-- Hashtags: entre 5 y 7 en Facebook.
+- Si el repositorio se borra o se vuelve a crear, hay que reconectar Vercel, la app de Claude en GitHub y el secreto `CONTACT_EMAIL`.
