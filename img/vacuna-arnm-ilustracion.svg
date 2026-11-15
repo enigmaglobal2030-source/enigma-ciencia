@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Ilustración de una jeringa, una célula tumoral y hebras de ARN mensajero">
+  <rect width="960" height="600" fill="#0f172a"/>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e05638" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#e05638" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="480" cy="270" r="280" fill="url(#glow)"/>
+  <!-- célula tumoral -->
+  <circle cx="620" cy="280" r="130" fill="#7c2d12" stroke="#fb923c" stroke-width="5" stroke-opacity="0.8"/>
+  <g fill="#fdba74" fill-opacity="0.7">
+    <circle cx="580" cy="240" r="10"/><circle cx="650" cy="255" r="8"/><circle cx="600" cy="320" r="12"/>
+    <circle cx="665" cy="330" r="9"/><circle cx="625" cy="200" r="7"/>
+  </g>
+  <!-- hebras de ARN mensajero -->
+  <path d="M250 300 C 300 240, 340 360, 390 300 S 470 240, 500 290" fill="none" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M260 340 C 310 290, 350 390, 400 335 S 470 290, 500 320" fill="none" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round" stroke-opacity="0.8"/>
+  <g fill="#38bdf8">
+    <circle cx="250" cy="300" r="12"/><circle cx="500" cy="290" r="12"/>
+  </g>
+  <!-- jeringa -->
+  <g transform="translate(70 170) rotate(-28)">
+    <rect x="0" y="80" width="260" height="60" rx="30" fill="#e2e8f0" stroke="#94a3b8" stroke-width="4"/>
+    <rect x="30" y="92" width="170" height="36" rx="14" fill="#38bdf8" fill-opacity="0.45"/>
+    <rect x="200" y="62" width="40" height="96" rx="8" fill="#cbd5e1" stroke="#94a3b8" stroke-width="3"/>
+    <rect x="240" y="100" width="90" height="20" rx="8" fill="#94a3b8"/>
+    <rect x="320" y="108" width="60" height="6" rx="3" fill="#cbd5e1"/>
+    <g stroke="#475569" stroke-width="3">
+      <line x1="40" y1="80" x2="40" y2="100"/><line x1="70" y1="80" x2="70" y2="100"/><line x1="100" y1="80" x2="100" y2="100"/><line x1="130" y1="80" x2="130" y2="100"/><line x1="160" y1="80" x2="160" y2="100"/>
+    </g>
+  </g>
+  <text x="480" y="520" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#f8fafc">Vacuna de ARN mensajero personalizada</text>
+  <text x="480" y="558" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#cbd5e1">Ilustración original con fines explicativos</text>
+</svg>
