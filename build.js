@@ -438,7 +438,7 @@ const pages = {
     title: "Política de privacidad",
     description: "Cómo Enigma Ciencia trata los datos de sus lectores.",
     body: `<p>Esta página describe, de forma general, el tratamiento de datos en Enigma Ciencia.</p>
-<p>Este sitio no solicita registro ni datos personales para leer los artículos. Puede utilizar cookies técnicas y cookies de terceros, como las de Google, para mostrar anuncios de Google AdSense y medir el tráfico. Google utiliza cookies para personalizar los anuncios según las visitas previas de cada usuario. Puedes gestionar esas preferencias en la configuración de anuncios de Google.</p>
+<p>Este sitio no solicita registro ni datos personales para leer los artículos. Puede utilizar cookies técnicas y cookies de terceros, como las de Google, para mostrar anuncios de Google AdSense y medir el tráfico. Google utiliza cookies para personalizar los anuncios según las visitas previas de cada usuario. Puedes gestionar esas preferencias en la <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">configuración de anuncios de Google</a>.</p>
 <p>Para cualquier consulta sobre privacidad, escribe a <a href="mailto:${EMAIL}">${EMAIL}</a>.</p>`,
   }),
 };
