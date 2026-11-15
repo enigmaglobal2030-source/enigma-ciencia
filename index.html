@@ -33,6 +33,10 @@
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
   </style>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#e05638">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"Enigma Ciencia","legalName":"EnigmaGlobal","url":"https://www.enigmaciencia.com","email":"enigmaglobal2030@gmail.com","sameAs":["https://www.facebook.com/profile.php?id=61581561126366","https://www.youtube.com/channel/UC3ipBC64xkxwqhT9S4ZBRfA"]}</script>
 </head>
 <body class="min-h-screen flex flex-col">

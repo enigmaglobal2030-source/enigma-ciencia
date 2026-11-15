@@ -85,6 +85,10 @@ function head({ title, description, canonical, image, type = "website", jsonld =
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
   </style>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#e05638">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
   ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
 </head>`;
 }

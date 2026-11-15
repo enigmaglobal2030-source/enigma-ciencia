@@ -1,0 +1,15 @@
+{
+  "name": "Enigma Ciencia",
+  "short_name": "Enigma Ciencia",
+  "description": "Te mantenemos informado de los avances científicos que están cambiando el mundo, con rigor y claridad.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f6f2",
+  "theme_color": "#e05638",
+  "lang": "es",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
