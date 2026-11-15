@@ -85,6 +85,7 @@ function head({ title, description, canonical, image, type = "website", jsonld =
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
   </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6763372649272480" crossorigin="anonymous"></script>
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#e05638">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
