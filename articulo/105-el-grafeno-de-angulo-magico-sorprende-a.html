@@ -88,6 +88,34 @@
       <h2 class="text-xs uppercase tracking-wider font-bold text-[#e05638]">Fuentes</h2>
       <p class="text-sm text-slate-600">Ma, Liu, Cai, Watanabe, Taniguchi, Xu, Chu y Yankowitz, Giant elastoresistance in magic-angle twisted bilayer graphene, preprint arXiv:2505.10506 (2025); Universidad de Washington.</p>
     </div>
+    
+    <div class="mt-8 flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
+      <a href="https://wa.me/?text=El%20grafeno%20de%20%C3%A1ngulo%20m%C3%A1gico%20responde%20con%20una%20se%C3%B1al%20el%C3%A9ctrica%20muy%20amplificada%20cuando%20se%20estira%20https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F105-el-grafeno-de-angulo-magico-sorprende-a" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F105-el-grafeno-de-angulo-magico-sorprende-a" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=El%20grafeno%20de%20%C3%A1ngulo%20m%C3%A1gico%20responde%20con%20una%20se%C3%B1al%20el%C3%A9ctrica%20muy%20amplificada%20cuando%20se%20estira&url=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F105-el-grafeno-de-angulo-magico-sorprende-a" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">X</a>
+      <a href="mailto:?subject=El%20grafeno%20de%20%C3%A1ngulo%20m%C3%A1gico%20responde%20con%20una%20se%C3%B1al%20el%C3%A9ctrica%20muy%20amplificada%20cuando%20se%20estira&body=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F105-el-grafeno-de-angulo-magico-sorprende-a" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Correo</a>
+      <button type="button" data-copy="https://www.enigmaciencia.com/articulo/105-el-grafeno-de-angulo-magico-sorprende-a" class="copy-link inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Copiar enlace</button>
+      <button type="button" data-native="https://www.enigmaciencia.com/articulo/105-el-grafeno-de-angulo-magico-sorprende-a" data-title="El grafeno de ángulo mágico responde con una señal eléctrica muy amplificada cuando se estira" class="native-share hidden inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Compartir</button>
+    </div>
+    <script>
+      document.querySelectorAll('.copy-link').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var url = b.getAttribute('data-copy');
+          var done = function () { b.textContent = 'Enlace copiado'; };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(done, function () {});
+          }
+        });
+      });
+      var nb = document.querySelector('.native-share');
+      if (nb && navigator.share) {
+        nb.classList.remove('hidden');
+        nb.addEventListener('click', function () {
+          navigator.share({ title: nb.getAttribute('data-title'), url: nb.getAttribute('data-native') }).catch(function () {});
+        });
+      }
+    </script>
   </article>
   
   <section class="max-w-3xl mx-auto mt-16 space-y-6">

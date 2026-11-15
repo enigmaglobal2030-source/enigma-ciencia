@@ -88,6 +88,34 @@
       <h2 class="text-xs uppercase tracking-wider font-bold text-[#e05638]">Fuentes</h2>
       <p class="text-sm text-slate-600">Universidad de Michigan (Michigan Engineering News), anuncio del estudio de Seung Hyun Lee y colaboradores, presentado en la Conferencia sobre Aprendizaje Robótico (CoRL) en Austin, el 10 de noviembre de 2026.</p>
     </div>
+    
+    <div class="mt-8 flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
+      <a href="https://wa.me/?text=Un%20m%C3%B3dulo%20de%20IA%20mejora%20la%20marcha%20de%20robots%20humanoides%20y%20mantiene%20su%20ventaja%20al%20cambiar%20peso%20y%20fricci%C3%B3n%20https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F103-inteligencia-fisica-avanzada-nueva-arquitectura-de-ia" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F103-inteligencia-fisica-avanzada-nueva-arquitectura-de-ia" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Un%20m%C3%B3dulo%20de%20IA%20mejora%20la%20marcha%20de%20robots%20humanoides%20y%20mantiene%20su%20ventaja%20al%20cambiar%20peso%20y%20fricci%C3%B3n&url=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F103-inteligencia-fisica-avanzada-nueva-arquitectura-de-ia" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">X</a>
+      <a href="mailto:?subject=Un%20m%C3%B3dulo%20de%20IA%20mejora%20la%20marcha%20de%20robots%20humanoides%20y%20mantiene%20su%20ventaja%20al%20cambiar%20peso%20y%20fricci%C3%B3n&body=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F103-inteligencia-fisica-avanzada-nueva-arquitectura-de-ia" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Correo</a>
+      <button type="button" data-copy="https://www.enigmaciencia.com/articulo/103-inteligencia-fisica-avanzada-nueva-arquitectura-de-ia" class="copy-link inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Copiar enlace</button>
+      <button type="button" data-native="https://www.enigmaciencia.com/articulo/103-inteligencia-fisica-avanzada-nueva-arquitectura-de-ia" data-title="Un módulo de IA mejora la marcha de robots humanoides y mantiene su ventaja al cambiar peso y fricción" class="native-share hidden inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Compartir</button>
+    </div>
+    <script>
+      document.querySelectorAll('.copy-link').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var url = b.getAttribute('data-copy');
+          var done = function () { b.textContent = 'Enlace copiado'; };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(done, function () {});
+          }
+        });
+      });
+      var nb = document.querySelector('.native-share');
+      if (nb && navigator.share) {
+        nb.classList.remove('hidden');
+        nb.addEventListener('click', function () {
+          navigator.share({ title: nb.getAttribute('data-title'), url: nb.getAttribute('data-native') }).catch(function () {});
+        });
+      }
+    </script>
   </article>
   
   <p class="mt-12"><a href="/" class="text-sm font-semibold text-[#e05638] hover:underline">← Volver a todos los artículos</a></p>

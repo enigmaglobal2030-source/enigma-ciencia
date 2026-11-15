@@ -90,6 +90,34 @@
       <h2 class="text-xs uppercase tracking-wider font-bold text-[#e05638]">Fuentes</h2>
       <p class="text-sm text-slate-600">The Guardian (reportaje sobre la granja de Ezhou, citado en medios internacionales); South China Morning Post (reportaje sobre granjas verticales en China); Sixth Tone (agosto de 2022); Producer.com y Pig Progress (datos de capacidad e inversión).</p>
     </div>
+    
+    <div class="mt-8 flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
+      <a href="https://wa.me/?text=Rascacielos%20porcinos%20en%20Ezhou%3A%20una%20granja%20vertical%20de%2026%20pisos%20que%20busca%20abastecer%20el%20mercado%20chino%20de%20carne%20https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F207-rascacielos-porcinos-en-china-la-monumental-reingenieria" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F207-rascacielos-porcinos-en-china-la-monumental-reingenieria" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Rascacielos%20porcinos%20en%20Ezhou%3A%20una%20granja%20vertical%20de%2026%20pisos%20que%20busca%20abastecer%20el%20mercado%20chino%20de%20carne&url=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F207-rascacielos-porcinos-en-china-la-monumental-reingenieria" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">X</a>
+      <a href="mailto:?subject=Rascacielos%20porcinos%20en%20Ezhou%3A%20una%20granja%20vertical%20de%2026%20pisos%20que%20busca%20abastecer%20el%20mercado%20chino%20de%20carne&body=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F207-rascacielos-porcinos-en-china-la-monumental-reingenieria" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Correo</a>
+      <button type="button" data-copy="https://www.enigmaciencia.com/articulo/207-rascacielos-porcinos-en-china-la-monumental-reingenieria" class="copy-link inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Copiar enlace</button>
+      <button type="button" data-native="https://www.enigmaciencia.com/articulo/207-rascacielos-porcinos-en-china-la-monumental-reingenieria" data-title="Rascacielos porcinos en Ezhou: una granja vertical de 26 pisos que busca abastecer el mercado chino de carne" class="native-share hidden inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Compartir</button>
+    </div>
+    <script>
+      document.querySelectorAll('.copy-link').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var url = b.getAttribute('data-copy');
+          var done = function () { b.textContent = 'Enlace copiado'; };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(done, function () {});
+          }
+        });
+      });
+      var nb = document.querySelector('.native-share');
+      if (nb && navigator.share) {
+        nb.classList.remove('hidden');
+        nb.addEventListener('click', function () {
+          navigator.share({ title: nb.getAttribute('data-title'), url: nb.getAttribute('data-native') }).catch(function () {});
+        });
+      }
+    </script>
   </article>
   
   <p class="mt-12"><a href="/" class="text-sm font-semibold text-[#e05638] hover:underline">← Volver a todos los artículos</a></p>

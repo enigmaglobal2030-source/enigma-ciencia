@@ -85,6 +85,34 @@
       <h2 class="text-xs uppercase tracking-wider font-bold text-[#e05638]">Fuentes</h2>
       <p class="text-sm text-slate-600">New England Journal of Medicine, estudio publicado el 4 de noviembre de 2026, reportado por ThePrint (9 de noviembre de 2026) y Business Today (9 de noviembre de 2026); Nature, noticia del 4 de noviembre de 2026, citada por Business Today.</p>
     </div>
+    
+    <div class="mt-8 flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
+      <a href="https://wa.me/?text=Una%20terapia%20g%C3%A9nica%20con%20clozapina%20reduce%20m%C3%A1s%20del%2090%20%25%20las%20crisis%20en%20tres%20personas%20con%20epilepsia%20resistente%20a%20f%C3%A1rmacos%20https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F211-terapia-genica-con-clozapina-reduce-crisis-epilepsia" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F211-terapia-genica-con-clozapina-reduce-crisis-epilepsia" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Una%20terapia%20g%C3%A9nica%20con%20clozapina%20reduce%20m%C3%A1s%20del%2090%20%25%20las%20crisis%20en%20tres%20personas%20con%20epilepsia%20resistente%20a%20f%C3%A1rmacos&url=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F211-terapia-genica-con-clozapina-reduce-crisis-epilepsia" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">X</a>
+      <a href="mailto:?subject=Una%20terapia%20g%C3%A9nica%20con%20clozapina%20reduce%20m%C3%A1s%20del%2090%20%25%20las%20crisis%20en%20tres%20personas%20con%20epilepsia%20resistente%20a%20f%C3%A1rmacos&body=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F211-terapia-genica-con-clozapina-reduce-crisis-epilepsia" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Correo</a>
+      <button type="button" data-copy="https://www.enigmaciencia.com/articulo/211-terapia-genica-con-clozapina-reduce-crisis-epilepsia" class="copy-link inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Copiar enlace</button>
+      <button type="button" data-native="https://www.enigmaciencia.com/articulo/211-terapia-genica-con-clozapina-reduce-crisis-epilepsia" data-title="Una terapia génica con clozapina reduce más del 90 % las crisis en tres personas con epilepsia resistente a fármacos" class="native-share hidden inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Compartir</button>
+    </div>
+    <script>
+      document.querySelectorAll('.copy-link').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var url = b.getAttribute('data-copy');
+          var done = function () { b.textContent = 'Enlace copiado'; };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(done, function () {});
+          }
+        });
+      });
+      var nb = document.querySelector('.native-share');
+      if (nb && navigator.share) {
+        nb.classList.remove('hidden');
+        nb.addEventListener('click', function () {
+          navigator.share({ title: nb.getAttribute('data-title'), url: nb.getAttribute('data-native') }).catch(function () {});
+        });
+      }
+    </script>
   </article>
   
   <section class="max-w-3xl mx-auto mt-16 space-y-6">

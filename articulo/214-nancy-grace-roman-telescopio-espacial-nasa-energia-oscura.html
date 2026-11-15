@@ -75,6 +75,34 @@ Space.com, cobertura en vivo del lanzamiento de Roman en Falcon Heavy, 30 ago 20
 Basenor, resumen del lanzamiento de Roman, sept 2026.
 Pulse2, &quot;NASA Launches Nancy Grace Roman Space Telescope&quot;, 2026.</p>
     </div>
+    
+    <div class="mt-8 flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
+      <a href="https://wa.me/?text=Nancy%20Grace%20Roman%20Space%20Telescope%20ya%20est%C3%A1%20en%20camino%20a%20L2%3A%20el%20telescopio%20de%20campo%20amplio%20de%20la%20NASA%20que%20estudiar%C3%A1%20la%20energ%C3%ADa%20oscura%20https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F214-nancy-grace-roman-telescopio-espacial-nasa-energia-oscura" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F214-nancy-grace-roman-telescopio-espacial-nasa-energia-oscura" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Nancy%20Grace%20Roman%20Space%20Telescope%20ya%20est%C3%A1%20en%20camino%20a%20L2%3A%20el%20telescopio%20de%20campo%20amplio%20de%20la%20NASA%20que%20estudiar%C3%A1%20la%20energ%C3%ADa%20oscura&url=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F214-nancy-grace-roman-telescopio-espacial-nasa-energia-oscura" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">X</a>
+      <a href="mailto:?subject=Nancy%20Grace%20Roman%20Space%20Telescope%20ya%20est%C3%A1%20en%20camino%20a%20L2%3A%20el%20telescopio%20de%20campo%20amplio%20de%20la%20NASA%20que%20estudiar%C3%A1%20la%20energ%C3%ADa%20oscura&body=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F214-nancy-grace-roman-telescopio-espacial-nasa-energia-oscura" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Correo</a>
+      <button type="button" data-copy="https://www.enigmaciencia.com/articulo/214-nancy-grace-roman-telescopio-espacial-nasa-energia-oscura" class="copy-link inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Copiar enlace</button>
+      <button type="button" data-native="https://www.enigmaciencia.com/articulo/214-nancy-grace-roman-telescopio-espacial-nasa-energia-oscura" data-title="Nancy Grace Roman Space Telescope ya está en camino a L2: el telescopio de campo amplio de la NASA que estudiará la energía oscura" class="native-share hidden inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Compartir</button>
+    </div>
+    <script>
+      document.querySelectorAll('.copy-link').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var url = b.getAttribute('data-copy');
+          var done = function () { b.textContent = 'Enlace copiado'; };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(done, function () {});
+          }
+        });
+      });
+      var nb = document.querySelector('.native-share');
+      if (nb && navigator.share) {
+        nb.classList.remove('hidden');
+        nb.addEventListener('click', function () {
+          navigator.share({ title: nb.getAttribute('data-title'), url: nb.getAttribute('data-native') }).catch(function () {});
+        });
+      }
+    </script>
   </article>
   
   <section class="max-w-3xl mx-auto mt-16 space-y-6">

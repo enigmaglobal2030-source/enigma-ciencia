@@ -81,6 +81,34 @@
       <h2 class="text-xs uppercase tracking-wider font-bold text-[#e05638]">Fuentes</h2>
       <p class="text-sm text-slate-600">Ensayo KEYNOTE-942, seguimiento a cinco años de intismeran autogene más pembrolizumab, presentado en ASCO 2026 y publicado como resumen en Journal of Clinical Oncology el 1 de junio de 2026. Anuncio de Merck y Moderna sobre el ensayo de fase III INTerpath-001, agosto de 2026, reportado por CancerNetwork el 19 de agosto de 2026.</p>
     </div>
+    
+    <div class="mt-8 flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
+      <a href="https://wa.me/?text=Una%20vacuna%20personalizada%20de%20ARNm%20reduce%20un%2049%20%25%20el%20riesgo%20de%20recurrencia%20o%20muerte%20por%20melanoma%20en%20un%20ensayo%20de%20fase%20IIb%20https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F217-vacuna-arnm-personalizada-melanoma-fase-iib" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F217-vacuna-arnm-personalizada-melanoma-fase-iib" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Una%20vacuna%20personalizada%20de%20ARNm%20reduce%20un%2049%20%25%20el%20riesgo%20de%20recurrencia%20o%20muerte%20por%20melanoma%20en%20un%20ensayo%20de%20fase%20IIb&url=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F217-vacuna-arnm-personalizada-melanoma-fase-iib" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">X</a>
+      <a href="mailto:?subject=Una%20vacuna%20personalizada%20de%20ARNm%20reduce%20un%2049%20%25%20el%20riesgo%20de%20recurrencia%20o%20muerte%20por%20melanoma%20en%20un%20ensayo%20de%20fase%20IIb&body=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F217-vacuna-arnm-personalizada-melanoma-fase-iib" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Correo</a>
+      <button type="button" data-copy="https://www.enigmaciencia.com/articulo/217-vacuna-arnm-personalizada-melanoma-fase-iib" class="copy-link inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Copiar enlace</button>
+      <button type="button" data-native="https://www.enigmaciencia.com/articulo/217-vacuna-arnm-personalizada-melanoma-fase-iib" data-title="Una vacuna personalizada de ARNm reduce un 49 % el riesgo de recurrencia o muerte por melanoma en un ensayo de fase IIb" class="native-share hidden inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Compartir</button>
+    </div>
+    <script>
+      document.querySelectorAll('.copy-link').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var url = b.getAttribute('data-copy');
+          var done = function () { b.textContent = 'Enlace copiado'; };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(done, function () {});
+          }
+        });
+      });
+      var nb = document.querySelector('.native-share');
+      if (nb && navigator.share) {
+        nb.classList.remove('hidden');
+        nb.addEventListener('click', function () {
+          navigator.share({ title: nb.getAttribute('data-title'), url: nb.getAttribute('data-native') }).catch(function () {});
+        });
+      }
+    </script>
   </article>
   
   <section class="max-w-3xl mx-auto mt-16 space-y-6">

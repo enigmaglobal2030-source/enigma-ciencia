@@ -300,6 +300,40 @@ function relatedHtml(a) {
   </section>`;
 }
 
+function shareHtml(a, url) {
+  const t = encodeURIComponent(a.title);
+  const u = encodeURIComponent(url);
+  const btn = "inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold";
+  return `
+    <div class="mt-8 flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
+      <a href="https://wa.me/?text=${t}%20${u}" target="_blank" rel="noopener noreferrer" class="${btn}">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=${u}" target="_blank" rel="noopener noreferrer" class="${btn}">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=${t}&url=${u}" target="_blank" rel="noopener noreferrer" class="${btn}">X</a>
+      <a href="mailto:?subject=${t}&body=${u}" class="${btn}">Correo</a>
+      <button type="button" data-copy="${esc(url)}" class="copy-link ${btn}">Copiar enlace</button>
+      <button type="button" data-native="${esc(url)}" data-title="${esc(a.title)}" class="native-share hidden ${btn}">Compartir</button>
+    </div>
+    <script>
+      document.querySelectorAll('.copy-link').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var url = b.getAttribute('data-copy');
+          var done = function () { b.textContent = 'Enlace copiado'; };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(done, function () {});
+          }
+        });
+      });
+      var nb = document.querySelector('.native-share');
+      if (nb && navigator.share) {
+        nb.classList.remove('hidden');
+        nb.addEventListener('click', function () {
+          navigator.share({ title: nb.getAttribute('data-title'), url: nb.getAttribute('data-native') }).catch(function () {});
+        });
+      }
+    </script>`;
+}
+
 function articlePage(a) {
   const url = `${SITE}${articleUrl(a)}`;
   const jsonld = {
@@ -339,6 +373,7 @@ ${header()}
       <h2 class="text-xs uppercase tracking-wider font-bold text-[#e05638]">Fuentes</h2>
       <p class="text-sm text-slate-600">${esc(a.sources)}</p>
     </div>
+    ${shareHtml(a, url)}
   </article>
   ${relatedHtml(a)}
   <p class="mt-12"><a href="/" class="text-sm font-semibold text-[#e05638] hover:underline">← Volver a todos los artículos</a></p>
