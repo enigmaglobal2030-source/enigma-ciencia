@@ -1,5 +1,17 @@
 [
   {
+    "id": 240,
+    "slug": "240-interfaces-cerebro-medula-personas-paralisis-volver-caminar",
+    "title": "Interfaces cerebro-médula: cómo algunas personas con parálisis han vuelto a caminar",
+    "category": "Neurociencia",
+    "date": "2026-11-15",
+    "summary": "Desde 2022, equipos de Suiza han probado implantes que conectan el cerebro con la médula espinal o la estimulan para recuperar movimiento. Los resultados son prometedores, pero se basan en pocos participantes.",
+    "content": "<p>Desde 2022, equipos de Suiza han probado implantes que conectan el cerebro con la médula espinal o estimulan directamente la médula para recuperar movimiento en personas con lesiones graves. Los resultados son prometedores, pero se basan en pocos participantes.</p>\n<h3>Qué es</h3>\n<p>Una interfaz cerebro-médula registra la actividad del cerebro, la interpreta con un decodificador y envía señales a la médula para activar los músculos de las piernas. Así se salta la zona lesionada.</p>\n<h3>El caso de 2023</h3>\n<p>En <em>Nature</em>, el equipo de Grégoire Courtine, del EPFL y el CHUV de Lausana, describió a un hombre paralizado tras un accidente en bicicleta en 2011. Con el implante podía caminar y sostenerse de pie sin apoyo de las manos durante algunos minutos, según la prensa. Ese estudio tuvo un solo participante.</p>\n<h3>El estudio de 2022</h3>\n<p>En <em>Nature Medicine</em>, tres personas con lesiones completas de médula recuperaron la capacidad de sostenerse de pie y dar pasos con estimulación epidural, según el comunicado del EPFL. Las mejoras continuaron durante meses de entrenamiento.</p>\n<h3>Rigor científico y estado de la investigación</h3>\n<p>Lo que sabemos: estos sistemas restauran movimientos en pocos participantes, en condiciones controladas. Lo que no sabemos: cuánto dura el beneficio y si funcionarían en muchas más personas. Los autores dicen que la tecnología no cura la parálisis. Los sistemas son voluminosos y aún no se han probado en ensayos grandes.</p>\n<h3>Desenlace</h3>\n<p>Es una vía prometedora para recuperar movimiento, pero todavía en etapa temprana. Los próximos resultados dirán si estos implantes pueden llegar a hospitales y a más pacientes.",
+    "sources": "Lorach, Courtine et al., Nature (mayo de 2023). Rowald et al. / Courtine et al., Nature Medicine (7 de febrero de 2022). Comunicados de EPFL y CHUV. Nota: los textos completos no se pudieron abrir; las cifras vienen de la prensa y de los comunicados.",
+    "image": "https://www.enigmaciencia.com/img/interfaz-cerebro-medula-ia.jpg",
+    "imageCaption": "Imagen generada con IA (Nano Banana), con fines ilustrativos. No muestra a pacientes ni un dispositivo real."
+  },
+  {
     "id": 239,
     "slug": "239-universal-quantum-iqpu-chip-iones-atrapados-escalar",
     "title": "Universal Quantum lanza un chip que integra control y conexiones para escalar computadoras cuánticas",
