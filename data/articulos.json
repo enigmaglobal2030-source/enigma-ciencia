@@ -1,5 +1,17 @@
 [
   {
+    "id": 239,
+    "slug": "239-universal-quantum-iqpu-chip-iones-atrapados-escalar",
+    "title": "Universal Quantum lanza un chip que integra control y conexiones para escalar computadoras cuánticas",
+    "category": "Tecnología",
+    "date": "2026-11-15",
+    "summary": "Universal Quantum presentó el iQPU, un chip de iones atrapados que integra la zona de cómputo, la electrónica de control y las conexiones entre módulos, para fabricar y escalar computadoras cuánticas a menor costo.",
+    "content": "<p>A principios de noviembre de 2026, la empresa Universal Quantum presentó el iQPU, un chip de iones atrapados que integra en un mismo procesador la zona de cómputo, la electrónica de control y las conexiones entre módulos. Busca que las computadoras cuánticas se fabriquen y escalen a menor costo.</p>\n<h3>Qué incluye el chip</h3>\n<p>Según la empresa, el chip tiene un área activa de cómputo de más de 400 mm². Lo acompañan electrónica de control integrada y conexiones modulares entre chips, llamadas UQConnect.</p>\n<h3>Quiénes lo usarían</h3>\n<p>El iQPU irá en sistemas que la empresa construye para clientes, como el Centro Aeroespacial Alemán (DLR), que tiene un contrato por dos computadoras cuánticas de unos 67 millones de euros.</p>\n<h3>Rigor científico y estado de la investigación</h3>\n<p>Lo que sabemos: el anuncio describe el chip y su integración. Lo que no sabemos: su rendimiento real en sistemas en operación. Según reportes, los sistemas que lo incluyen están en pruebas. La empresa no ha publicado aún cifras de desempeño verificadas de forma independiente.</p>\n<h3>Desenlace</h3>\n<p>Si el iQPU funciona como se describe, sería un paso para producir computadoras cuánticas de iones atrapados en serie, no solo como prototipos de laboratorio.</p>",
+    "sources": "HPCwire, anuncio del lanzamiento del iQPU (4 de noviembre de 2026). The Quantum Insider, 3 de noviembre de 2026. DatacenterDynamics, sobre el contrato con el DLR.",
+    "image": "https://www.enigmaciencia.com/img/iqpu-criostato-ia.jpg",
+    "imageCaption": "Imagen generada con IA (Nano Banana), con fines ilustrativos. No es una fotografía del producto de Universal Quantum."
+  },
+  {
     "id": 236,
     "slug": "236-ibm-nighthawk-r3-procesador-cuantico-520-qubits",
     "title": "IBM presenta el procesador cuántico Nighthawk R3, con 520 qubits programables",
