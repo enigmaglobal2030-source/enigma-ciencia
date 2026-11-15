@@ -1,5 +1,17 @@
 [
   {
+    "id": 234,
+    "slug": "234-vacuna-bcg-reduce-uso-insulina-diabetes-autoinmune",
+    "title": "Una vacuna contra la tuberculosis reduce el uso de insulina en un grupo con diabetes autoinmune, según un ensayo preliminar",
+    "category": "Medicina y Biotecnología",
+    "date": "2026-11-15",
+    "summary": "Denise Faustman presentó datos de la vacuna BCG en personas con diabetes autoinmune latente de adultos: su uso de insulina bajó 3 % frente a un aumento de 22 % en el grupo placebo. Son resultados preliminares, sin publicación revisada por pares.",
+    "content": "<p>La investigadora Denise Faustman presentó en junio de 2026 resultados de ensayos con la vacuna BCG, la que se usa contra la tuberculosis. En personas con diabetes autoinmune latente de adultos, el grupo que recibió seis dosis durante cinco años redujo su uso de insulina, mientras el grupo placebo lo aumentó. Son resultados preliminares, presentados en un congreso y sin publicación revisada por pares.</p>\n<h3>Qué es la BCG</h3>\n<p>La vacuna BCG se usa desde hace décadas para prevenir las formas graves de tuberculosis. Estudia la respuesta del sistema inmunitario, que en la diabetes tipo 1 ataca las células productoras de insulina del páncreas.</p>\n<h3>Qué se observó</h3>\n<p>Según los reportes del congreso, en el grupo con BCG el uso de insulina bajó 3 % en el periodo de estudio, mientras que en el grupo placebo subió 22 %. En otro grupo de personas con diabetes tipo 1 de larga duración, la hemoglobina glucosilada (HbA1c), que mide el control de la glucosa, bajó de 7,84 % a 7,30 % en cinco años.</p>\n<p>Los reportes también hablan de un aumento importante del tiempo que los pacientes pasan dentro del rango de glucosa objetivo, pero las cifras varían según la fuente, por lo que no lo incluimos.</p>\n<h3>Rigor científico y estado de la investigación</h3>\n<p>Lo que sabemos: los datos indican un efecto sobre el control de la glucosa en grupos pequeños, sin aumentar los episodios de glucosa baja según los reportes. Lo que no sabemos: si el efecto se confirma en un ensayo más grande y controlado, cuánto dura y si la vacuna sirve para prevenir la enfermedad. Los expertos consultados señalan que el efecto es modesto y que el mecanismo requiere más estudio. El ensayo fase 2 del Hospital General de Massachusetts todavía está en curso.</p>\n<h3>Desenlace</h3>\n<p>Es una línea de investigación prometedora, pero todavía no cambia el tratamiento de la diabetes. Antes de hablar de un uso clínico, hacen falta publicaciones revisadas por pares y ensayos más amplios.",
+    "sources": "Congreso de la Asociación Americana de Diabetes (ADA), junio de 2026, presentación de Denise Faustman y colaboradores. GXP News, reporte de junio de 2026 sobre el uso de insulina. Live Science, resumen de los ensayos en diabetes tipo 1. Registro NCT02081326, Hospital General de Massachusetts. Nota: las fechas del congreso varían entre fuentes (5 o 7 de junio); no se encontró publicación revisada por pares.",
+    "image": "https://www.enigmaciencia.com/img/bcg-diabetes-ilustracion.svg",
+    "imageCaption": "Ilustración original de Enigma Ciencia con fines explicativos. No muestra a pacientes ni un tratamiento real."
+  },
+  {
     "id": 233,
     "slug": "233-pdbe-paginas-proteinas-anotaciones-ia",
     "title": "PDBe rediseña sus páginas de proteínas e integra anotaciones de la literatura con inteligencia artificial",
