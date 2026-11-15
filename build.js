@@ -334,6 +334,11 @@ function shareHtml(a, url) {
     </script>`;
 }
 
+function readingMinutes(a) {
+  const words = String(a.content || "").replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
 function articlePage(a) {
   const url = `${SITE}${articleUrl(a)}`;
   const jsonld = {
@@ -364,6 +369,7 @@ ${header()}
     <header class="space-y-3 mb-6">
       <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-orange-100 text-[#e05638]">${esc(a.category)}</span>
       <h1 class="editorial-serif text-3xl sm:text-5xl font-bold text-slate-900 leading-tight">${esc(a.title)}</h1>
+      <p class="flex items-center gap-2 text-sm font-semibold text-green-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>${readingMinutes(a)} ${readingMinutes(a) === 1 ? "minuto" : "minutos"} de lectura</p>
       <p class="text-sm text-slate-500">${esc(a.summary)}</p>
       <time datetime="${a.date}" class="block text-xs font-mono text-slate-500">${fmtDate(a.date)} · Enigma Ciencia</time>
     </header>
