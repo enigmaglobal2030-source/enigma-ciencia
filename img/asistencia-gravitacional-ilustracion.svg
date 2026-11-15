@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Ilustración de una nave que pasa detrás de un planeta en órbita alrededor del Sol">
+  <rect width="960" height="600" fill="#0f172a"/>
+  <circle cx="160" cy="300" r="60" fill="#f59e0b" fill-opacity="0.9"/>
+  <text x="160" y="390" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#cbd5e1">Sol</text>
+  <!-- órbita del planeta -->
+  <ellipse cx="160" cy="300" rx="420" ry="250" fill="none" stroke="#475569" stroke-width="2" stroke-dasharray="8 8"/>
+  <!-- planeta -->
+  <circle cx="580" cy="165" r="38" fill="#c2410c"/>
+  <text x="580" y="105" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#cbd5e1">Planeta</text>
+  <!-- trayectoria de la nave -->
+  <path d="M430 320 Q 520 260 560 215 Q 600 180 680 200 Q 740 215 800 300" fill="none" stroke="#22d3ee" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 8"/>
+  <polygon points="812,310 790,308 800,288" fill="#22d3ee"/>
+  <circle cx="430" cy="320" r="10" fill="#e2e8f0"/>
+  <text x="400" y="350" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">Nave</text>
+  <text x="480" y="520" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#f8fafc">Asistencia gravitacional</text>
+  <text x="480" y="558" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#cbd5e1">Ilustración original; no a escala</text>
+</svg>
