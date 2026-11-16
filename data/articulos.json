@@ -1,5 +1,17 @@
 [
   {
+    "id": 248,
+    "slug": "248-fda-rechaza-ivonescimab-cancer-pulmon-progresion-supervivencia",
+    "title": "La FDA rechaza por ahora ivonescimab para cáncer de pulmón: retrasó la progresión, pero no demostró mejorar la supervivencia",
+    "category": "Medicina y Biotecnología",
+    "date": "2026-11-16",
+    "summary": "La FDA no aprobó por ahora el anticuerpo ivonescimab, desarrollado por Akeso y licenciado a Summit Therapeutics. El ensayo retrasó la progresión del cáncer, pero no mostró una mejora estadísticamente significativa en cuánto tiempo viven los pacientes.",
+    "content": "<p>Ivonescimab es un anticuerpo biespecífico: se une a dos proteínas a la vez. Bloquea PD-1, que ayuda al cáncer a esconderse del sistema inmune, y VEGF, que los tumores usan para crear vasos sanguíneos. La idea es combinar ambos efectos en una sola molécula.</p><p>El 15 de noviembre de 2026, la Administración de Alimentos y Medicamentos de Estados Unidos (FDA) emitió una carta de respuesta completa a Summit Therapeutics. La carta indica que la solicitud no puede aprobarse en su forma actual para pacientes con cáncer de pulmón de células no pequeñas, con mutación EGFR, que ya recibieron un inhibidor de EGFR de tercera generación.</p><h3>Qué mostró el ensayo</h3><p>El ensayo HARMONi, de fase III, comparó ivonescimab más quimioterapia contra placebo más quimioterapia. Cumplió su objetivo principal de supervivencia libre de progresión: redujo un 48 % el riesgo de que la enfermedad progresara o el paciente falleciera.</p><h3>Qué sabemos y qué no</h3><p><strong>Lo que sabemos:</strong> el fármaco retrasó la progresión, y la FDA no lo consideró aprobable en esta indicación porque no hubo un beneficio estadísticamente significativo en supervivencia global. <strong>Lo que no sabemos:</strong> si un seguimiento más largo cambiará esa conclusión. Summit presentó un análisis posterior con un cociente de riesgos de 0,76 en supervivencia global, pero es un dato de la empresa y no cambió la decisión.</p><h3>Desenlace</h3><p>La decisión no significa que el fármaco carezca de actividad ni impide una nueva solicitud en el futuro. Ivonescimab ya está aprobado en China, y Summit sigue desarrollándolo en otros tipos de cáncer.</p>",
+    "sources": "Summit Therapeutics. «Summit Therapeutics Provides Update Regarding Ivonescimab Biologics License Application». Comunicado, 15 de noviembre de 2026. Reuters. «US FDA declines to approve Summit lung cancer drug after trial misses key survival goal». 15 de noviembre de 2026.",
+    "image": "https://www.enigmaciencia.com/img/ivonescimab-anticuerpo-ia.jpg",
+    "imageCaption": "Imagen generada con IA (Nano Banana), con fines ilustrativos. No corresponde a un paciente ni a un estudio concreto."
+  },
+  {
     "id": 247,
     "slug": "247-risto-cel-edicion-genetica-anemia-falciforme-ensayo-beacon",
     "title": "Una terapia de edición genética para la anemia falciforme cumple su objetivo principal en un ensayo",
