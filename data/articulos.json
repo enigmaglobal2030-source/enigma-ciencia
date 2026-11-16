@@ -1,5 +1,17 @@
 [
   {
+    "id": 259,
+    "slug": "259-nave-giratoria-pequena-no-daria-gravedad-comoda-problema-mareo",
+    "title": "Una nave giratoria pequeña no daría una gravedad cómoda: el problema del mareo",
+    "category": "Tecnología",
+    "date": "2026-11-16",
+    "summary": "En el cine, algunas naves giratorias pequeñas simulan la gravedad de la Tierra. Para lograrlo sin mareos graves, la física pide radios muy grandes o giros lentos.",
+    "content": "<p>Girar una nave crea una fuerza hacia afuera que empuja a los objetos contra el suelo. Es la gravedad artificial, y el cine la usa para simular la Tierra en el espacio: anillos o cilindros que giran y permiten caminar como si hubiera gravedad.</p><p>El problema es el tamaño. Según la NASA, para lograr 1 g, el radio debe ser muy grande si la rotación es lenta, por ejemplo unos 35 metros a 5 revoluciones por minuto. Si la nave es pequeña y gira rápido, el radio tiene que ser de solo unos 4 metros, pero entonces el giro es más intenso.</p><p>Además, los pies de una persona en un anillo giratorio se mueven más rápido que su cabeza. Esa diferencia de velocidad, llamada gradiente de gravedad, hace que la gravedad artificial no sea uniforme.</p><p>El efecto Coriolis aparece cuando la persona se mueve o gira la cabeza dentro del anillo. Según la NASA, eso puede provocar mareo incluso a menos de 3 rpm. La mayoría de los expertos considera que a 2 rpm o menos los efectos son manejables. Con ese giro, para lograr 1 g se necesita un radio de unos 224 metros, según un cálculo propio con la fórmula de la fuerza centrífuga.</p><h3>Qué sabemos y qué no</h3><p><strong>Lo que sabemos:</strong> la relación entre radio, rotación y gravedad, y que el efecto Coriolis causa mareo. <strong>Lo que no sabemos:</strong> cuánto se tarda en adaptarse, y cómo afectaría esto a una tripulación en un viaje de meses. La adaptación varía según la persona, y la NASA la describe como posible después de exposiciones prolongadas, no como algo inmediato.</p><h3>Desenlace</h3><p>Por eso las estaciones giratorias propuestas son grandes, y las naves pequeñas del cine difícilmente simularían la gravedad sin consecuencias. Es un problema de ingeniería que ninguna nave compacta resuelve sin compromisos.</p>",
+    "sources": "Bukley, A., Paloski, W. y Clément, G. «Physics of Artificial Gravity». NASA, capítulo 2 (NTRS 20070001008). Cálculo propio: radio = g / ω², con ω = 2 rpm, da unos 224 m.",
+    "image": "https://www.enigmaciencia.com/img/gravedad-artificial-corredor-ia.jpg",
+    "imageCaption": "Imagen generada con IA (Nano Banana), con fines ilustrativos. Representación artística; no es una estación ni una nave real."
+  },
+  {
     "id": 258,
     "slug": "258-laser-espacio-no-se-veria-como-peliculas-luz-necesita-materia",
     "title": "Un láser en el espacio no se vería como en las películas: la luz necesita materia para mostrarse",
