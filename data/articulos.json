@@ -1,5 +1,17 @@
 [
   {
+    "id": 247,
+    "slug": "247-risto-cel-edicion-genetica-anemia-falciforme-ensayo-beacon",
+    "title": "Una terapia de edición genética para la anemia falciforme cumple su objetivo principal en un ensayo",
+    "category": "Medicina y Biotecnología",
+    "date": "2026-11-16",
+    "summary": "Beam Therapeutics anuncia que su terapia experimental risto-cel cumplió el objetivo principal del ensayo BEACON: evitar crisis graves de anemia falciforme durante al menos 12 meses. Son resultados comunicados por la empresa, aún sin publicar en detalle.",
+    "content": "<p>La anemia falciforme es una enfermedad hereditaria de la sangre causada por una mutación en el gen de la beta globina. Los glóbulos rojos adquieren forma de hoz, se obstruyen en los vasos sanguíneos y provocan crisis de dolor intenso, infecciones, daño de órganos y, en algunos casos, accidentes cerebrovasculares.</p><p>Risto-cel es una terapia experimental que modifica células madre sanguíneas del propio paciente con una técnica de edición de bases. El cambio busca aumentar la hemoglobina fetal, que impide que los glóbulos rojos adopten la forma de hoz. El tratamiento se administra una sola vez y requiere quimioterapia de acondicionamiento con busulfán y un trasplante de células madre.</p><h3>Qué informó la empresa</h3><p>El ensayo BEACON es de fase 1/2, abierto y de un solo brazo. Al corte del 20 de octubre de 2026 habían recibido la terapia 39 adultos y 10 adolescentes. De ellos, 31 completaron el seguimiento necesario para evaluar el objetivo principal: pasar al menos 12 meses seguidos sin crisis graves. Beam informa que ese objetivo se cumplió según evaluación independiente, y que también se cumplieron los objetivos de seguridad y los secundarios, entre ellos la ausencia de hospitalizaciones por crisis graves durante el mismo periodo.</p><h3>Qué sabemos y qué no</h3><p><strong>Lo que sabemos:</strong> según la empresa, el objetivo principal se cumplió con evaluación independiente, y los resultados de seguridad fueron los esperados. <strong>Lo que no sabemos:</strong> las cifras detalladas de eficacia y seguridad, cuántos pacientes alcanzaron el objetivo y cuánto durará el efecto. Ese detalle llegará en un congreso médico en 2027. Como es un ensayo abierto y sin grupo de comparación, no se puede separar el efecto de la terapia de otras causas.</p><h3>Desenlace</h3><p>Beam podría presentar la solicitud de aprobación en Estados Unidos a finales de 2026. Hoy el tratamiento sigue siendo experimental. Requiere un procedimiento complejo, con riesgos asociados al trasplante y a la quimioterapia, por lo que no es una solución sencilla. Las personas con anemia falciforme que quieran saber si pueden acceder a un ensayo deben hablarlo con su hematólogo.</p>",
+    "sources": "Beam Therapeutics Inc. «Beam Therapeutics Announces Positive Topline Pivotal Data from BEACON Phase 1/2 Trial of Risto-cel in Patients with Sickle Cell Disease». Comunicado de prensa, 10 de noviembre de 2026.",
+    "image": "https://www.enigmaciencia.com/img/risto-cel-anemia-falciforme-ia.jpg",
+    "imageCaption": "Imagen generada con IA (Nano Banana), con fines ilustrativos. No corresponde a un paciente ni a un estudio concreto."
+  },
+  {
     "id": 246,
     "slug": "246-brats-reg-banco-pruebas-registro-resonancias-tumores-cerebrales",
     "title": "BraTS-Reg crea un banco de pruebas para comparar métodos que alinean resonancias de tumores cerebrales",
