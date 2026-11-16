@@ -87,6 +87,8 @@ function head({ title, description, canonical, image, type = "website", jsonld =
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
   </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6763372649272480" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DDKGWCPL7"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-3DDKGWCPL7');</script>
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#e05638">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
@@ -439,7 +441,7 @@ const pages = {
     title: "Política de privacidad",
     description: "Cómo Enigma Ciencia trata los datos de sus lectores.",
     body: `<p>Esta página describe, de forma general, el tratamiento de datos en Enigma Ciencia.</p>
-<p>Este sitio no solicita registro ni datos personales para leer los artículos. Puede utilizar cookies técnicas y cookies de terceros, como las de Google, para mostrar anuncios de Google AdSense y medir el tráfico. Google utiliza cookies para personalizar los anuncios según las visitas previas de cada usuario. Puedes gestionar esas preferencias en la <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">configuración de anuncios de Google</a>.</p>
+<p>Este sitio no solicita registro ni datos personales para leer los artículos. Puede utilizar cookies técnicas y cookies de terceros, como las de Google, para mostrar anuncios de Google AdSense y medir el tráfico con Google Analytics 4, que registra datos anónimos de visitas, páginas vistas, país aproximado y origen del tráfico. Google utiliza cookies para personalizar los anuncios según las visitas previas de cada usuario. Puedes gestionar esas preferencias en la <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">configuración de anuncios de Google</a>.</p>
 <p>Para cualquier consulta sobre privacidad, escribe a <a href="mailto:${EMAIL}">${EMAIL}</a>.</p>`,
   }),
 };
