@@ -91,6 +91,7 @@ function head({ title, description, canonical, image, type = "website", jsonld =
     html[data-theme="dark"] .article-body h3, html[data-theme="dark"] .article-body strong { color: #e6f0fb; }
     .theme-toggle { border: 1px solid #94a3b8; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; color: #0f172a; background: transparent; cursor: pointer; white-space: nowrap; }
     html[data-theme="dark"] .theme-toggle { color: #e6f0fb; border-color: #3b5a85; }
+    html[data-theme="dark"] [class*="text-[#0b1f3a]"], html[data-theme="dark"] [class*="text-[#0f172a]"], html[data-theme="dark"] [class*="text-[#1e1b18]"] { color: #e6f0fb !important; }
     html[data-theme="dark"] [class*="bg-slate-200/"] { background-color: rgba(31,58,96,.75) !important; }
     html[data-theme="dark"] .hover\:bg-slate-200:hover { background-color: #2a4a75 !important; }
     body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #0b1f3a; }
