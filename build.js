@@ -411,7 +411,7 @@ ${header()}
       <h1 class="editorial-serif text-3xl sm:text-5xl font-bold text-slate-900 leading-tight">${esc(a.title)}</h1>
       <p class="flex items-center gap-2 text-sm font-semibold text-green-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>${readingMinutes(a)} ${readingMinutes(a) === 1 ? "minuto" : "minutos"} de lectura</p>
       <p class="text-sm text-slate-500">${esc(a.summary)}</p>
-      <time datetime="${a.date}" class="block text-xs font-mono text-slate-500">${fmtDate(a.date)} · Enigma Ciencia</time>
+      <time datetime="${a.date}" class="block text-xs font-mono text-slate-500">${fmtDate(a.date)} · Redacción Enigma Ciencia</time>
     </header>
     <div class="mb-6"><button type="button" id="escuchar" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-sm font-semibold">Escuchar artículo</button></div>
     <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm">${mediaHtml(a, true)}</div>${a.imageCaption ? `<figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">${esc(a.imageCaption)}</figcaption>` : ""}</figure>
