@@ -1,5 +1,17 @@
 [
   {
+    "id": 242,
+    "slug": "242-vacunacion-covid-arnm-supervivencia-inmunoterapia-cancer-pulmon",
+    "title": "Vacunarse contra la COVID-19 durante la inmunoterapia se asocia con mayor supervivencia en cáncer de pulmón, según un estudio observacional",
+    "category": "Medicina y Biotecnología",
+    "date": "2026-11-16",
+    "summary": "Un estudio de MD Anderson publicado en Nature en octubre de 2025 asocia la vacuna de ARN mensajero contra la COVID-19, aplicada cerca del inicio de la inmunoterapia, con más supervivencia en cáncer de pulmón. Es observacional y no demuestra causa.",
+    "content": "<p>Un estudio observacional publicado en <em>Nature</em> en octubre de 2025 encontró que los pacientes con cáncer de pulmón o melanoma que recibían inmunoterapia vivían más tiempo cuando se habían vacunado contra la COVID-19 con tecnología de ARN mensajero dentro de los 100 días anteriores o posteriores al inicio del tratamiento.</p>\n<h3>Qué analizaron</h3>\n<p>Investigadores del MD Anderson Cancer Center revisaron historiales de 2019 a 2023. Incluyeron pacientes con cáncer de pulmón de células no pequeñas avanzado o melanoma metastásico tratados con inhibidores de puntos de control inmunitarios. En total, la muestra fue de cerca de 1 100 personas.</p>\n<h3>Qué observaron</h3>\n<p>En pacientes con cáncer de pulmón de células no pequeñas, la supervivencia mediana fue de 37,3 meses en quienes se vacunaron y de 20,6 meses en quienes no. Los autores también reportaron un beneficio similar en melanoma. El grupo vacunado fue pequeño: 180 pacientes con pulmón y 43 con melanoma.</p>\n<h3>Qué no demuestra</h3>\n<p>Es un estudio retrospectivo, con datos de una sola institución. Muestra una asociación, no que la vacuna cause la mayor supervivencia. Los pacientes vacunados y no vacunados pueden diferir en otros factores que no se controlaron del todo.</p>\n<h3>Rigor científico y estado de la investigación</h3>\n<p>Lo que sabemos: en este análisis, la vacunación cercana al inicio de la inmunoterapia se asocia con más supervivencia. Lo que no sabemos: si la vacuna contribuye al efecto. Los autores proponen un mecanismo en el que la vacuna activa la respuesta inmunitaria, pero esa hipótesis se probó en ratones. Están diseñando un ensayo aleatorizado de fase 3 para comprobarlo.</p>\n<h3>Desenlace</h3>\n<p>El hallazgo es una pista para investigar, no una recomendación clínica. Antes de cambiar la práctica médica, hace falta un ensayo aleatorizado. Quienes están en tratamiento deben consultar a su oncólogo sobre sus vacunas.",
+    "sources": "Grippin et al., Nature (octubre de 2025), estudio retrospectivo del MD Anderson Cancer Center. Cobertura de CIDRAP, Consultant360 y touchONCOLOGY. Nota: el texto completo no se pudo abrir; las cifras vienen de resúmenes y de la prensa especializada.",
+    "image": "https://www.enigmaciencia.com/img/inmunoterapia-vacuna-covid-ia.jpg",
+    "imageCaption": "Ilustración generada con IA (Nano Banana), con fines ilustrativos. No muestra a pacientes ni un pulmón real."
+  },
+  {
     "id": 241,
     "slug": "241-china-autoriza-implante-cerebral-neuracle-neo-paralisis",
     "title": "China autoriza el primer implante cerebral comercial del mundo, un dispositivo que se coloca sobre el cerebro sin penetrarlo",
