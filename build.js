@@ -124,9 +124,9 @@ function header() {
   <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-0 sm:h-20 flex flex-wrap items-center justify-between gap-y-2">
     <a href="/" class="flex items-center space-x-3" aria-label="Enigma Ciencia, inicio">
       <div class="flex items-center space-x-1 h-6">
-        <div class="w-1.5 h-full bg-[#0284c7] rounded-full -skew-x-12"></div>
-        <div class="w-1.5 h-full bg-[#0ea5e9] rounded-full -skew-x-12"></div>
-        <div class="w-1.5 h-full bg-[#2563eb] rounded-full -skew-x-12"></div>
+        <div class="w-1.5 h-full bg-[#f07150] rounded-full -skew-x-12"></div>
+        <div class="w-1.5 h-full bg-[#38bdf8] rounded-full -skew-x-12"></div>
+        <div class="w-1.5 h-full bg-[#3b82f6] rounded-full -skew-x-12"></div>
       </div>
       <span class="text-sm sm:text-xl font-black tracking-tight text-slate-900 font-mono uppercase">Enigma Ciencia</span>
     </a>
@@ -188,7 +188,7 @@ function card(a) {
     <a href="${articleUrl(a)}" class="block">
       <div class="relative overflow-hidden h-56 bg-slate-100">
         ${mediaHtml(a)}
-        <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/90 text-[#0284c7] shadow-sm z-10">${esc(a.category)}</span>
+        <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#0284c7] text-white shadow-md ring-1 ring-white/30 z-10">${esc(a.category)}</span>
       </div>
       <div class="p-6 sm:p-8 space-y-3">
         <time datetime="${a.date}" class="text-xs font-mono text-slate-400">${fmtDate(a.date)}</time>
@@ -233,7 +233,7 @@ function indexPage() {
 ${header()}
 <div class="border-b border-slate-200 bg-white/60">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 h-11 flex items-center gap-4">
-    <span class="flex items-center gap-2 text-[11px] font-bold tracking-widest text-[#0284c7] whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-[#0284c7]"></span>EN DIRECTO</span>
+    <span class="flex items-center gap-2 text-[11px] font-bold tracking-widest text-[#0284c7] whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-[#f07150]"></span>EN DIRECTO</span>
     <div class="flex items-center gap-6 overflow-x-auto no-scrollbar font-mono text-[11px] uppercase text-slate-700 whitespace-nowrap">${articles.slice(0, 5).map((a) => `<span>${esc(a.title)}</span>`).join('<span class="text-[#0284c7]">•</span>')}</div>
   </div>
 </div>
@@ -241,7 +241,7 @@ ${header()}
   <section class="space-y-6">
     <p class="font-mono text-xs tracking-widest text-[#0284c7] uppercase">Curiosidad con método · Edición oficial EnigmaGlobal</p>
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-      <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-[-0.04em] leading-[0.95] text-[#0b1f3a]">La ciencia,<br><span class="italic font-normal text-[#0284c7] editorial-serif tracking-normal">en contexto.</span></h1>
+      <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-[-0.04em] leading-[0.95] text-[#0b1f3a]">La ciencia,<br><span class="italic font-normal editorial-serif tracking-normal" style="background:linear-gradient(90deg,#0284c7,#3b82f6);-webkit-background-clip:text;background-clip:text;color:transparent">en contexto.</span></h1>
       <div class="max-w-md space-y-3 lg:pb-3">
         <p class="text-slate-600 text-lg leading-relaxed">Te mantenemos informado de los avances científicos que están cambiando el mundo, con rigor y claridad.</p>
         <p class="text-xs text-slate-500">Última publicación: ${fmtDate(latest)}</p>
