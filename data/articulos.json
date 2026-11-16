@@ -1,5 +1,17 @@
 [
   {
+    "id": 258,
+    "slug": "258-laser-espacio-no-se-veria-como-peliculas-luz-necesita-materia",
+    "title": "Un láser en el espacio no se vería como en las películas: la luz necesita materia para mostrarse",
+    "category": "Tecnología",
+    "date": "2026-11-16",
+    "summary": "En el cine, los láseres espaciales son rayos brillantes que cruzan la oscuridad. La física dice otra cosa: en el vacío, un haz de luz solo se ve si choca con partículas que lo dispersen.",
+    "content": "<p>En las películas de ciencia ficción, las naves disparan láseres que cruzan el espacio como líneas de color brillante. Pero en la Tierra, la luz de un láser solo se ve porque el aire tiene polvo, humedad y moléculas de gas. Esas partículas dispersan parte de la luz hacia los ojos del observador, y así se ve el trayecto del haz.</p><p>En el vacío casi no hay partículas. Según la física de la luz, un haz láser que atraviesa el espacio vacío no envía luz hacia un observador que lo mira de lado. Por eso, un haz así sería invisible mientras viaja.</p><p>En cambio, el haz sí se volvería visible en dos casos: cuando choca con algo, por ejemplo el casco de otra nave, que se calienta y brilla, y cuando atraviesa polvo, gas o plasma, que dispersan la luz.</p><h3>Qué sabemos y qué no</h3><p><strong>Lo que sabemos:</strong> en el vacío, la trayectoria de un haz no se ve si no hay partículas que la dispersen. <strong>Lo que no sabemos:</strong> cómo sería una batalla real en el espacio, porque depende de la presencia de polvo, de los sensores de cada nave y de los materiales que reciben el impacto. Las películas siguen mostrando los rayos porque facilitan la historia, no porque reflejen la física.</p><h3>Desenlace</h3><p>La física no hace menos impresionante el láser, pero cambia lo que se vería: poca luz en el camino y destellos donde el haz toca algo. Es un buen recordatorio de que la luz en el espacio se comporta diferente que en la atmósfera.</p>",
+    "sources": "Phys.org. «Physicists make laser beams visible in vacuum». Agosto de 2021 (resumen consultado en resultados de búsqueda; la página completa no fue accesible). Principio físico: la luz se hace visible al dispersarse en partículas de materia; en el vacío no hay partículas suficientes para ello.",
+    "image": "https://www.enigmaciencia.com/img/laser-espacio-asteroide-ia.jpg",
+    "imageCaption": "Imagen generada con IA (Nano Banana), con fines ilustrativos. Representación artística; no muestra un arma real."
+  },
+  {
     "id": 257,
     "slug": "257-rail-baltica-solicita-357-5-millones-euros-linea-ferroviaria-balticos",
     "title": "Rail Baltica solicita 357,5 millones de euros para seguir construyendo su línea ferroviaria en los países bálticos",
