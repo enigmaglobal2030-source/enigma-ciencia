@@ -1,5 +1,17 @@
 [
   {
+    "id": 256,
+    "slug": "256-proteinas-dientes-homo-naledi-individuos-femeninos",
+    "title": "Proteínas de dientes de Homo naledi sugieren que los restos de una cueva corresponden solo a individuos femeninos",
+    "category": "Medicina y Biotecnología",
+    "date": "2026-11-16",
+    "summary": "Investigadores analizaron proteínas del esmalte de 23 dientes de Homo naledi de la cueva Rising Star, en Sudáfrica. No encontraron la proteína que indica sexo masculino. Los autores advierten que podría haber otra explicación.",
+    "content": "<p>Homo naledi es una especie humana extinta conocida por sus restos encontrados en la cueva Rising Star, en Sudáfrica. Vivió entre hace unos 335.000 y 241.000 años y combinaba rasgos humanos con otros más primitivos; su cerebro era apenas más grande que el de un chimpancé.</p><p>Un equipo internacional hizo el primer análisis de proteínas antiguas de esta especie. Extrajeron péptidos del esmalte dental con una técnica poco destructiva y los analizaron con espectrometría de masas. Según el equipo, el esmalte protege las proteínas durante millones de años, porque es el tejido más duro del cuerpo humano.</p><p>Analizaron 23 dientes fósiles, de al menos 20 individuos. Buscaron la proteína amelogenina-Y, codificada por un gen del cromosoma Y que se encuentra normalmente solo en individuos biológicamente masculinos. No la detectaron en ninguno de los dientes.</p><p>Los autores publicaron el estudio en la revista <em>Cell</em> el 24 de junio de 2026. Según la investigadora principal, Palesa Madupe, la ausencia de variación entre los restos podría deberse a que todos pertenecían a un mismo sexo.</p><h3>Qué sabemos y qué no</h3><p><strong>Lo que sabemos:</strong> en los 23 dientes analizados no hay señales de la proteína masculina. <strong>Lo que no sabemos:</strong> si eso significa que en la cueva solo hay mujeres. Los propios autores señalan otra posibilidad: que los machos de esta especie tuvieran una deleción en el gen AMELY, lo que haría que parecieran femeninos en este tipo de análisis. Enrico Cappellini, autor principal, dice que ambas opciones son importantes para entender la biología de la especie.</p><h3>Desenlace</h3><p>Si se confirma, el método permitiría estudiar el sexo de fósiles sin dañarlos. Por ahora, el resultado es una hipótesis que requiere más análisis.</p>",
+    "sources": "Madupe, P. J. et al. Artículo en Cell, 24 de junio de 2026. Autores principales: Palesa Madupe y Enrico Cappellini. Max Planck Institute for Evolutionary Anthropology. «Ancient teeth suggest Homo naledi fossils in a cave may all be female». 24 de junio de 2026.",
+    "image": "https://www.enigmaciencia.com/img/homo-naledi-diente-ia.jpg",
+    "imageCaption": "Imagen generada con IA (Nano Banana), con fines ilustrativos. Representación artística; no es un fósil real."
+  },
+  {
     "id": 255,
     "slug": "255-atlas-25-millones-celulas-ganglios-basales-humanos-macacos-titis",
     "title": "Un atlas de unos 25 millones de células de los ganglios basales compara humanos, macacos y títis",
