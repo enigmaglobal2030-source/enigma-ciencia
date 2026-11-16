@@ -413,6 +413,7 @@ ${header()}
       <p class="text-sm text-slate-500">${esc(a.summary)}</p>
       <time datetime="${a.date}" class="block text-xs font-mono text-slate-500">${fmtDate(a.date)} · Enigma Ciencia</time>
     </header>
+    <div class="mb-6"><button type="button" id="escuchar" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-sm font-semibold">Escuchar artículo</button></div>
     <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm">${mediaHtml(a, true)}</div>${a.imageCaption ? `<figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">${esc(a.imageCaption)}</figcaption>` : ""}</figure>
     <div class="article-body">${a.content}</div>
     <div class="mt-10 p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
@@ -420,6 +421,7 @@ ${header()}
       <p class="text-sm text-slate-600">${esc(a.sources)}</p>
     </div>
     ${shareHtml(a, url)}
+    <script>(function(){var b=document.getElementById("escuchar");if(!b||!("speechSynthesis" in window)){if(b)b.remove();return;}function texto(){var c=document.querySelector(".article-body");var h=document.querySelector("article h1");return (h?h.innerText+". ":"")+(c?c.innerText:"");}function parar(){speechSynthesis.cancel();b.textContent="Escuchar artículo";}b.addEventListener("click",function(){if(speechSynthesis.speaking){parar();return;}try{var u=new SpeechSynthesisUtterance(texto());u.lang="es-MX";var voces=speechSynthesis.getVoices()||[];var v=voces.find(function(x){return x.lang&&x.lang.indexOf("es")===0;});if(v)u.voice=v;u.rate=1;u.onend=parar;u.onerror=parar;b.textContent="Detener lectura";speechSynthesis.speak(u);}catch(e){parar();}});})();</script>
   </article>
   ${relatedHtml(a)}
   <p class="mt-12"><a href="/" class="text-sm font-semibold text-[#0284c7] hover:underline">← Volver a todos los artículos</a></p>

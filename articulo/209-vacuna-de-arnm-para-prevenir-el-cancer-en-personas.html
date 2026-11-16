@@ -96,6 +96,7 @@
       <p class="text-sm text-slate-500">Moderna y la Universidad de Oxford iniciaron un ensayo de fase 1/2 con mRNA-4194. El objetivo es entrenar al sistema inmune contra células precancerosas; aún no hay datos de eficacia.</p>
       <time datetime="2026-11-13" class="block text-xs font-mono text-slate-500">13 NOV 2026 · Enigma Ciencia</time>
     </header>
+    <div class="mb-6"><button type="button" id="escuchar" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-sm font-semibold">Escuchar artículo</button></div>
     <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Solo-mrna-vaccine-5.jpg/1280px-Solo-mrna-vaccine-5.jpg" alt="Una vacuna de ARNm para prevenir cáncer en personas con síndrome de Lynch empieza sus primeras pruebas en Oxford" class="w-full h-80 object-cover" loading="eager" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=Medicina%20y%20Biotecnolog%C3%ADa'"></div><figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">Imagen ilustrativa: frasco de vacuna de ARNm de demostración (Spencer D&#39;Avis, Wikimedia Commons, CC BY 4.0). No es la vacuna mRNA-4194.</figcaption></figure>
     <div class="article-body"><p>El síndrome de Lynch es una condición hereditaria que aumenta el riesgo de varios cánceres, sobre todo el colorrectal y el de endometrio. Según el comunicado de Moderna y la Universidad de Oxford, algunas personas con esta condición tienen un riesgo de cáncer a lo largo de la vida que se acerca al 80 %.</p>
 <p>Ahora, los primeros voluntarios del ensayo INTERCEPT-Lynch han recibido una vacuna experimental de ARN mensajero (ARNm) con un objetivo distinto al de las vacunas contra tumores ya formados: actuar antes de que aparezca el cáncer.</p>
@@ -148,6 +149,7 @@
         });
       }
     </script>
+    <script>(function(){var b=document.getElementById("escuchar");if(!b||!("speechSynthesis" in window)){if(b)b.remove();return;}function texto(){var c=document.querySelector(".article-body");var h=document.querySelector("article h1");return (h?h.innerText+". ":"")+(c?c.innerText:"");}function parar(){speechSynthesis.cancel();b.textContent="Escuchar artículo";}b.addEventListener("click",function(){if(speechSynthesis.speaking){parar();return;}try{var u=new SpeechSynthesisUtterance(texto());u.lang="es-MX";var voces=speechSynthesis.getVoices()||[];var v=voces.find(function(x){return x.lang&&x.lang.indexOf("es")===0;});if(v)u.voice=v;u.rate=1;u.onend=parar;u.onerror=parar;b.textContent="Detener lectura";speechSynthesis.speak(u);}catch(e){parar();}});})();</script>
   </article>
   
   <section class="max-w-3xl mx-auto mt-16 space-y-6">
