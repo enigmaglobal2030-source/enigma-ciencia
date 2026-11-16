@@ -110,7 +110,7 @@ function head({ title, description, canonical, image, type = "website", jsonld =
   <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-3DDKGWCPL7');</script>
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#0284c7">
-  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180.png">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
   <script>document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("theme-toggle");if(!b)return;function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}function sync(){var d=isDark();b.textContent=d?"Modo claro":"Modo oscuro";b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}sync();b.addEventListener("click",function(){var d=isDark();if(d){document.documentElement.removeAttribute("data-theme")}else{document.documentElement.setAttribute("data-theme","dark")}try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()})});</script>
   ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
