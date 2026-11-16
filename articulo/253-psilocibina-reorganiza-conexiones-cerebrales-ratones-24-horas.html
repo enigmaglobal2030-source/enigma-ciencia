@@ -20,16 +20,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <script>(function(){try{if(localStorage.getItem("theme")==="dark"){document.documentElement.setAttribute("data-theme","dark")}}catch(e){}})();</script>
   <link rel="stylesheet" href="/styles.css">
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #f7f6f2; color: #1e1b18; }
+    html[data-theme="dark"] body { background-color: #0b1f3a; color: #e6f0fb; }
+    html[data-theme="dark"] header { background-color: rgba(11,31,58,.95) !important; border-color: #1f3a60 !important; }
+    html[data-theme="dark"] .bg-white { background-color: #12294a !important; }
+    html[data-theme="dark"] [class*="bg-white/"] { background-color: rgba(18,41,74,.9) !important; }
+    html[data-theme="dark"] .bg-slate-50 { background-color: #0f2544 !important; }
+    html[data-theme="dark"] .bg-slate-100, html[data-theme="dark"] .bg-slate-200 { background-color: #1f3a60 !important; }
+    html[data-theme="dark"] .bg-slate-900 { background-color: #061426 !important; }
+    html[data-theme="dark"] .text-slate-900 { color: #e6f0fb !important; }
+    html[data-theme="dark"] .text-slate-700, html[data-theme="dark"] .text-slate-800 { color: #c3d3e8 !important; }
+    html[data-theme="dark"] .text-slate-600, html[data-theme="dark"] .text-slate-500 { color: #9fb4cf !important; }
+    html[data-theme="dark"] .text-slate-400 { color: #7f93ad !important; }
+    html[data-theme="dark"] .border-slate-200, html[data-theme="dark"] .border-slate-300 { border-color: #1f3a60 !important; }
+    html[data-theme="dark"] .article-body p { color: #c3d3e8; }
+    html[data-theme="dark"] .article-body h3, html[data-theme="dark"] .article-body strong { color: #e6f0fb; }
+    .theme-toggle { border: 1px solid #94a3b8; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; color: #0f172a; background: transparent; cursor: pointer; white-space: nowrap; }
+    html[data-theme="dark"] .theme-toggle { color: #e6f0fb; border-color: #3b5a85; }
+    html[data-theme="dark"] [class*="bg-slate-200/"] { background-color: rgba(31,58,96,.75) !important; }
+    html[data-theme="dark"] .hover:bg-slate-200:hover { background-color: #2a4a75 !important; }
+    body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #0b1f3a; }
     .editorial-serif { font-family: 'Lora', serif; }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     .article-body p { margin-bottom: 1.5rem; line-height: 1.85; font-size: 1.125rem; color: #334155; }
     .article-body h3 { font-family: 'Lora', serif; font-size: 1.5rem; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
     .article-body strong { color: #0f172a; }
-    .article-body a { color: #e05638; text-decoration: underline; }
+    .article-body a { color: #0284c7; text-decoration: underline; }
     img { max-width: 100%; height: auto; display: block; }
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
@@ -38,37 +57,39 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DDKGWCPL7"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-3DDKGWCPL7');</script>
   <link rel="manifest" href="/manifest.webmanifest">
-  <meta name="theme-color" content="#e05638">
+  <meta name="theme-color" content="#0284c7">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
+  <script>document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("theme-toggle");if(!b)return;function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}function sync(){var d=isDark();b.textContent=d?"Modo claro":"Modo oscuro";b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}sync();b.addEventListener("click",function(){var d=isDark();if(d){document.documentElement.removeAttribute("data-theme")}else{document.documentElement.setAttribute("data-theme","dark")}try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()})});</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"La psilocibina reorganiza conexiones cerebrales en ratones en 24 horas, sin efecto alucinógeno","description":"En un estudio con ratones, la psilocibina aceleró la formación de nuevas conexiones entre neuronas en un día. En ratones estresados, el efecto fue mayor. Los autores sugieren que esta parte del efecto puede separarse de la alucinación, aunque todavía no hay pruebas en personas.","image":["https://www.enigmaciencia.com/img/psilocibina-neuronas-ia.jpg"],"datePublished":"2026-11-16","dateModified":"2026-11-16","author":{"@type":"Organization","name":"Enigma Ciencia"},"publisher":{"@type":"Organization","name":"Enigma Ciencia","email":"enigmaglobal2030@gmail.com"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.enigmaciencia.com/articulo/253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas"}}</script>
 </head>
 <body class="min-h-screen flex flex-col">
 
-<header class="sticky top-0 z-50 bg-[#f7f6f2]/95 backdrop-blur border-b border-slate-200">
+<header class="sticky top-0 z-50 bg-[#f1f5f9]/95 backdrop-blur border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-0 sm:h-20 flex flex-wrap items-center justify-between gap-y-2">
     <a href="/" class="flex items-center space-x-3" aria-label="Enigma Ciencia, inicio">
       <div class="flex items-center space-x-1 h-6">
-        <div class="w-1.5 h-full bg-[#e05638] rounded-full -skew-x-12"></div>
+        <div class="w-1.5 h-full bg-[#0284c7] rounded-full -skew-x-12"></div>
         <div class="w-1.5 h-full bg-[#0ea5e9] rounded-full -skew-x-12"></div>
         <div class="w-1.5 h-full bg-[#2563eb] rounded-full -skew-x-12"></div>
       </div>
       <span class="text-sm sm:text-xl font-black tracking-tight text-slate-900 font-mono uppercase">Enigma Ciencia</span>
     </a>
-    <nav class="flex w-full sm:w-auto items-center justify-between sm:justify-end gap-x-4 sm:gap-x-6 text-xs sm:text-sm font-semibold text-slate-700">
-      <a href="/#articulos" class="hover:text-[#e05638]">Artículos</a>
-      <a href="/acerca" class="hover:text-[#e05638]">Acerca</a>
-      <a href="/contacto" class="hover:text-[#e05638]">Contacto</a>
+    <nav class="flex flex-wrap gap-y-2 w-full sm:w-auto items-center justify-between sm:justify-end gap-x-4 sm:gap-x-6 text-xs sm:text-sm font-semibold text-slate-700">
+      <a href="/#articulos" class="hover:text-[#0284c7]">Artículos</a>
+      <a href="/acerca" class="hover:text-[#0284c7]">Acerca</a>
+      <a href="/contacto" class="hover:text-[#0284c7]">Contacto</a>
       <a href="https://www.facebook.com/profile.php?id=61581561126366" target="_blank" rel="noopener noreferrer" class="text-[#1877F2] hover:underline">Facebook</a>
       <a href="https://www.youtube.com/channel/UC3ipBC64xkxwqhT9S4ZBRfA" target="_blank" rel="noopener noreferrer" class="text-[#FF0000] hover:underline">YouTube</a>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
     </nav>
   </div>
 </header>
 <main class="max-w-3xl mx-auto px-4 sm:px-8 py-10 sm:py-14 w-full">
-  <nav class="text-xs text-slate-500 mb-6"><a href="/" class="hover:text-[#e05638]">Inicio</a> / <span>Neurociencia</span></nav>
+  <nav class="text-xs text-slate-500 mb-6"><a href="/" class="hover:text-[#0284c7]">Inicio</a> / <span>Neurociencia</span></nav>
   <article>
     <header class="space-y-3 mb-6">
-      <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-orange-100 text-[#e05638]">Neurociencia</span>
+      <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-sky-100 text-[#0284c7]">Neurociencia</span>
       <h1 class="editorial-serif text-3xl sm:text-5xl font-bold text-slate-900 leading-tight">La psilocibina reorganiza conexiones cerebrales en ratones en 24 horas, sin efecto alucinógeno</h1>
       <p class="flex items-center gap-2 text-sm font-semibold text-green-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>2 minutos de lectura</p>
       <p class="text-sm text-slate-500">En un estudio con ratones, la psilocibina aceleró la formación de nuevas conexiones entre neuronas en un día. En ratones estresados, el efecto fue mayor. Los autores sugieren que esta parte del efecto puede separarse de la alucinación, aunque todavía no hay pruebas en personas.</p>
@@ -77,18 +98,18 @@
     <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://www.enigmaciencia.com/img/psilocibina-neuronas-ia.jpg" alt="La psilocibina reorganiza conexiones cerebrales en ratones en 24 horas, sin efecto alucinógeno" class="w-full h-80 object-cover" loading="eager" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=Neurociencia'"></div><figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">Imagen generada con IA (Nano Banana), con fines ilustrativos. No muestra una sustancia real ni un paciente.</figcaption></figure>
     <div class="article-body"><p>La psilocibina, la sustancia de los «hongos mágicos», está siendo estudiada como posible tratamiento para la depresión y otros trastornos psiquiátricos. Una pregunta central es si el efecto que la hace útil depende de la experiencia alucinógena o si puede ocurrir sin ella.</p><p>Un equipo de la Universidad de California en Santa Cruz publicó el 15 de octubre de 2026 en <em>Nature Neuroscience</em> un estudio en ratones. Usaron microscopía de dos fotones para seguir, durante semanas, pequeñas prolongaciones de las neuronas llamadas espinas dendríticas. Estas espinas son los puntos donde una neurona recibe señales de otra.</p><p>Después de una dosis de psilocibina, el número de nuevas espinas aumentó en 24 horas. Además, una proporción mayor de esas espinas maduró y se volvió estable, algo que en ratones sin tratamiento ocurre con menos frecuencia.</p><p>El efecto dependió del estado del cerebro. En ratones sanos, el aumento fue temporal: a lo largo de tres semanas, el número de espinas volvió a niveles basales. En ratones sometidos a estrés crónico leve, la psilocibina produjo un aumento mucho mayor de nuevas espinas y frenó la pérdida de las que ya existían.</p><p>Para comprobar si este efecto requiere la experiencia alucinógena, los investigadores manipularon un receptor de serotonina, el 5-HT2A, solo en un tipo de neurona de la corteza. Cuando el receptor estaba presente, la psilocibina creó nuevas conexiones; cuando se eliminó, esas conexiones dejaron de formarse. En los dos casos, el comportamiento que los científicos usan como indicador de alucinación en ratones no cambió.</p><h3>Qué sabemos y qué no</h3><p><strong>Lo que sabemos:</strong> en ratones, la psilocibina cambia la estructura de las conexiones cerebrales en 24 horas, y ese cambio puede ocurrir sin el comportamiento asociado a la alucinación. <strong>Lo que no sabemos:</strong> si ocurre lo mismo en personas, si esos cambios duran lo suficiente para tratar una enfermedad y si existirá una sustancia que lo logre sin efectos psicodélicos. Los autores lo describen como una base para diseñar futuros fármacos, no como un tratamiento.</p><h3>Desenlace</h3><p>El estudio ofrece una pista sobre cómo podrían diseñarse tratamientos que produzcan cambios en el cerebro sin la experiencia alucinógena. Pero todavía está en una etapa muy temprana. No es un tratamiento y no debe usarse por cuenta propia.</p></div>
     <div class="mt-10 p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
-      <h2 class="text-xs uppercase tracking-wider font-bold text-[#e05638]">Fuentes</h2>
+      <h2 class="text-xs uppercase tracking-wider font-bold text-[#0284c7]">Fuentes</h2>
       <p class="text-sm text-slate-600">Baker, J. J., Kogan, E., Ma, S., Lu, J. y Zuo, Y. «5-HT2A receptors in layer 5 pyramidal neurons mediate the neuroplastic but not the hallucinogenic effects of psilocybin». Nature Neuroscience, 15 de octubre de 2026. DOI: 10.1038/s41593-026-02490-y. University of California, Santa Cruz. «How psilocybin reshapes brain circuits». Comunicado, 22 de octubre de 2026.</p>
     </div>
     
     <div class="mt-8 flex flex-wrap items-center gap-2">
       <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
-      <a href="https://wa.me/?text=La%20psilocibina%20reorganiza%20conexiones%20cerebrales%20en%20ratones%20en%2024%20horas%2C%20sin%20efecto%20alucin%C3%B3geno%20https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">WhatsApp</a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Facebook</a>
-      <a href="https://twitter.com/intent/tweet?text=La%20psilocibina%20reorganiza%20conexiones%20cerebrales%20en%20ratones%20en%2024%20horas%2C%20sin%20efecto%20alucin%C3%B3geno&url=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">X</a>
-      <a href="mailto:?subject=La%20psilocibina%20reorganiza%20conexiones%20cerebrales%20en%20ratones%20en%2024%20horas%2C%20sin%20efecto%20alucin%C3%B3geno&body=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Correo</a>
-      <button type="button" data-copy="https://www.enigmaciencia.com/articulo/253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" class="copy-link inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Copiar enlace</button>
-      <button type="button" data-native="https://www.enigmaciencia.com/articulo/253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" data-title="La psilocibina reorganiza conexiones cerebrales en ratones en 24 horas, sin efecto alucinógeno" class="native-share hidden inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold">Compartir</button>
+      <a href="https://wa.me/?text=La%20psilocibina%20reorganiza%20conexiones%20cerebrales%20en%20ratones%20en%2024%20horas%2C%20sin%20efecto%20alucin%C3%B3geno%20https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=La%20psilocibina%20reorganiza%20conexiones%20cerebrales%20en%20ratones%20en%2024%20horas%2C%20sin%20efecto%20alucin%C3%B3geno&url=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">X</a>
+      <a href="mailto:?subject=La%20psilocibina%20reorganiza%20conexiones%20cerebrales%20en%20ratones%20en%2024%20horas%2C%20sin%20efecto%20alucin%C3%B3geno&body=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">Correo</a>
+      <button type="button" data-copy="https://www.enigmaciencia.com/articulo/253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" class="copy-link inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">Copiar enlace</button>
+      <button type="button" data-native="https://www.enigmaciencia.com/articulo/253-psilocibina-reorganiza-conexiones-cerebrales-ratones-24-horas" data-title="La psilocibina reorganiza conexiones cerebrales en ratones en 24 horas, sin efecto alucinógeno" class="native-share hidden inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">Compartir</button>
     </div>
     <script>
       document.querySelectorAll('.copy-link').forEach(function (b) {
@@ -113,19 +134,19 @@
   <section class="max-w-3xl mx-auto mt-16 space-y-6">
     <h2 class="editorial-serif text-2xl font-bold text-slate-900">Más sobre Neurociencia</h2>
     <ul class="space-y-4">
-      <li><a href="/articulo/255-atlas-25-millones-celulas-ganglios-basales-humanos-macacos-titis" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#e05638]/50">
+      <li><a href="/articulo/255-atlas-25-millones-celulas-ganglios-basales-humanos-macacos-titis" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#0284c7]/50">
         <span class="text-xs font-mono text-slate-400">16 NOV 2026</span>
         <span class="block editorial-serif text-lg font-bold text-slate-900 mt-1">Un atlas de unos 25 millones de células de los ganglios basales compara humanos, macacos y títis</span>
-      </a></li><li><a href="/articulo/246-brats-reg-banco-pruebas-registro-resonancias-tumores-cerebrales" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#e05638]/50">
+      </a></li><li><a href="/articulo/246-brats-reg-banco-pruebas-registro-resonancias-tumores-cerebrales" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#0284c7]/50">
         <span class="text-xs font-mono text-slate-400">16 NOV 2026</span>
         <span class="block editorial-serif text-lg font-bold text-slate-900 mt-1">BraTS-Reg crea un banco de pruebas para comparar métodos que alinean resonancias de tumores cerebrales</span>
-      </a></li><li><a href="/articulo/245-modelo-ia-fmri-alzheimer-hipocampo-prueba-preliminar" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#e05638]/50">
+      </a></li><li><a href="/articulo/245-modelo-ia-fmri-alzheimer-hipocampo-prueba-preliminar" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#0284c7]/50">
         <span class="text-xs font-mono text-slate-400">16 NOV 2026</span>
         <span class="block editorial-serif text-lg font-bold text-slate-900 mt-1">Un modelo de IA clasifica imágenes de fMRI asociadas con Alzheimer en una prueba preliminar</span>
       </a></li>
     </ul>
   </section>
-  <p class="mt-12"><a href="/" class="text-sm font-semibold text-[#e05638] hover:underline">← Volver a todos los artículos</a></p>
+  <p class="mt-12"><a href="/" class="text-sm font-semibold text-[#0284c7] hover:underline">← Volver a todos los artículos</a></p>
 </main>
 
 <footer class="bg-slate-900 text-slate-300 mt-20 py-12 px-4 sm:px-8 border-t border-slate-800">
@@ -133,11 +154,11 @@
     <div>
       <span class="text-base font-bold text-white uppercase tracking-wider font-mono">Enigma Ciencia</span>
       <p class="text-xs text-slate-400 mt-1">Edición oficial EnigmaGlobal.</p>
-      <p class="text-xs text-orange-400 mt-1 font-mono">enigmaglobal2030@gmail.com</p>
+      <p class="text-xs text-sky-400 mt-1 font-mono">enigmaglobal2030@gmail.com</p>
     </div>
     <div class="text-center text-sm text-slate-400">
       <p>© 2026 Enigma Ciencia. Todos los derechos reservados.</p>
-      <p class="text-xs text-[#e05638] mt-1">Divulgación científica rigurosa y accesible.</p>
+      <p class="text-xs text-[#0284c7] mt-1">Divulgación científica rigurosa y accesible.</p>
     </div>
     <nav class="flex justify-center md:justify-end space-x-6 text-sm text-slate-400">
       <a href="/acerca" class="hover:text-white">Acerca</a>

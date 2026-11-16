@@ -72,16 +72,35 @@ function head({ title, description, canonical, image, type = "website", jsonld =
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <script>(function(){try{if(localStorage.getItem("theme")==="dark"){document.documentElement.setAttribute("data-theme","dark")}}catch(e){}})();</script>
   <link rel="stylesheet" href="/styles.css">
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #f7f6f2; color: #1e1b18; }
+    html[data-theme="dark"] body { background-color: #0b1f3a; color: #e6f0fb; }
+    html[data-theme="dark"] header { background-color: rgba(11,31,58,.95) !important; border-color: #1f3a60 !important; }
+    html[data-theme="dark"] .bg-white { background-color: #12294a !important; }
+    html[data-theme="dark"] [class*="bg-white/"] { background-color: rgba(18,41,74,.9) !important; }
+    html[data-theme="dark"] .bg-slate-50 { background-color: #0f2544 !important; }
+    html[data-theme="dark"] .bg-slate-100, html[data-theme="dark"] .bg-slate-200 { background-color: #1f3a60 !important; }
+    html[data-theme="dark"] .bg-slate-900 { background-color: #061426 !important; }
+    html[data-theme="dark"] .text-slate-900 { color: #e6f0fb !important; }
+    html[data-theme="dark"] .text-slate-700, html[data-theme="dark"] .text-slate-800 { color: #c3d3e8 !important; }
+    html[data-theme="dark"] .text-slate-600, html[data-theme="dark"] .text-slate-500 { color: #9fb4cf !important; }
+    html[data-theme="dark"] .text-slate-400 { color: #7f93ad !important; }
+    html[data-theme="dark"] .border-slate-200, html[data-theme="dark"] .border-slate-300 { border-color: #1f3a60 !important; }
+    html[data-theme="dark"] .article-body p { color: #c3d3e8; }
+    html[data-theme="dark"] .article-body h3, html[data-theme="dark"] .article-body strong { color: #e6f0fb; }
+    .theme-toggle { border: 1px solid #94a3b8; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; color: #0f172a; background: transparent; cursor: pointer; white-space: nowrap; }
+    html[data-theme="dark"] .theme-toggle { color: #e6f0fb; border-color: #3b5a85; }
+    html[data-theme="dark"] [class*="bg-slate-200/"] { background-color: rgba(31,58,96,.75) !important; }
+    html[data-theme="dark"] .hover\:bg-slate-200:hover { background-color: #2a4a75 !important; }
+    body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #0b1f3a; }
     .editorial-serif { font-family: 'Lora', serif; }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     .article-body p { margin-bottom: 1.5rem; line-height: 1.85; font-size: 1.125rem; color: #334155; }
     .article-body h3 { font-family: 'Lora', serif; font-size: 1.5rem; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
     .article-body strong { color: #0f172a; }
-    .article-body a { color: #e05638; text-decoration: underline; }
+    .article-body a { color: #0284c7; text-decoration: underline; }
     img { max-width: 100%; height: auto; display: block; }
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
@@ -90,31 +109,33 @@ function head({ title, description, canonical, image, type = "website", jsonld =
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DDKGWCPL7"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-3DDKGWCPL7');</script>
   <link rel="manifest" href="/manifest.webmanifest">
-  <meta name="theme-color" content="#e05638">
+  <meta name="theme-color" content="#0284c7">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
+  <script>document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("theme-toggle");if(!b)return;function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}function sync(){var d=isDark();b.textContent=d?"Modo claro":"Modo oscuro";b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}sync();b.addEventListener("click",function(){var d=isDark();if(d){document.documentElement.removeAttribute("data-theme")}else{document.documentElement.setAttribute("data-theme","dark")}try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()})});</script>
   ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
 </head>`;
 }
 
 function header() {
   return `
-<header class="sticky top-0 z-50 bg-[#f7f6f2]/95 backdrop-blur border-b border-slate-200">
+<header class="sticky top-0 z-50 bg-[#f1f5f9]/95 backdrop-blur border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-0 sm:h-20 flex flex-wrap items-center justify-between gap-y-2">
     <a href="/" class="flex items-center space-x-3" aria-label="Enigma Ciencia, inicio">
       <div class="flex items-center space-x-1 h-6">
-        <div class="w-1.5 h-full bg-[#e05638] rounded-full -skew-x-12"></div>
+        <div class="w-1.5 h-full bg-[#0284c7] rounded-full -skew-x-12"></div>
         <div class="w-1.5 h-full bg-[#0ea5e9] rounded-full -skew-x-12"></div>
         <div class="w-1.5 h-full bg-[#2563eb] rounded-full -skew-x-12"></div>
       </div>
       <span class="text-sm sm:text-xl font-black tracking-tight text-slate-900 font-mono uppercase">Enigma Ciencia</span>
     </a>
-    <nav class="flex w-full sm:w-auto items-center justify-between sm:justify-end gap-x-4 sm:gap-x-6 text-xs sm:text-sm font-semibold text-slate-700">
-      <a href="/#articulos" class="hover:text-[#e05638]">Artículos</a>
-      <a href="/acerca" class="hover:text-[#e05638]">Acerca</a>
-      <a href="/contacto" class="hover:text-[#e05638]">Contacto</a>
+    <nav class="flex flex-wrap gap-y-2 w-full sm:w-auto items-center justify-between sm:justify-end gap-x-4 sm:gap-x-6 text-xs sm:text-sm font-semibold text-slate-700">
+      <a href="/#articulos" class="hover:text-[#0284c7]">Artículos</a>
+      <a href="/acerca" class="hover:text-[#0284c7]">Acerca</a>
+      <a href="/contacto" class="hover:text-[#0284c7]">Contacto</a>
       <a href="${FB}" target="_blank" rel="noopener noreferrer" class="text-[#1877F2] hover:underline">Facebook</a>
       <a href="${YT}" target="_blank" rel="noopener noreferrer" class="text-[#FF0000] hover:underline">YouTube</a>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
     </nav>
   </div>
 </header>`;
@@ -127,11 +148,11 @@ function footer() {
     <div>
       <span class="text-base font-bold text-white uppercase tracking-wider font-mono">Enigma Ciencia</span>
       <p class="text-xs text-slate-400 mt-1">Edición oficial EnigmaGlobal.</p>
-      <p class="text-xs text-orange-400 mt-1 font-mono">${EMAIL}</p>
+      <p class="text-xs text-sky-400 mt-1 font-mono">${EMAIL}</p>
     </div>
     <div class="text-center text-sm text-slate-400">
       <p>© 2026 Enigma Ciencia. Todos los derechos reservados.</p>
-      <p class="text-xs text-[#e05638] mt-1">Divulgación científica rigurosa y accesible.</p>
+      <p class="text-xs text-[#0284c7] mt-1">Divulgación científica rigurosa y accesible.</p>
     </div>
     <nav class="flex justify-center md:justify-end space-x-6 text-sm text-slate-400">
       <a href="/acerca" class="hover:text-white">Acerca</a>
@@ -152,7 +173,7 @@ function mediaHtml(a, large = false) {
       </div>
       <div class="w-1/2 h-full relative overflow-hidden">
         <img src="${esc(a.montage.right)}" alt="${esc(a.montage.labelRight)}" class="w-full h-full object-cover" loading="${large ? "eager" : "lazy"}">
-        <div class="absolute bottom-2 right-2 bg-[#e05638]/95 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">${esc(a.montage.labelRight)}</div>
+        <div class="absolute bottom-2 right-2 bg-[#0284c7]/95 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">${esc(a.montage.labelRight)}</div>
       </div>
     </div>`;
   }
@@ -162,18 +183,18 @@ function mediaHtml(a, large = false) {
 function card(a) {
   const text = `${a.title} ${a.summary} ${a.category}`.toLowerCase();
   return `
-  <article class="article-card bg-white rounded-3xl overflow-hidden border border-slate-200 hover:border-[#e05638]/50 transition-all group flex flex-col justify-between shadow-sm" data-cat="${esc(a.category)}" data-text="${esc(text)}">
+  <article class="article-card bg-white rounded-3xl overflow-hidden border border-slate-200 hover:border-[#0284c7]/50 transition-all group flex flex-col justify-between shadow-sm" data-cat="${esc(a.category)}" data-text="${esc(text)}">
     <a href="${articleUrl(a)}" class="block">
       <div class="relative overflow-hidden h-56 bg-slate-100">
         ${mediaHtml(a)}
-        <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/90 text-[#e05638] shadow-sm z-10">${esc(a.category)}</span>
+        <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/90 text-[#0284c7] shadow-sm z-10">${esc(a.category)}</span>
       </div>
       <div class="p-6 sm:p-8 space-y-3">
         <time datetime="${a.date}" class="text-xs font-mono text-slate-400">${fmtDate(a.date)}</time>
-        <h3 class="editorial-serif text-xl font-bold text-slate-900 group-hover:text-[#e05638] transition-colors leading-snug">${esc(a.title)}</h3>
+        <h3 class="editorial-serif text-xl font-bold text-slate-900 group-hover:text-[#0284c7] transition-colors leading-snug">${esc(a.title)}</h3>
         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">${esc(a.summary)}</p>
       </div>
-      <div class="px-6 sm:px-8 pb-6 sm:pb-8 text-sm font-semibold text-[#e05638]">Leer artículo →</div>
+      <div class="px-6 sm:px-8 pb-6 sm:pb-8 text-sm font-semibold text-[#0284c7]">Leer artículo →</div>
     </a>
   </article>`;
 }
@@ -186,7 +207,7 @@ function indexPage() {
     .map(
       (c, i) => `<button type="button" data-filter="${esc(c)}" class="filter-btn px-4 py-2.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
         i === 0 ? "bg-slate-900 text-white" : "bg-slate-200/70 hover:bg-slate-200 text-slate-700"
-      }">${esc(c)} <span class="font-mono text-[10px] ${i === 0 ? "text-orange-400" : "text-slate-500"}">${String(counts[c] || 0).padStart(2, "0")}</span></button>`
+      }">${esc(c)} <span class="font-mono text-[10px] ${i === 0 ? "text-sky-400" : "text-slate-500"}">${String(counts[c] || 0).padStart(2, "0")}</span></button>`
     )
     .join("");
 
@@ -211,15 +232,15 @@ function indexPage() {
 ${header()}
 <div class="border-b border-slate-200 bg-white/60">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 h-11 flex items-center gap-4">
-    <span class="flex items-center gap-2 text-[11px] font-bold tracking-widest text-[#e05638] whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-[#e05638]"></span>EN DIRECTO</span>
-    <div class="flex items-center gap-6 overflow-x-auto no-scrollbar font-mono text-[11px] uppercase text-slate-700 whitespace-nowrap">${articles.slice(0, 5).map((a) => `<span>${esc(a.title)}</span>`).join('<span class="text-[#e05638]">•</span>')}</div>
+    <span class="flex items-center gap-2 text-[11px] font-bold tracking-widest text-[#0284c7] whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-[#0284c7]"></span>EN DIRECTO</span>
+    <div class="flex items-center gap-6 overflow-x-auto no-scrollbar font-mono text-[11px] uppercase text-slate-700 whitespace-nowrap">${articles.slice(0, 5).map((a) => `<span>${esc(a.title)}</span>`).join('<span class="text-[#0284c7]">•</span>')}</div>
   </div>
 </div>
 <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-12 w-full space-y-12">
   <section class="space-y-6">
-    <p class="font-mono text-xs tracking-widest text-[#e05638] uppercase">Curiosidad con método · Edición oficial EnigmaGlobal</p>
+    <p class="font-mono text-xs tracking-widest text-[#0284c7] uppercase">Curiosidad con método · Edición oficial EnigmaGlobal</p>
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-      <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-[-0.04em] leading-[0.95] text-[#0b1f3a]">La ciencia,<br><span class="italic font-normal text-[#e05638] editorial-serif tracking-normal">en contexto.</span></h1>
+      <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-[-0.04em] leading-[0.95] text-[#0b1f3a]">La ciencia,<br><span class="italic font-normal text-[#0284c7] editorial-serif tracking-normal">en contexto.</span></h1>
       <div class="max-w-md space-y-3 lg:pb-3">
         <p class="text-slate-600 text-lg leading-relaxed">Te mantenemos informado de los avances científicos que están cambiando el mundo, con rigor y claridad.</p>
         <p class="text-xs text-slate-500">Última publicación: ${fmtDate(latest)}</p>
@@ -232,10 +253,10 @@ ${header()}
 
   <section id="articulos" class="space-y-6 pt-4 border-t border-slate-200">
     <div class="text-xs font-bold uppercase tracking-widest text-slate-500">Explorar</div>
-    <div class="relative flex items-center gap-2"><button type="button" id="cat-prev" aria-label="Desplazar categorías a la izquierda" class="flex-shrink-0 w-10 h-10 rounded-xl bg-white hover:bg-[#e05638] hover:text-white text-slate-700 border border-slate-300 flex items-center justify-center shadow-sm transition-all active:scale-95"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg></button><div id="category-filters" class="flex items-center gap-3 overflow-x-auto no-scrollbar scroll-smooth pb-2 pt-1 flex-1">${pills}</div><button type="button" id="cat-next" aria-label="Desplazar categorías a la derecha" class="flex-shrink-0 w-10 h-10 rounded-xl bg-white hover:bg-[#e05638] hover:text-white text-slate-700 border border-slate-300 flex items-center justify-center shadow-sm transition-all active:scale-95"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg></button></div>
+    <div class="relative flex items-center gap-2"><button type="button" id="cat-prev" aria-label="Desplazar categorías a la izquierda" class="flex-shrink-0 w-10 h-10 rounded-xl bg-white hover:bg-[#0284c7] hover:text-white text-slate-700 border border-slate-300 flex items-center justify-center shadow-sm transition-all active:scale-95"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg></button><div id="category-filters" class="flex items-center gap-3 overflow-x-auto no-scrollbar scroll-smooth pb-2 pt-1 flex-1">${pills}</div><button type="button" id="cat-next" aria-label="Desplazar categorías a la derecha" class="flex-shrink-0 w-10 h-10 rounded-xl bg-white hover:bg-[#0284c7] hover:text-white text-slate-700 border border-slate-300 flex items-center justify-center shadow-sm transition-all active:scale-95"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg></button></div>
     <div class="relative max-w-2xl">
       <label for="search-input" class="sr-only">Buscar artículos</label>
-      <input type="search" id="search-input" placeholder="Buscar historias..." class="w-full px-4 py-3.5 bg-transparent border-b-2 border-slate-300 focus:border-[#e05638] text-slate-900 placeholder-slate-400 focus:outline-none text-base">
+      <input type="search" id="search-input" placeholder="Buscar historias..." class="w-full px-4 py-3.5 bg-transparent border-b-2 border-slate-300 focus:border-[#0284c7] text-slate-900 placeholder-slate-400 focus:outline-none text-base">
     </div>
     <p id="articles-count" class="text-xs font-mono text-slate-500">Mostrando ${articles.length} artículos</p>
     <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -308,7 +329,7 @@ function relatedHtml(a) {
     <ul class="space-y-4">
       ${related
         .map(
-          (r) => `<li><a href="${articleUrl(r)}" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#e05638]/50">
+          (r) => `<li><a href="${articleUrl(r)}" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#0284c7]/50">
         <span class="text-xs font-mono text-slate-400">${fmtDate(r.date)}</span>
         <span class="block editorial-serif text-lg font-bold text-slate-900 mt-1">${esc(r.title)}</span>
       </a></li>`
@@ -321,7 +342,7 @@ function relatedHtml(a) {
 function shareHtml(a, url) {
   const t = encodeURIComponent(a.title);
   const u = encodeURIComponent(url);
-  const btn = "inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e05638] hover:text-[#e05638] text-xs font-semibold";
+  const btn = "inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold";
   return `
     <div class="mt-8 flex flex-wrap items-center gap-2">
       <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
@@ -382,10 +403,10 @@ function articlePage(a) {
 <body class="min-h-screen flex flex-col">
 ${header()}
 <main class="max-w-3xl mx-auto px-4 sm:px-8 py-10 sm:py-14 w-full">
-  <nav class="text-xs text-slate-500 mb-6"><a href="/" class="hover:text-[#e05638]">Inicio</a> / <span>${esc(a.category)}</span></nav>
+  <nav class="text-xs text-slate-500 mb-6"><a href="/" class="hover:text-[#0284c7]">Inicio</a> / <span>${esc(a.category)}</span></nav>
   <article>
     <header class="space-y-3 mb-6">
-      <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-orange-100 text-[#e05638]">${esc(a.category)}</span>
+      <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-sky-100 text-[#0284c7]">${esc(a.category)}</span>
       <h1 class="editorial-serif text-3xl sm:text-5xl font-bold text-slate-900 leading-tight">${esc(a.title)}</h1>
       <p class="flex items-center gap-2 text-sm font-semibold text-green-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>${readingMinutes(a)} ${readingMinutes(a) === 1 ? "minuto" : "minutos"} de lectura</p>
       <p class="text-sm text-slate-500">${esc(a.summary)}</p>
@@ -394,13 +415,13 @@ ${header()}
     <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm">${mediaHtml(a, true)}</div>${a.imageCaption ? `<figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">${esc(a.imageCaption)}</figcaption>` : ""}</figure>
     <div class="article-body">${a.content}</div>
     <div class="mt-10 p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
-      <h2 class="text-xs uppercase tracking-wider font-bold text-[#e05638]">Fuentes</h2>
+      <h2 class="text-xs uppercase tracking-wider font-bold text-[#0284c7]">Fuentes</h2>
       <p class="text-sm text-slate-600">${esc(a.sources)}</p>
     </div>
     ${shareHtml(a, url)}
   </article>
   ${relatedHtml(a)}
-  <p class="mt-12"><a href="/" class="text-sm font-semibold text-[#e05638] hover:underline">← Volver a todos los artículos</a></p>
+  <p class="mt-12"><a href="/" class="text-sm font-semibold text-[#0284c7] hover:underline">← Volver a todos los artículos</a></p>
 </main>
 ${footer()}
 </body>
