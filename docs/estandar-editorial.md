@@ -1,8 +1,10 @@
 # Estándar editorial de Enigma Ciencia
 
-## Longitud según el tema
-- **Temas médicos, de salud, vacunas, fármacos y ensayos clínicos:** artículos largos y detallados (aprox. 1.200 a 1.800 palabras, de 6 a 8 minutos). Deben nombrar autores, institución (universidad o centro), revista, fecha y DOI, y verificar el artículo original.
-- **Espacio, astronomía, tecnología, robótica y otros temas:** formato breve, de unos 2 minutos de lectura (aprox. 400 a 500 palabras).
+## Longitud según el tema (actualizado 17 de noviembre de 2026)
+- **Salud, medicina, vacunas, fármacos, ensayos clínicos y biotecnología:** artículos de referencia, de 2.500 a 3.500 palabras (unos 12 a 15 minutos de lectura). Estructura: la enfermedad, tratamientos actuales, el producto o tecnología, el ensayo o estudio con cifras y su contexto, lo que dice la autoridad regulatoria, qué se espera, rigor científico y fuentes. Autores, universidades, revista y DOI siempre.
+- **Espacio, astronomía, física, tecnología y robótica:** artículos de 1.200 a 2.000 palabras (unos 6 a 9 minutos), con fuentes primarias y análisis del contexto.
+- **Notas de avance (un hecho en curso, sin resultado todavía):** pueden ser más breves, pero deben declararse como avance y actualizarse al cierre.
+- Nunca rellenar: si el tema no da para más, se explica con más rigor, no con más palabras vacías.
 
 ## Reglas que no cambian
 - Verificar cifras y citas en fuentes primarias. Lo que no se pueda verificar se deja fuera o se marca como pendiente.
