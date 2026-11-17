@@ -418,7 +418,7 @@ ${header()}
     <div class="article-body">${a.content}</div>
     <div class="mt-10 p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
       <h2 class="text-xs uppercase tracking-wider font-bold text-[#0284c7]">Fuentes</h2>
-      <p class="text-sm text-slate-600">${esc(a.sources)}</p>
+      <p class="text-sm text-slate-600" style="overflow-wrap:anywhere">${esc(a.sources)}</p>
     </div>
     ${shareHtml(a, url)}
     <script>(function(){var b=document.getElementById("escuchar");if(!b||!("speechSynthesis" in window)){if(b)b.remove();return;}function texto(){var c=document.querySelector(".article-body");var h=document.querySelector("article h1");return (h?h.innerText+". ":"")+(c?c.innerText:"");}function parar(){speechSynthesis.cancel();b.textContent="Escuchar artículo";}b.addEventListener("click",function(){if(speechSynthesis.speaking){parar();return;}try{var u=new SpeechSynthesisUtterance(texto());u.lang="es-MX";var voces=speechSynthesis.getVoices()||[];var v=voces.find(function(x){return x.lang&&x.lang.indexOf("es")===0;});if(v)u.voice=v;u.rate=1;u.onend=parar;u.onerror=parar;b.textContent="Detener lectura";speechSynthesis.speak(u);}catch(e){parar();}});})();</script>
