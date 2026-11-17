@@ -14,6 +14,8 @@ const FB = "https://www.facebook.com/profile.php?id=61581561126366";
 const YT = "https://www.youtube.com/channel/UC3ipBC64xkxwqhT9S4ZBRfA";
 
 const articles = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "articulos.json"), "utf8"));
+// Orden de publicación: más reciente primero; a igual fecha, el id más alto.
+articles.sort((p, q) => (q.date || "").localeCompare(p.date || "") || q.id - p.id);
 const CATEGORIES = [
   "Astronomía y Espacio",
   "Física Cuántica",
