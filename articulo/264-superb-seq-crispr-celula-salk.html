@@ -92,7 +92,7 @@
     <header class="space-y-3 mb-6">
       <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-sky-100 text-[#0284c7]">Medicina y Biotecnología</span>
       <h1 class="editorial-serif text-3xl sm:text-5xl font-bold text-slate-900 leading-tight">Superb-seq mide a la vez las ediciones de CRISPR y la respuesta génica de cada célula</h1>
-      <p class="flex items-center gap-2 text-sm font-semibold text-green-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>9 minutos de lectura</p>
+      <p class="flex items-center gap-2 text-sm font-semibold text-green-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>13 minutos de lectura</p>
       <p class="text-sm text-slate-500">Un método del Instituto Salk registra al mismo tiempo las ediciones de CRISPR, dentro y fuera del objetivo, y su efecto en la expresión génica de cada célula. Se publicó en Nature Methods el 16 de noviembre de 2026.</p>
       <time datetime="2026-11-17" class="block text-xs font-mono text-slate-500">17 NOV 2026 · Enigma Ciencia</time>
     </header>
@@ -127,6 +127,28 @@
 <h3>Limitaciones</h3>
 <p>Superb-seq se probó en líneas celulares cultivadas, no en personas ni en animales. Las células de cultivo se comportan de forma distinta a los tejidos del cuerpo, y un resultado en leucemia cultivada no se traslada automáticamente a un paciente. El método tampoco demuestra por sí solo que una edición cause un efecto: muestra que ambas cosas ocurren en la misma célula, y eso requiere comprobaciones adicionales. Además, su sensibilidad depende de la profundidad de la secuenciación, algo que cambia según cada experimento.</p>
 
+<h3>Qué pasa dentro de una célula cuando CRISPR corta</h3>
+<p>Cuando Cas9 corta las dos hebras del ADN, la célula tiene que repararlo. El método más rápido es unir de nuevo los extremos, pero lo hace sin fidelidad: a menudo se pierden o se añaden algunas letras en el punto de corte. Esas pequeñas inserciones y deleciones se llaman indels, y son la marca más habitual de una edición con CRISPR. Si el corte cae dentro de un gen, el resultado puede ser una proteína incompleta o un mensaje genético que la célula destruye.</p>
+<p>Por eso medir una edición no es lo mismo que medir sus consecuencias. Una edición puede estar presente en una célula sin alterar nada visible, y otra puede cambiar la actividad de genes situados a cierta distancia. Para saber qué ocurre realmente, hace falta leer dos cosas en la misma célula: la secuencia del ADN y la actividad de sus genes.</p>
+
+<h3>Leer una célula a la vez</h3>
+<p>La secuenciación de ARN de célula única permite medir qué genes está usando cada célula en un momento dado. El procedimiento general es separar miles de células, marcar el ARN de cada una con una etiqueta molecular única y secuenciarlo todo junto. Después, un programa agrupa las lecturas por etiqueta y reconstruye el perfil de cada célula. El resultado es una tabla enorme: células en las filas, genes en las columnas, y en cada casilla cuánto ARN de ese gen tenía esa célula.</p>
+<p>Esa técnica describe muy bien qué tipo de célula es y qué genes están activos. Lo que no mide, en su forma habitual, es la secuencia del ADN que se editó en esa misma célula. Superb-seq añade ese dato al perfil de expresión.</p>
+
+<h3>Por qué las ediciones no deseadas son difíciles de encontrar</h3>
+<p>Un corte fuera de objetivo puede ocurrir en pocas células de una población. Si se analiza una muestra mezclada de millones de células, el resultado es un promedio, y una edición presente en una fracción pequeña de ellas se diluye. Los métodos de análisis en masa son sensibles para cortes frecuentes, pero pueden pasar por alto eventos raros o confundirlos con ruido de fondo.</p>
+<p>Los métodos de célula única tienen el problema contrario: cada célula aporta poca información, y la secuenciación no siempre captura el ADN editado en todas. Por eso un método nuevo tiene que demostrar dos cosas: que detecta las ediciones que existen y que no inventa ediciones que no existen. Superb-seq evalúa ambas con comparaciones frente a métodos ya establecidos.</p>
+
+<h3>Perturbar muchos genes a la vez</h3>
+<p>En biología se llaman perturbaciones los experimentos en los que se altera un gen y se observa qué cambia. Con CRISPR, es posible hacerlo para muchos genes a la vez, usando una mezcla de ARN guía distintos y mirando el resultado célula por célula. Esos experimentos, llamados cribados, ayudan a encontrar qué genes controlan un proceso. Su límite es que asumen que cada guía produjo el efecto que se quería. Si una guía corta en otro lugar, el efecto observado puede venir de ese corte no previsto.</p>
+<p>Superb-seq se diseñó precisamente para comprobar esa suposición en cada célula, al registrar qué edición se produjo y qué genes cambiaron en la misma célula.</p>
+
+<h3>Del laboratorio a la clínica</h3>
+<p>Una terapia génica tiene que demostrar que su efecto deseado es mayor que sus riesgos. En ese proceso, las agencias reguladoras piden caracterizar las ediciones que la terapia produce, incluidas las no deseadas. La dificultad es que esas ediciones son, por definición, poco frecuentes y dispersas por el genoma. Un método que las mida célula a célula puede servir para seleccionar guías más específicas antes de pasar a un ensayo en personas.</p>
+<p>Conviene recordar que la eficiencia y la especificidad de una guía no dependen solo de su secuencia. Los autores del estudio lo muestran con el caso de ADSS1, un sitio con cuatro desajustes que se editaba en el 18 % de las células de una muestra. Esa observación justifica medir en lugar de predecir.</p>
+
+<h3>Cómo se valida un método nuevo</h3>
+<p>Un método de medición necesita un punto de referencia. En este caso, los autores usaron guías bien caracterizadas en células con resultados ya publicados, y compararon sus datos con esos resultados. Si el nuevo método coincide con los antiguos en los casos conocidos, y además encuentra eventos que los antiguos no veían, gana credibilidad. Si no coincide, hay que explicar por qué. Este estudio cumple la primera parte y reconoce que hay diferencias en ambas direcciones.</p>
 <h3>Lo que encontraron en las células</h3>
 <p>En la biblioteca de 10.000 células, Superb-seq identificó 36 ediciones fuera de objetivo repartidas en 18 cromosomas y en 2.098 células. Cada sitio apareció entre 2 y 670 células, lo que equivale a entre el 0,05 % y el 18 % de las células editadas. Más del 80 % de esas ediciones (30 de 36) estaban dentro de intrones, las zonas del gen que no se traducen en proteína.</p>
 <p>Un detalle llamó la atención a los autores: los ARN guía habían superado filtros de especificidad previos, y aun así generaron tantos cortes fuera de objetivo. Las secuencias fuera de objetivo coincidían con el ARN guía en 14 a 19 bases, con desajustes repartidos por toda la secuencia, incluida la región semilla, que es la más importante para la actividad de Cas9.</p>
