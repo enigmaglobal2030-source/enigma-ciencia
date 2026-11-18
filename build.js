@@ -245,6 +245,11 @@ ${header()}
   </div>
 </div>
 <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-12 w-full space-y-12">
+  <div class="max-w-2xl mx-auto w-full">
+      <label for="search-input" class="sr-only">Buscar artículos</label>
+      <input type="search" id="search-input" placeholder="Buscar historias..." class="w-full px-4 py-3.5 bg-transparent border-b-2 border-slate-300 focus:border-[#0284c7] text-slate-900 placeholder-slate-400 focus:outline-none text-base">
+  </div>
+
   <section class="space-y-6">
     <p class="font-mono text-xs tracking-widest text-[#0284c7] uppercase">Curiosidad con método · Edición oficial EnigmaGlobal</p>
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
@@ -262,10 +267,6 @@ ${header()}
   <section id="articulos" class="space-y-6 pt-4 border-t border-slate-200">
     <div class="text-xs font-bold uppercase tracking-widest text-slate-500">Explorar</div>
     <div id="category-filters" class="flex flex-wrap items-center gap-3 pb-2 pt-1">${pills}</div>
-    <div class="relative max-w-2xl">
-      <label for="search-input" class="sr-only">Buscar artículos</label>
-      <input type="search" id="search-input" placeholder="Buscar historias..." class="w-full px-4 py-3.5 bg-transparent border-b-2 border-slate-300 focus:border-[#0284c7] text-slate-900 placeholder-slate-400 focus:outline-none text-base">
-    </div>
     <p id="articles-count" class="text-xs font-mono text-slate-500">Mostrando ${articles.length} artículos</p>
     <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       ${articles.map(card).join("")}
