@@ -8,8 +8,8 @@ const path = require("path");
 const ROOT = __dirname;
 const SITE = "https://www.enigmaciencia.com";
 const GOOGLE_VERIFICATION = "60OQwXNBe3P9nVm1IpDHfyjJXsXt2p-ibGQ8s8H_Hz8";
-const EMAIL = process.env.CONTACT_EMAIL || "contacto@enigmaciencia.com";
-if (!process.env.CONTACT_EMAIL) { console.warn("AVISO: Falta la variable CONTACT_EMAIL; usando valor por defecto."); }
+const EMAIL = process.env.CONTACT_EMAIL || "";
+if (!EMAIL) { console.error("Falta la variable CONTACT_EMAIL (correo de contacto del sitio)."); process.exit(1); }
 const FB = "https://www.facebook.com/profile.php?id=61581561126366";
 const YT = "https://www.youtube.com/channel/UC3ipBC64xkxwqhT9S4ZBRfA";
 
