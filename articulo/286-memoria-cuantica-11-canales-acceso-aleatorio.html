@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Un experimento guarda qubits en 11 canales cuánticos | Enigma Ciencia</title>
+  <meta name="description" content="Una memoria cuántica de 11 canales permitió recuperar tres qubits temporales en el orden elegido, con fidelidades superiores al 99 %. La eficiencia fue mucho menor y el experimento no probó una red a 100 km.">
+  <link rel="canonical" href="https://www.enigmaciencia.com/articulo/286-memoria-cuantica-11-canales-acceso-aleatorio">
+  <meta name="google-site-verification" content="60OQwXNBe3P9nVm1IpDHfyjJXsXt2p-ibGQ8s8H_Hz8">
+  <meta property="og:title" content="Un experimento guarda qubits en 11 canales cuánticos | Enigma Ciencia">
+  <meta property="og:description" content="Una memoria cuántica de 11 canales permitió recuperar tres qubits temporales en el orden elegido, con fidelidades superiores al 99 %. La eficiencia fue mucho menor y el experimento no probó una red a 100 km.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.enigmaciencia.com/articulo/286-memoria-cuantica-11-canales-acceso-aleatorio">
+  <meta property="og:image" content="https://www.enigmaciencia.com/img/memoria-cuantica-11-canales-ia.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Un experimento guarda qubits en 11 canales cuánticos | Enigma Ciencia">
+  <meta name="twitter:description" content="Una memoria cuántica de 11 canales permitió recuperar tres qubits temporales en el orden elegido, con fidelidades superiores al 99 %. La eficiencia fue mucho menor y el experimento no probó una red a 100 km.">
+  <meta name="twitter:image" content="https://www.enigmaciencia.com/img/memoria-cuantica-11-canales-ia.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect x='2' y='4' width='6' height='22' rx='3' fill='%23f07150'/%3E%3Crect x='12' y='4' width='6' height='22' rx='3' fill='%2338bdf8'/%3E%3Crect x='22' y='4' width='6' height='22' rx='3' fill='%233b82f6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <script>(function(){try{if(localStorage.getItem("theme")==="dark"){document.documentElement.setAttribute("data-theme","dark")}}catch(e){}})();</script>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    html[data-theme="dark"] body { background-color: #0b1f3a; color: #e6f0fb; }
+    html[data-theme="dark"] header { background-color: rgba(11,31,58,.95) !important; border-color: #1f3a60 !important; }
+    html[data-theme="dark"] .bg-white { background-color: #12294a !important; }
+    html[data-theme="dark"] [class*="bg-white/"] { background-color: rgba(18,41,74,.9) !important; }
+    html[data-theme="dark"] .bg-slate-50 { background-color: #0f2544 !important; }
+    html[data-theme="dark"] .bg-slate-100, html[data-theme="dark"] .bg-slate-200 { background-color: #1f3a60 !important; }
+    html[data-theme="dark"] .bg-slate-900 { background-color: #061426 !important; }
+    html[data-theme="dark"] .text-slate-900 { color: #e6f0fb !important; }
+    html[data-theme="dark"] .text-slate-700, html[data-theme="dark"] .text-slate-800 { color: #c3d3e8 !important; }
+    html[data-theme="dark"] .text-slate-600, html[data-theme="dark"] .text-slate-500 { color: #9fb4cf !important; }
+    html[data-theme="dark"] .text-slate-400 { color: #7f93ad !important; }
+    html[data-theme="dark"] .border-slate-200, html[data-theme="dark"] .border-slate-300 { border-color: #1f3a60 !important; }
+    html[data-theme="dark"] .article-body p { color: #c3d3e8; }
+    html[data-theme="dark"] .article-body h3, html[data-theme="dark"] .article-body strong { color: #e6f0fb; }
+    .theme-toggle { border: 1px solid #94a3b8; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; color: #0f172a; background: transparent; cursor: pointer; white-space: nowrap; }
+    html[data-theme="dark"] .theme-toggle { color: #e6f0fb; border-color: #3b5a85; }
+    html[data-theme="dark"] [class*="text-[#0b1f3a]"], html[data-theme="dark"] [class*="text-[#0f172a]"], html[data-theme="dark"] [class*="text-[#1e1b18]"] { color: #e6f0fb !important; }
+    html[data-theme="dark"] [class*="bg-slate-200/"] { background-color: rgba(31,58,96,.75) !important; }
+    html[data-theme="dark"] .hover:bg-slate-200:hover { background-color: #2a4a75 !important; }
+    body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #0b1f3a; }
+    .editorial-serif { font-family: 'Lora', serif; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .article-body p { margin-bottom: 1.5rem; line-height: 1.85; font-size: 1.125rem; color: #334155; }
+    .article-body h3 { font-family: 'Lora', serif; font-size: 1.5rem; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
+    .article-body strong { color: #0f172a; }
+    .article-body a { color: #0284c7; text-decoration: underline; }
+    img { max-width: 100%; height: auto; display: block; }
+    img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
+    @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6763372649272480" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCJDRN3D3Y"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-VCJDRN3D3Y');</script>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0284c7">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180.png">
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
+  <script>document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("theme-toggle");if(!b)return;function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}function sync(){var d=isDark();b.textContent=d?"Modo claro":"Modo oscuro";b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}sync();b.addEventListener("click",function(){var d=isDark();if(d){document.documentElement.removeAttribute("data-theme")}else{document.documentElement.setAttribute("data-theme","dark")}try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()})});</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Un experimento guarda qubits en 11 canales cuánticos","description":"Una memoria cuántica de 11 canales permitió recuperar tres qubits temporales en el orden elegido, con fidelidades superiores al 99 %. La eficiencia fue mucho menor y el experimento no probó una red a 100 km.","image":["https://www.enigmaciencia.com/img/memoria-cuantica-11-canales-ia.webp"],"datePublished":"2026-11-18","dateModified":"2026-11-18","author":{"@type":"Organization","name":"Enigma Ciencia"},"publisher":{"@type":"Organization","name":"Enigma Ciencia","email":"enigmaglobal2030@gmail.com"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.enigmaciencia.com/articulo/286-memoria-cuantica-11-canales-acceso-aleatorio"}}</script>
+</head>
+<body class="min-h-screen flex flex-col">
+
+<header class="sticky top-0 z-50 bg-[#f1f5f9]/95 backdrop-blur border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-0 sm:h-20 flex flex-wrap items-center justify-between gap-y-2">
+    <a href="/" class="flex items-center space-x-3" aria-label="Enigma Ciencia, inicio">
+      <div class="flex items-center space-x-1 h-6">
+        <div class="w-1.5 h-full bg-[#f07150] rounded-full -skew-x-12"></div>
+        <div class="w-1.5 h-full bg-[#38bdf8] rounded-full -skew-x-12"></div>
+        <div class="w-1.5 h-full bg-[#3b82f6] rounded-full -skew-x-12"></div>
+      </div>
+      <span class="text-sm sm:text-xl font-black tracking-tight text-slate-900 font-mono uppercase">Enigma Ciencia</span>
+    </a>
+    <nav class="flex flex-wrap gap-y-2 w-full sm:w-auto items-center justify-between sm:justify-end gap-x-4 sm:gap-x-6 text-xs sm:text-sm font-semibold text-slate-700">
+      <a href="/#articulos" class="hover:text-[#0284c7]">Artículos</a>
+      <a href="/acerca" class="hover:text-[#0284c7]">Acerca</a>
+      <a href="/contacto" class="hover:text-[#0284c7]">Contacto</a>
+      <a href="https://www.facebook.com/profile.php?id=61581561126366" target="_blank" rel="noopener noreferrer" class="text-[#1877F2] hover:underline">Facebook</a>
+      <a href="https://www.youtube.com/channel/UC3ipBC64xkxwqhT9S4ZBRfA" target="_blank" rel="noopener noreferrer" class="text-[#FF0000] hover:underline">YouTube</a>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+    </nav>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-8 py-10 sm:py-14 w-full">
+  <nav class="text-xs text-slate-500 mb-6"><a href="/" class="hover:text-[#0284c7]">Inicio</a> / <span>Física Cuántica</span></nav>
+  <article>
+    <header class="space-y-3 mb-6">
+      <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-sky-100 text-[#0284c7]">Física Cuántica</span>
+      <h1 class="editorial-serif text-3xl sm:text-5xl font-bold text-slate-900 leading-tight">Un experimento guarda qubits en 11 canales cuánticos</h1>
+      <p class="flex items-center gap-2 text-sm font-semibold text-green-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>9 minutos de lectura</p>
+      <p class="text-sm text-slate-500">Una memoria cuántica de 11 canales permitió recuperar tres qubits temporales en el orden elegido, con fidelidades superiores al 99 %. La eficiencia fue mucho menor y el experimento no probó una red a 100 km.</p>
+      <time datetime="2026-11-18" class="block text-xs font-mono text-slate-500">18 NOV 2026 · Enigma Ciencia</time>
+    </header>
+    <div class="mb-6"><button type="button" id="escuchar" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-sm font-semibold">Escuchar artículo</button></div>
+    <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://www.enigmaciencia.com/img/memoria-cuantica-11-canales-ia.webp" alt="Un experimento guarda qubits en 11 canales cuánticos" class="w-full h-80 object-cover" loading="eager" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=F%C3%ADsica%20Cu%C3%A1ntica'"></div><figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">Imagen generada con IA, con fines ilustrativos.</figcaption></figure>
+    <div class="article-body"><p>Una memoria cuántica integrada con 11 canales logró almacenar y recuperar estados de luz en un orden elegido por los investigadores. En pruebas de laboratorio, tres qubits codificados en intervalos de tiempo conservaron fidelidades superiores al 99 %, y dos estados cuánticos de cinco dimensiones conservaron fidelidades de 97,9 % y 96,1 %. El resultado, publicado en <em>PhotoniX</em>, muestra una nueva función experimental para las memorias fotónicas sólidas. No significa que exista una red cuántica conectada a 100 kilómetros: el trabajo estudió un dispositivo en laboratorio, no una comunicación de larga distancia.</p>
+<h3>Qué es una memoria cuántica</h3>
+<p>En una computadora convencional, la memoria guarda bits que pueden representar un cero o un uno. Un qubit es la unidad de información cuántica: puede prepararse en combinaciones de esos dos estados y conservar relaciones de fase que se pierden si se mide de forma inadecuada. Una memoria cuántica busca guardar ese estado durante un intervalo y devolverlo después sin destruir sus propiedades. Es una pieza que podría ayudar a conectar procesadores o a coordinar fotones en redes futuras, pero por sí sola no constituye una red.</p>
+<p>La memoria descrita en este estudio trabaja con fotones, partículas de luz. Los investigadores los introducen en canales ópticos dentro de un cristal y luego controlan cuándo recuperar la señal. Tener varios canales permite guardar más de una secuencia de información y seleccionar el orden de lectura. La llamada “memoria de acceso aleatorio” no significa que el dispositivo acceda a cualquier dato como un disco duro; significa que puede elegir, entre estados almacenados en canales separados, cuál recuperar y en qué orden, dentro del protocolo probado.</p>
+<p>El equipo también estudió estados de dimensión mayor que un qubit. Mientras un qubit usa dos estados de base, un qudit puede codificarse en tres, cuatro, cinco o más alternativas distinguibles. En este caso, los investigadores usaron cinco caminos ópticos del dispositivo para codificar estados de cinco dimensiones. La ventaja potencial es transportar más información cuántica por fotón, pero ese beneficio depende de que los estados se preparen, almacenen, recuperen y midan con suficiente calidad.</p>
+<h3>Cómo construyeron el dispositivo</h3>
+<p>Zhong-Wen Ou, Tian-Xiang Zhu y colegas de la Universidad de Ciencia y Tecnología de China fabricaron una matriz de 11 guías de onda dentro de un cristal de silicato de itrio (Y₂SiO₅) dopado con iones de europio-151. Las guías se escribieron con pulsos de láser de femtosegundo: el láser modifica regiones microscópicas del cristal para que la luz pueda propagarse por rutas definidas. Electrodos situados junto a cada guía aplican pulsos eléctricos que cambian las condiciones de los iones y controlan el momento de lectura.</p>
+<p>El material se enfrió a unos 3,2 kelvin en un criostato, es decir, a una temperatura apenas superior al cero absoluto. Además, el montaje empleó desviadores acusto-ópticos para dirigir los pulsos de luz hacia cada canal y recogerlos durante la lectura. Los desviadores usan señales acústicas para cambiar la dirección de un haz dentro de un material. El sistema descrito combina así guías integradas en el cristal con componentes ópticos externos y refrigeración criogénica.</p>
+<p>Esta precisión importa al describir el avance: aunque el artículo habla de una memoria cuántica integrada, el montaje no es un chip autónomo que se conecte directamente a una red de fibra. En la discusión, los propios autores indican que para lograr una integración completa habría que sustituir el acoplamiento óptico en espacio libre por una conexión directa a una matriz de fibras. La distinción no resta valor a la demostración, pero ayuda a situarla en la etapa de desarrollo en la que se encuentra.</p>
+<h3>Qué logró en los 11 canales</h3>
+<p>Primero, los investigadores probaron el almacenamiento multicanal con pulsos coherentes débiles, con una media de 0,14 fotones por pulso. Esa condición se conoce como régimen de nivel de fotón único porque la mayoría de los pulsos contiene cero o un fotón, aunque algunos pueden contener más de uno. No es lo mismo que usar una fuente ideal que emita exactamente un fotón cada vez.</p>
+<p>En esta prueba multicanal inicial, la eficiencia media de almacenamiento y recuperación fue de 39,2 ± 0,2 % para el primer eco y de 31,3 ± 0,2 % para el segundo. “Eficiencia” describe qué fracción de la señal de entrada se recupera en la salida bajo el procedimiento medido. El artículo también reporta un cruce óptico entre canales inferior a −40 decibelios y una degradación de eficiencia menor al 1 % por el cruce eléctrico entre electrodos. Esas mediciones indican que los canales se interfieren poco entre sí en el dispositivo estudiado.</p>
+<p>Después, el equipo almacenó tres qubits temporales. En esta codificación, dos partes de un pulso —una temprana y otra tardía— representan los estados de base del qubit. Los electrodos permitieron controlar la lectura de cada canal; los autores mostraron varios órdenes de salida, incluidos 1-2-3, 2-1-3 y 3-2-1. Las fidelidades medidas para esos qubits superaron el 99 %. La fidelidad compara el estado recuperado con el que se había preparado: un valor alto indica que la forma cuántica se conservó bien en los casos probados.</p>
+<p>Ese número debe leerse junto con la eficiencia, no en su lugar. La fidelidad reportada se refiere a la calidad del estado recuperado; la eficiencia mide cuánta señal llega a recuperarse. En la prueba de acceso aleatorio con qubits temporales, las eficiencias estuvieron entre 2,9 % y 18,7 %, según el qubit y el orden de lectura. Las cifras de 39,2 % y 31,3 % del apartado anterior pertenecen a la prueba multicanal inicial con pulsos débiles, no a esa demostración de tres qubits. Por eso “más de 99 %” no quiere decir que más del 99 % de los fotones atravesaran la memoria.</p>
+<h3>Estados de cuatro y cinco dimensiones</h3>
+<p>El segundo grupo de pruebas codificó información en la ruta espacial que seguía la luz entre las guías. Para la prueba de cuatro dimensiones, el equipo realizó tomografía de proceso cuántico, un método que reconstruye cómo transforma el dispositivo varios estados de entrada. La fidelidad de proceso fue de 97,9 ± 0,2 %, y los autores calcularon una capacidad de canal cuántico de 1,932 ± 0,007 en las condiciones de su análisis. Esta cifra describe la información que puede preservar el canal bajo el modelo usado; no es una tasa de transmisión en una red comercial.</p>
+<p>En la demostración de cinco dimensiones, se codificaron dos estados superpuestos sobre cinco canales espaciales. Sus fidelidades recuperadas fueron 97,9 ± 0,5 % y 96,1 ± 0,5 %. La eficiencia de almacenamiento correspondiente fue 30,2 ± 0,3 % y 31,4 ± 0,4 %, medida para el segundo eco leído a 1 microsegundo. Los dos estados superaron el límite clásico que el equipo calculó para las entradas débiles y la eficiencia observada, lo que respalda que el dispositivo preservó características cuánticas en ese protocolo.</p>
+<p>No se debe convertir esos dos valores en una afirmación universal de que cualquier estado de cinco dimensiones se almacena con esa fidelidad. Son resultados de estados concretos que el equipo preparó y midió, en un experimento con una configuración específica. El suplemento describe cómo se compararon con límites clásicos que tienen en cuenta la eficiencia y la distribución estadística de los pulsos de entrada.</p>
+<h3>Qué no demuestra y qué falta</h3>
+<p>El experimento demuestra funciones de almacenamiento y lectura selectiva en un dispositivo sólido de 11 canales. No demuestra que una computadora cuántica ya use esta memoria, que se hayan guardado 11 qubits simultáneos, ni que los fotones hayan viajado 100 kilómetros. Tampoco muestra un enlace remoto entre dos memorias, una comunicación cuántica a través de fibra larga o una red operativa. Los autores discuten posibles aplicaciones en redes futuras; son una motivación para seguir desarrollando el componente, no el resultado medido en este artículo.</p>
+<p>La duración de almacenamiento también sigue siendo una limitación. En el montaje, el equipo pudo recuperar los estados a tiempos definidos por el protocolo; para los estados de cinco dimensiones reportó la lectura del segundo eco a 1 microsegundo. En su discusión, los autores identifican el tiempo de almacenamiento y el tiempo de respuesta de los desviadores acusto-ópticos —aproximadamente 1,9 microsegundos— como límites para aumentar el número de canales de acceso aleatorio. Proponen explorar almacenamiento de onda de espín para prolongar el tiempo y ampliar los canales, pero eso queda como trabajo futuro.</p>
+<p>También falta mejorar la eficiencia y simplificar la integración óptica. El artículo menciona que cavidades adaptadas a las guías podrían elevar la eficiencia en diseños futuros, y que conectar directamente el cristal a una matriz de fibras ayudaría a sustituir parte del sistema óptico externo. Estas posibilidades no son mejoras ya alcanzadas por el dispositivo de 11 canales descrito aquí.</p>
+<h3>Una pieza posible, no una red cuántica</h3>
+<p>Las redes cuánticas necesitan distribuir y conservar estados cuánticos entre nodos separados, además de sincronizar las fuentes, los canales de comunicación y las memorias. Guardar tres qubits en orden controlado y preservar estados espaciales de cinco dimensiones aborda una parte del problema: cómo almacenar y recuperar información fotónica con flexibilidad. Aún se requieren conexiones eficientes, tiempos de almacenamiento útiles, fuentes y detectores compatibles, y pruebas con nodos remotos.</p>
+<p>Por eso la noticia es una demostración de laboratorio con resultados medibles, no una promesa de internet cuántico a 100 kilómetros. La contribución concreta está en combinar 11 canales de guía de onda, lectura con acceso aleatorio y almacenamiento de qubits temporales y estados de dimensión alta en un mismo cristal. El próximo paso será comprobar cuánto puede escalarse esta arquitectura y cómo se conecta a sistemas de fibra sin perder eficiencia ni fidelidad.</p>
+<h3>Rigor científico</h3>
+<p><strong>Publicación:</strong> Ou ZW, Zhu TX, Liang PJ, Hu XM, Zhou ZQ, Li CF, Guo GC. “Random access and high dimensional integrated quantum memory”. <em>PhotoniX</em>. 2026;7:60. Publicado el 14 de septiembre de 2026. DOI: <a href="https://doi.org/10.1186/s43074-026-00284-w">10.1186/s43074-026-00284-w</a>. <a href="https://arxiv.org/abs/2508.19605">Preprint arXiv:2508.19605</a>, enviado el 27 de agosto de 2025 y revisado el 28 de septiembre de 2026. <a href="https://static-content.springer.com/esm/art%3A10.1186%2Fs43074-026-00284-w/MediaObjects/43074_2026_284_MOESM1_ESM.pdf">Material suplementario</a>.</p>
+<p><strong>Tipo de estudio:</strong> experimento de óptica cuántica en laboratorio; no es ensayo con personas ni demostración de red a larga distancia.</p>
+<p><strong>Financiación y conflictos:</strong> financiado por programas de la Academia China de Ciencias, proyectos nacionales de ciencia y tecnología y la Fundación Nacional de Ciencias Naturales de China. Los autores declaran no tener conflictos de interés.</p>
+<p><strong>Límites principales:</strong> memoria enfriada a unos 3,2 K, acoplamiento óptico externo, eficiencia de almacenamiento inferior a la fidelidad y tiempos de lectura breves en las pruebas reportadas. No se verificó en esta publicación una conexión de 100 km; esa cifra se excluye.</p>
+<p><strong>Firma:</strong> Redacción Enigma Ciencia.</p>
+<p><strong>Aviso:</strong> Enigma Ciencia es un medio informativo. Este artículo describe investigación experimental y no una tecnología disponible comercialmente.</p></div>
+    <div class="mt-10 p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
+      <h2 class="text-xs uppercase tracking-wider font-bold text-[#0284c7]">Fuentes</h2>
+      <p class="text-sm text-slate-600" style="overflow-wrap:anywhere">Ou ZW, Zhu TX, Liang PJ, et al. “Random access and high dimensional integrated quantum memory”. PhotoniX. 2026;7:60. DOI 10.1186/s43074-026-00284-w; preprint arXiv:2508.19605; material suplementario del artículo.</p>
+    </div>
+    
+    <div class="mt-8 flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-1">Compartir</span>
+      <a href="https://wa.me/?text=Un%20experimento%20guarda%20qubits%20en%2011%20canales%20cu%C3%A1nticos%20https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F286-memoria-cuantica-11-canales-acceso-aleatorio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F286-memoria-cuantica-11-canales-acceso-aleatorio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Un%20experimento%20guarda%20qubits%20en%2011%20canales%20cu%C3%A1nticos&url=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F286-memoria-cuantica-11-canales-acceso-aleatorio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">X</a>
+      <a href="mailto:?subject=Un%20experimento%20guarda%20qubits%20en%2011%20canales%20cu%C3%A1nticos&body=https%3A%2F%2Fwww.enigmaciencia.com%2Farticulo%2F286-memoria-cuantica-11-canales-acceso-aleatorio" class="inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">Correo</a>
+      <button type="button" data-copy="https://www.enigmaciencia.com/articulo/286-memoria-cuantica-11-canales-acceso-aleatorio" class="copy-link inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">Copiar enlace</button>
+      <button type="button" data-native="https://www.enigmaciencia.com/articulo/286-memoria-cuantica-11-canales-acceso-aleatorio" data-title="Un experimento guarda qubits en 11 canales cuánticos" class="native-share hidden inline-flex items-center px-3 py-1.5 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-xs font-semibold">Compartir</button>
+    </div>
+    <script>
+      document.querySelectorAll('.copy-link').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var url = b.getAttribute('data-copy');
+          var done = function () { b.textContent = 'Enlace copiado'; };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(done, function () {});
+          }
+        });
+      });
+      var nb = document.querySelector('.native-share');
+      if (nb && navigator.share) {
+        nb.classList.remove('hidden');
+        nb.addEventListener('click', function () {
+          navigator.share({ title: nb.getAttribute('data-title'), url: nb.getAttribute('data-native') }).catch(function () {});
+        });
+      }
+    </script>
+    <script>(function(){var b=document.getElementById("escuchar");if(!b||!("speechSynthesis" in window)){if(b)b.remove();return;}function texto(){var c=document.querySelector(".article-body");var h=document.querySelector("article h1");return (h?h.innerText+". ":"")+(c?c.innerText:"");}function parar(){speechSynthesis.cancel();b.textContent="Escuchar artículo";}b.addEventListener("click",function(){if(speechSynthesis.speaking){parar();return;}try{var u=new SpeechSynthesisUtterance(texto());u.lang="es-MX";var voces=speechSynthesis.getVoices()||[];var v=voces.find(function(x){return x.lang&&x.lang.indexOf("es")===0;});if(v)u.voice=v;u.rate=1;u.onend=parar;u.onerror=parar;b.textContent="Detener lectura";speechSynthesis.speak(u);}catch(e){parar();}});})();</script>
+  </article>
+  
+  <section class="max-w-3xl mx-auto mt-16 space-y-6">
+    <h2 class="editorial-serif text-2xl font-bold text-slate-900">Más sobre Física Cuántica</h2>
+    <ul class="space-y-4">
+      <li><a href="/articulo/283-revision-computacion-cuantica-atomos-neutros-2026" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#0284c7]/50">
+        <span class="text-xs font-mono text-slate-400">18 NOV 2026</span>
+        <span class="block editorial-serif text-lg font-bold text-slate-900 mt-1">Una revisión de 2026 resume el avance de la computación cuántica con átomos neutros</span>
+      </a></li><li><a href="/articulo/105-el-grafeno-de-angulo-magico-sorprende-a" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#0284c7]/50">
+        <span class="text-xs font-mono text-slate-400">12 NOV 2026</span>
+        <span class="block editorial-serif text-lg font-bold text-slate-900 mt-1">El grafeno de ángulo mágico responde con una señal eléctrica muy amplificada cuando se estira</span>
+      </a></li><li><a href="/articulo/205-el-gran-misterio-de-la-fisica-resuelto" class="block p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#0284c7]/50">
+        <span class="text-xs font-mono text-slate-400">9 NOV 2026</span>
+        <span class="block editorial-serif text-lg font-bold text-slate-900 mt-1">Superconductividad a temperatura ambiente: los pares de electrones sí se forman, pero aún no se sincronizan</span>
+      </a></li>
+    </ul>
+  </section>
+  <p class="mt-12"><a href="/" class="text-sm font-semibold text-[#0284c7] hover:underline">← Volver a todos los artículos</a></p>
+</main>
+
+<footer class="bg-slate-900 text-slate-300 mt-20 py-12 px-4 sm:px-8 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+    <div>
+      <span class="text-base font-bold text-white uppercase tracking-wider font-mono">Enigma Ciencia</span>
+      <p class="text-xs text-slate-400 mt-1">Edición oficial EnigmaGlobal.</p>
+      <p class="text-xs text-sky-400 mt-1 font-mono">enigmaglobal2030@gmail.com</p>
+    </div>
+    <div class="text-center text-sm text-slate-400">
+      <p>© 2026 Enigma Ciencia. Todos los derechos reservados.</p>
+      <p class="text-xs text-[#0284c7] mt-1">Divulgación científica rigurosa y accesible.</p>
+    </div>
+    <nav class="flex justify-center md:justify-end space-x-6 text-sm text-slate-400">
+      <a href="/acerca" class="hover:text-white">Acerca</a>
+      <a href="/contacto" class="hover:text-white">Contacto</a>
+      <a href="/privacidad" class="hover:text-white">Privacidad</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
