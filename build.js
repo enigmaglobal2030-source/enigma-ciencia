@@ -261,7 +261,7 @@ ${header()}
 
   <section id="articulos" class="space-y-6 pt-4 border-t border-slate-200">
     <div class="text-xs font-bold uppercase tracking-widest text-slate-500">Explorar</div>
-    <div class="relative flex items-center gap-2"><button type="button" id="cat-prev" aria-label="Desplazar categorías a la izquierda" class="flex-shrink-0 w-10 h-10 rounded-xl bg-white hover:bg-[#0284c7] hover:text-white text-slate-700 border border-slate-300 flex items-center justify-center shadow-sm transition-all active:scale-95"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg></button><div id="category-filters" class="flex items-center gap-3 overflow-x-auto no-scrollbar scroll-smooth pb-2 pt-1 flex-1">${pills}</div><button type="button" id="cat-next" aria-label="Desplazar categorías a la derecha" class="flex-shrink-0 w-10 h-10 rounded-xl bg-white hover:bg-[#0284c7] hover:text-white text-slate-700 border border-slate-300 flex items-center justify-center shadow-sm transition-all active:scale-95"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg></button></div>
+    <div id="category-filters" class="flex flex-wrap items-center gap-3 pb-2 pt-1">${pills}</div>
     <div class="relative max-w-2xl">
       <label for="search-input" class="sr-only">Buscar artículos</label>
       <input type="search" id="search-input" placeholder="Buscar historias..." class="w-full px-4 py-3.5 bg-transparent border-b-2 border-slate-300 focus:border-[#0284c7] text-slate-900 placeholder-slate-400 focus:outline-none text-base">
@@ -313,9 +313,6 @@ ${footer()}
     });
   });
 
-  var strip = document.getElementById('category-filters');
-  document.getElementById('cat-prev').addEventListener('click', function () { strip.scrollBy({ left: -260, behavior: 'smooth' }); });
-  document.getElementById('cat-next').addEventListener('click', function () { strip.scrollBy({ left: 260, behavior: 'smooth' }); });
 
   input.addEventListener('input', function () {
     state.q = input.value.trim().toLowerCase();
