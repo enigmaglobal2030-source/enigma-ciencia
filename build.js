@@ -25,6 +25,11 @@ const CATEGORIES = [
   "Tecnología",
   "Agricultura y Sostenibilidad",
   "Medioambiente",
+  "Neurociencia",
+  "Inteligencia Artificial",
+  "Espacio y exploración",
+  "Economía",
+  "Antropología y Paleontología",
 ];
 
 const MONTHS = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
