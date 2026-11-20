@@ -508,4 +508,22 @@ write("privacidad.html", pages.privacidad);
 write("sitemap.xml", sitemap());
 write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 
-console.log(`OK: index + ${articles.length} artículos + 3 páginas + sitemap + robots`);
+// Copiar carpeta public/ a la raíz para que Vercel la sirva como estática
+const publicDir = path.join(ROOT, "public");
+if (fs.existsSync(publicDir)) {
+  function copyDir(src, dest) {
+    fs.mkdirSync(dest, { recursive: true });
+    fs.readdirSync(src).forEach((file) => {
+      const srcPath = path.join(src, file);
+      const destPath = path.join(dest, file);
+      if (fs.statSync(srcPath).isDirectory()) {
+        copyDir(srcPath, destPath);
+      } else {
+        fs.copyFileSync(srcPath, destPath);
+      }
+    });
+  }
+  copyDir(publicDir, ROOT);
+}
+
+console.log(`OK: index + ${articles.length} artículos + 3 páginas + sitemap + robots + public/`);
