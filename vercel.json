@@ -1,4 +1,5 @@
 {
+  "public": "img",
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false
