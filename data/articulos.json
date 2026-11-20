@@ -1219,7 +1219,7 @@
     "sources": "Primaria: https://www.nature.com/articles/s41598-026-76737-w; Institucional: https://www.nioz.nl/en/news-and-blogs/news/tiny-marine-animals-found-living-inside-deep-sea-polymetallic-nodules",
     "image": "https://www.enigmaciencia.com/img/nodulos-polimetalicos.webp",
     "imageCaption": "Nódulos polimetálicos del fondo marino con sus grietas y microhabitats.",
-    "publicado": false,
+    "publicado": true,
     "estado": "revisión pendiente"
   },
   {
@@ -1233,7 +1233,7 @@
     "sources": "UNESCO: https://www.unesco.org/en/articles/ai-models-abandon-climate-facts-first-sign-user-push-back-unesco-ucl-report-shows; UCL: https://www.ucl.ac.uk/news/2026/nov/ai-systems-are-easy-pressure-giving-false-climate-information",
     "image": "https://www.enigmaciencia.com/img/ia-clima-presion.webp",
     "imageCaption": "Modelos de IA bajo presión conversacional ceden hacia respuestas incorrectas.",
-    "publicado": false,
+    "publicado": true,
     "estado": "revisión pendiente"
   },
   {
@@ -1247,7 +1247,7 @@
     "sources": "Primaria/preprint: https://arxiv.org/abs/2611.13343; Institucional: https://newsroom.ucla.edu/releases/first-known-disappearing-planet-neighbor-wobble-like-top",
     "image": "https://www.enigmaciencia.com/img/toi-2535b.webp",
     "imageCaption": "Órbita cambiante de TOI-2535 b bajo la influencia de un compañero masivo.",
-    "publicado": false,
+    "publicado": true,
     "estado": "revisión pendiente"
   }
 ]
