@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Ilustración de una célula T atacando una célula tumoral">
+  <rect width="960" height="600" fill="#0f172a"/>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="480" cy="270" r="280" fill="url(#glow)"/>
+  <!-- célula tumoral -->
+  <circle cx="640" cy="270" r="135" fill="#7c2d12" stroke="#fb923c" stroke-width="5" stroke-opacity="0.8"/>
+  <g fill="#fdba74" fill-opacity="0.7">
+    <circle cx="600" cy="220" r="10"/><circle cx="675" cy="235" r="8"/><circle cx="610" cy="320" r="12"/>
+    <circle cx="690" cy="330" r="9"/><circle cx="650" cy="190" r="7"/>
+  </g>
+  <!-- célula T -->
+  <circle cx="300" cy="270" r="95" fill="#1e3a8a" stroke="#93c5fd" stroke-width="5" stroke-opacity="0.9"/>
+  <circle cx="300" cy="270" r="42" fill="#1d4ed8" fill-opacity="0.8"/>
+  <!-- receptores -->
+  <g stroke="#38bdf8" stroke-width="6" stroke-linecap="round">
+    <line x1="385" y1="230" x2="420" y2="200"/>
+    <line x1="385" y1="270" x2="425" y2="270"/>
+    <line x1="385" y1="310" x2="420" y2="340"/>
+  </g>
+  <g fill="#38bdf8">
+    <circle cx="425" cy="200" r="8"/><circle cx="430" cy="270" r="8"/><circle cx="425" cy="340" r="8"/>
+  </g>
+  <!-- ataque -->
+  <g stroke="#e2e8f0" stroke-width="4" stroke-dasharray="6 10" stroke-linecap="round" fill="none">
+    <path d="M440 270 C 470 250, 490 260, 505 270"/>
+  </g>
+  <text x="480" y="520" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#f8fafc">Célula T atacando un tumor</text>
+  <text x="480" y="558" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#cbd5e1">Ilustración original con fines explicativos</text>
+</svg>
