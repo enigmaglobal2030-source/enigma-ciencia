@@ -92,7 +92,7 @@
     <header class="space-y-3 mb-6">
       <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-sky-100 text-[#0284c7]">Tecnología</span>
       <h1 class="editorial-serif text-3xl sm:text-5xl font-bold text-slate-900 leading-tight">IBM presenta el procesador cuántico Nighthawk R3, con 520 qubits programables</h1>
-      <p class="flex items-center gap-2 text-sm font-semibold text-green-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>1 minuto de lectura</p>
+      <p class="flex items-center gap-2 text-sm font-semibold text-green-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>3 minutos de lectura</p>
       <p class="text-sm text-slate-500">IBM anunció el Nighthawk R3, un diseño de procesador cuántico con 520 qubits programables para ejecutar 10 000 operaciones. Aún no está disponible; sus cifras son metas de diseño de la empresa.</p>
       <time datetime="2026-11-15" class="block text-xs font-mono text-slate-500">15 NOV 2026 · Enigma Ciencia</time>
     </header>
@@ -106,7 +106,31 @@
 <h3>Rigor científico y estado de la investigación</h3>
 <p>Lo que sabemos: IBM describe el diseño y sus metas. Lo que no sabemos: si el hardware real alcanzará esas cifras. Son datos de la empresa, sin verificación independiente, y las fuentes no coinciden en algunos detalles de fidelidad, por lo que no los incluimos.</p>
 <h3>Desenlace</h3>
-<p>Si IBM cumple sus metas, la computación cuántica con cientos de qubits útiles estaría más cerca. Por ahora, es un anuncio de diseño que todavía debe probarse en equipos reales.</p></div>
+<p>Si IBM cumple sus metas, la computación cuántica con cientos de qubits útiles estaría más cerca. Por ahora, es un anuncio de diseño que todavía debe probarse en equipos reales.</p>
+<h2>Contexto: La carrera por la supremacía cuántica</h2>
+<p>IBM, Google, IonQ y startups como Universal Quantum compiten por demostrar "ventaja cuántica práctica"—la capacidad de resolver problemas reales más rápido que computadoras clásicas. El Nighthawk R3 representa el enfoque de IBM basado en qubits superconductores, mientras que sus competidores exploran iones atrapados, fotones y otras arquitecturas. En 2026, el debate no es si la computación cuántica funcionará, sino cuál arquitectura llegará a 1 000+ qubits útiles primero.</p>
+
+<h2>Detalles técnicos: de 200 ms a 25 nanosegundos</h2>
+<p>La mejora crítica está en el tiempo de espera entre operaciones. En procesadores anteriores, después de ejecutar una operación, el sistema espera ~200 milisegundos antes de poder hacer otra. El Nighthawk R3 reduce esto a 25 nanosegundos—una mejora de 8 millones de veces. Este "cycle time" es fundamental: más operaciones rápidas = más algoritmos ejecutables sin que el qubit pierda coherencia (el estado cuántico se desmorona por interferencias electromagnéticas).</p>
+
+<p>Los "l-couplers" (conexiones entre chips) son piezas clave para escalar. En lugar de integrar más qubits en un solo chip (difícil de mantener coherentes), IBM planea conectar chips separados de forma que actúen como uno. Dos chips Nighthawk (1 040 qubits combinados) debería estar listo en 2027.</p>
+
+<h2>Caso de uso verificado: Cleveland Clinic</h2>
+<p>La Cleveland Clinic procesó 2,6 millones de muestras de histopatología hasta 3 veces más rápido en la plataforma de IBM. Este dato específico sugiere que el Nighthawk R3 podría aplicarse a problemas reales de optimización y análisis de datos, no solo a demostraciones de laboratorio. Sin embargo, la velocidad de 3 veces más rápida depende del algoritmo usado y de cómo se midió; IBM no ha publicado un preprint revisado por pares con estos detalles.</p>
+
+<h2>Desafíos y limitaciones</h2>
+<p>El Nighthawk R3 aún no existe como producto. IBM propone metas de diseño, no hardware entregado. La "fidelidad" (precisión de las operaciones) no se menciona: si algunos de los 520 qubits producen resultados incorrectos con frecuencia, el sistema será inútil. Además, 25 nanosegundos es el tiempo de ciclo máximo; muchos qubits reales toleran ciclos más lentos antes de perder coherencia.</p>
+
+<h2>Implicaciones de mercado</h2>
+<p>Si IBM cumple sus promesas, el Nighthawk R3 podría redefinir cuáles problemas son "competitivos" para computación cuántica. Farmacéuticas, bancos y compañías de logística esperan para validar si los algoritmos cuánticos reales (no simulaciones) superan a computadores clásicos. 2027 será crítico: Nighthawk R3 vs iQPU de Universal Quantum vs sistemas de IonQ.</p>
+
+<h2>Rigor científico</h2>
+<p><strong>Fase:</strong> Anuncio de diseño; prototipo esperado en 2027.<br/>
+<strong>Validación:</strong> IBM ha publicado datos en conferencias de IEEE, pero no en journals revisados por pares con el Nighthawk R3.<br/>
+<strong>Limitaciones:</strong> Las cifras de rendimiento son metas; no hay dato de fidelidad de qubits publicado. El caso de uso de Cleveland Clinic no ha sido validado independientemente.<br/>
+<strong>Conflicto de interés:</strong> IBM tiene incentivos comerciales para exagerar capacidades.<br/>
+<strong>Validación necesaria:</strong> Publicación de preprint con arquitectura, fidelidad y benchmarks comparados con sistemas clásicos.</p>
+</div>
     <div class="mt-10 p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
       <h2 class="text-xs uppercase tracking-wider font-bold text-[#0284c7]">Fuentes</h2>
       <p class="text-sm text-slate-600" style="overflow-wrap:anywhere">IBM, comunicado del 11 de noviembre de 2026 (vía PR Newswire). The Quantum Insider, 11 de noviembre de 2026. Techzine.</p>
