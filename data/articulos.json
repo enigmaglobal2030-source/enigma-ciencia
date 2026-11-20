@@ -1261,7 +1261,7 @@
     "sources": "FDA Novel Drug Approvals 2026 (https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026); The Lancet, NIMBLE trial, DOI 10.1016/S0140-6736(26)00690-2 (https://pubmed.ncbi.nlm.nih.gov/42030965/); ClinicalTrials.gov NCT05070858 (https://clinicaltrials.gov/study/NCT05070858); Regeneron investor news (https://investor.regeneron.com/news-releases/news-release-details/livsayistm-cemdisiran-approved-fda-first-and-only-sirna-therapy)",
     "image": "https://www.enigmaciencia.com/img/livsayis-cemdisiran.webp",
     "imageCaption": "Mecanismo de cemdisiran: inhibición de C5 en cascada del complemento en miastenia gravis.",
-    "publicado": false,
-    "estado": "borrador - preparado, no publicado"
+    "publicado": true,
+    "estado": "publicado"
   }
 ]
