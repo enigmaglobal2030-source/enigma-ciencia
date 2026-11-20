@@ -1,6 +1,14 @@
 {
-  "public": "img",
   "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/img/(.*)",
+      "dest": "/img/$1",
+      "headers": {
+        "cache-control": "public, max-age=3600"
+      }
+    }
+  ]
 }
