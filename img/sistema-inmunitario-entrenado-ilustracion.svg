@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Ilustración de linfocitos entrenados reconociendo células de mama en fase temprana">
+  <rect width="960" height="600" fill="#0f172a"/>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="480" cy="270" r="280" fill="url(#glow)"/>
+  <!-- células de mama en fase temprana -->
+  <g fill="#9d174d" fill-opacity="0.85" stroke="#f9a8d4" stroke-width="3" stroke-opacity="0.7">
+    <circle cx="680" cy="170" r="60"/>
+    <circle cx="740" cy="330" r="66"/>
+    <circle cx="640" cy="440" r="52"/>
+  </g>
+  <g fill="#fbcfe8" fill-opacity="0.8">
+    <circle cx="670" cy="160" r="7"/><circle cx="695" cy="185" r="5"/>
+    <circle cx="735" cy="320" r="8"/><circle cx="760" cy="350" r="6"/>
+    <circle cx="630" cy="435" r="6"/>
+  </g>
+  <!-- linfocitos entrenados -->
+  <g>
+    <circle cx="380" cy="230" r="46" fill="#1d4ed8" fill-opacity="0.85" stroke="#93c5fd" stroke-width="3"/>
+    <circle cx="380" cy="230" r="18" fill="#60a5fa"/>
+    <circle cx="470" cy="330" r="46" fill="#1d4ed8" fill-opacity="0.85" stroke="#93c5fd" stroke-width="3"/>
+    <circle cx="470" cy="330" r="18" fill="#60a5fa"/>
+    <circle cx="350" cy="380" r="40" fill="#1d4ed8" fill-opacity="0.85" stroke="#93c5fd" stroke-width="3"/>
+    <circle cx="350" cy="380" r="16" fill="#60a5fa"/>
+  </g>
+  <!-- receptores que reconocen -->
+  <g stroke="#38bdf8" stroke-width="5" stroke-linecap="round">
+    <line x1="425" y1="245" x2="600" y2="170"/>
+    <line x1="515" y1="330" x2="680" y2="330"/>
+    <line x1="388" y1="410" x2="600" y2="440"/>
+  </g>
+  <g fill="#f8fafc">
+    <circle cx="600" cy="170" r="6"/><circle cx="680" cy="330" r="6"/><circle cx="600" cy="440" r="6"/>
+  </g>
+  <text x="480" y="520" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#f8fafc">Sistema inmunitario entrenado</text>
+  <text x="480" y="558" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#cbd5e1">Ilustración original con fines explicativos</text>
+</svg>
