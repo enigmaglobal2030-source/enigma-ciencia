@@ -1,46 +1,26 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "headers": [
+  "rewrites": [
     {
-      "source": "/(.*)\\.webp",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "image/webp"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "source": "/img/(.*)",
+      "destination": "/img/$1"
     },
     {
-      "source": "/(.*)\\.png",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "image/png"
-        }
-      ]
+      "source": "/(.*)\\.webp$",
+      "destination": "/$1.webp"
     },
     {
-      "source": "/(.*)\\.jpg",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "image/jpeg"
-        }
-      ]
+      "source": "/(.*)\\.png$",
+      "destination": "/$1.png"
     },
     {
-      "source": "/(.*)\\.svg",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "image/svg+xml"
-        }
-      ]
+      "source": "/(.*)\\.jpg$",
+      "destination": "/$1.jpg"
+    },
+    {
+      "source": "/(.*)\\.svg$",
+      "destination": "/$1.svg"
     }
   ]
 }
