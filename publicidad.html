@@ -12,6 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.enigmaciencia.com/publicidad">
   <meta property="og:image" content="https://www.enigmaciencia.com/img/305-region-wernicke-planificar-palabras-ia.jpg">
+  <link rel="preload" as="image" href="https://www.enigmaciencia.com/img/305-region-wernicke-planificar-palabras-ia.jpg" fetchpriority="high">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Política de publicidad | Enigma Ciencia">
   <meta name="twitter:description" content="Cómo se separan la publicidad y el contenido editorial en Enigma Ciencia.">
@@ -53,6 +54,7 @@
     .article-body strong { color: #0f172a; }
     .article-body a { color: #0284c7; text-decoration: underline; }
     img { max-width: 100%; height: auto; display: block; }
+    .article-card { content-visibility: auto; contain-intrinsic-size: 420px; }
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
   </style>
@@ -64,7 +66,7 @@
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180.png">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
   <script>document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("theme-toggle");if(!b)return;function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}function sync(){var d=isDark();b.textContent=d?"Modo claro":"Modo oscuro";b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}sync();b.addEventListener("click",function(){var d=isDark();if(d){document.documentElement.removeAttribute("data-theme")}else{document.documentElement.setAttribute("data-theme","dark")}try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()})});</script>
-  
+
 </head>
 <body class="min-h-screen flex flex-col">
 

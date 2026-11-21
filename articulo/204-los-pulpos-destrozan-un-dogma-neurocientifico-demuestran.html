@@ -12,6 +12,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.enigmaciencia.com/articulo/204-los-pulpos-destrozan-un-dogma-neurocientifico-demuestran">
   <meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Octopus_vulgaris_03.jpg/960px-Octopus_vulgaris_03.jpg">
+  <link rel="preload" as="image" href="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Octopus_vulgaris_03.jpg/960px-Octopus_vulgaris_03.jpg" fetchpriority="high">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pulpos: la memoria sináptica se sostiene sin fabricar proteínas nuevas | Enigma Ciencia">
   <meta name="twitter:description" content="En el lóbulo vertical del pulpo, un ciclo sostenido de óxido nítrico mantiene la potenciación sináptica sin síntesis de proteínas nuevas, según un estudio de Journal of Neuroscience.">
@@ -53,6 +54,7 @@
     .article-body strong { color: #0f172a; }
     .article-body a { color: #0284c7; text-decoration: underline; }
     img { max-width: 100%; height: auto; display: block; }
+    .article-card { content-visibility: auto; contain-intrinsic-size: 420px; }
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
   </style>
@@ -64,7 +66,7 @@
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180.png">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
   <script>document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("theme-toggle");if(!b)return;function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}function sync(){var d=isDark();b.textContent=d?"Modo claro":"Modo oscuro";b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}sync();b.addEventListener("click",function(){var d=isDark();if(d){document.documentElement.removeAttribute("data-theme")}else{document.documentElement.setAttribute("data-theme","dark")}try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()})});</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Pulpos: la memoria sináptica se sostiene sin fabricar proteínas nuevas","description":"En el lóbulo vertical del pulpo, un ciclo sostenido de óxido nítrico mantiene la potenciación sináptica sin síntesis de proteínas nuevas, según un estudio de Journal of Neuroscience.","image":["https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Octopus_vulgaris_03.jpg/960px-Octopus_vulgaris_03.jpg"],"datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@type":"Organization","name":"Enigma Ciencia"},"publisher":{"@type":"Organization","name":"Enigma Ciencia","email":"enigmaglobal2030@gmail.com"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.enigmaciencia.com/articulo/204-los-pulpos-destrozan-un-dogma-neurocientifico-demuestran"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Pulpos: la memoria sináptica se sostiene sin fabricar proteínas nuevas","description":"En el lóbulo vertical del pulpo, un ciclo sostenido de óxido nítrico mantiene la potenciación sináptica sin síntesis de proteínas nuevas, según un estudio de Journal of Neuroscience.","image":["https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Octopus_vulgaris_03.jpg/960px-Octopus_vulgaris_03.jpg"],"datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@type":"Organization","name":"Enigma Ciencia"},"publisher":{"@type":"Organization","name":"Enigma Ciencia","email":"enigmaglobal2030@gmail.com"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.enigmaciencia.com/articulo/204-los-pulpos-destrozan-un-dogma-neurocientifico-demuestran"}}</script>
 </head>
 <body class="min-h-screen flex flex-col">
 
@@ -100,7 +102,7 @@
       <time datetime="2026-11-08" class="block text-xs font-mono text-slate-500">8 NOV 2026 · Enigma Ciencia</time>
     </header>
     <div class="mb-6"><button type="button" id="escuchar" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-sm font-semibold">Escuchar artículo</button></div>
-    <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Octopus_vulgaris_03.jpg/960px-Octopus_vulgaris_03.jpg" alt="Pulpos: la memoria sináptica se sostiene sin fabricar proteínas nuevas" class="w-full h-80 object-cover" loading="eager" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=Medicina%20y%20Biotecnolog%C3%ADa'"></div><figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">Imagen ilustrativa: pulpo común, Octopus vulgaris (H. Zell, Wikimedia Commons, CC BY-SA 3.0).</figcaption></figure>
+    <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Octopus_vulgaris_03.jpg/960px-Octopus_vulgaris_03.jpg" alt="Pulpos: la memoria sináptica se sostiene sin fabricar proteínas nuevas" class="w-full h-80 object-cover" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=Medicina%20y%20Biotecnolog%C3%ADa'"></div><figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">Imagen ilustrativa: pulpo común, Octopus vulgaris (H. Zell, Wikimedia Commons, CC BY-SA 3.0).</figcaption></figure>
     <div class="article-body"><p>Durante décadas, la neurociencia enseñó que consolidar una memoria a largo plazo exige fabricar proteínas nuevas en las neuronas. Esa idea sale de estudios con vertebrados y es uno de los pilares de la explicación del aprendizaje.</p>
 <p>El pulpo es un caso especial: su sistema nervioso evolucionó de forma independiente de los nuestros y aprende con mucha flexibilidad.</p>
 <h3>Conceptos clave: potenciación a largo plazo</h3>

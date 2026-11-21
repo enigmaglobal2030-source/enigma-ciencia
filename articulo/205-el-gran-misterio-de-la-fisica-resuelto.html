@@ -12,6 +12,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.enigmaciencia.com/articulo/205-el-gran-misterio-de-la-fisica-resuelto">
   <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Superconductor-levitation.jpg/960px-Superconductor-levitation.jpg">
+  <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Superconductor-levitation.jpg/960px-Superconductor-levitation.jpg" fetchpriority="high">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Superconductividad a temperatura ambiente: los pares de electrones sí se forman, pero aún no se sincronizan | Enigma Ciencia">
   <meta name="twitter:description" content="Un estudio de Utrecht, Leiden y Múnich en el cuprato Bi-2212 apunta a la coherencia de fase como el cuello de botella de la superconductividad a alta temperatura.">
@@ -53,6 +54,7 @@
     .article-body strong { color: #0f172a; }
     .article-body a { color: #0284c7; text-decoration: underline; }
     img { max-width: 100%; height: auto; display: block; }
+    .article-card { content-visibility: auto; contain-intrinsic-size: 420px; }
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
   </style>
@@ -64,7 +66,7 @@
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180.png">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
   <script>document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("theme-toggle");if(!b)return;function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}function sync(){var d=isDark();b.textContent=d?"Modo claro":"Modo oscuro";b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}sync();b.addEventListener("click",function(){var d=isDark();if(d){document.documentElement.removeAttribute("data-theme")}else{document.documentElement.setAttribute("data-theme","dark")}try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()})});</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Superconductividad a temperatura ambiente: los pares de electrones sí se forman, pero aún no se sincronizan","description":"Un estudio de Utrecht, Leiden y Múnich en el cuprato Bi-2212 apunta a la coherencia de fase como el cuello de botella de la superconductividad a alta temperatura.","image":["https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Superconductor-levitation.jpg/960px-Superconductor-levitation.jpg"],"datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@type":"Organization","name":"Enigma Ciencia"},"publisher":{"@type":"Organization","name":"Enigma Ciencia","email":"enigmaglobal2030@gmail.com"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.enigmaciencia.com/articulo/205-el-gran-misterio-de-la-fisica-resuelto"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Superconductividad a temperatura ambiente: los pares de electrones sí se forman, pero aún no se sincronizan","description":"Un estudio de Utrecht, Leiden y Múnich en el cuprato Bi-2212 apunta a la coherencia de fase como el cuello de botella de la superconductividad a alta temperatura.","image":["https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Superconductor-levitation.jpg/960px-Superconductor-levitation.jpg"],"datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@type":"Organization","name":"Enigma Ciencia"},"publisher":{"@type":"Organization","name":"Enigma Ciencia","email":"enigmaglobal2030@gmail.com"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.enigmaciencia.com/articulo/205-el-gran-misterio-de-la-fisica-resuelto"}}</script>
 </head>
 <body class="min-h-screen flex flex-col">
 
@@ -100,7 +102,7 @@
       <time datetime="2026-11-09" class="block text-xs font-mono text-slate-500">9 NOV 2026 · Enigma Ciencia</time>
     </header>
     <div class="mb-6"><button type="button" id="escuchar" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-sm font-semibold">Escuchar artículo</button></div>
-    <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Superconductor-levitation.jpg/960px-Superconductor-levitation.jpg" alt="Superconductividad a temperatura ambiente: los pares de electrones sí se forman, pero aún no se sincronizan" class="w-full h-80 object-cover" loading="eager" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=F%C3%ADsica%20Cu%C3%A1ntica'"></div></figure>
+    <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Superconductor-levitation.jpg/960px-Superconductor-levitation.jpg" alt="Superconductividad a temperatura ambiente: los pares de electrones sí se forman, pero aún no se sincronizan" class="w-full h-80 object-cover" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=F%C3%ADsica%20Cu%C3%A1ntica'"></div></figure>
     <div class="article-body"><p>La superconductividad es la capacidad de conducir corriente sin pérdidas. Si se lograra a temperatura ambiente, las redes eléctricas, los imanes y los equipos de computación cambiarían de forma profunda.</p>
 <p>Desde los años ochenta se han descubierto materiales que superconducen a temperaturas cada vez más altas, pero todos siguen necesitando un frío muy intenso. Entender por qué ha sido un reto durante décadas.</p>
 <h3>Conceptos clave: pares de Cooper y coherencia</h3>

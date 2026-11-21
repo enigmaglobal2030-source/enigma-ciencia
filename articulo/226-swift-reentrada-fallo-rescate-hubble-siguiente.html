@@ -12,6 +12,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.enigmaciencia.com/articulo/226-swift-reentrada-fallo-rescate-hubble-siguiente">
   <meta property="og:image" content="https://www.enigmaciencia.com/img/swift-telescopio-ia.jpg">
+  <link rel="preload" as="image" href="https://www.enigmaciencia.com/img/swift-telescopio-ia.jpg" fetchpriority="high">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="El telescopio Swift de la NASA cayó a la Tierra tras fallar su rescate, y Hubble busca una opción similar | Enigma Ciencia">
   <meta name="twitter:description" content="El telescopio Swift reentró el 4 de noviembre de 2026 sobre Sumatra, después de casi 22 años en órbita. Su rescate comercial se canceló. NASA pidió ideas a la industria para elevar la órbita de Hubble, aunque aún no hay misión aprobada.">
@@ -53,6 +54,7 @@
     .article-body strong { color: #0f172a; }
     .article-body a { color: #0284c7; text-decoration: underline; }
     img { max-width: 100%; height: auto; display: block; }
+    .article-card { content-visibility: auto; contain-intrinsic-size: 420px; }
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
   </style>
@@ -64,7 +66,7 @@
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180.png">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
   <script>document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("theme-toggle");if(!b)return;function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}function sync(){var d=isDark();b.textContent=d?"Modo claro":"Modo oscuro";b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}sync();b.addEventListener("click",function(){var d=isDark();if(d){document.documentElement.removeAttribute("data-theme")}else{document.documentElement.setAttribute("data-theme","dark")}try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()})});</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"El telescopio Swift de la NASA cayó a la Tierra tras fallar su rescate, y Hubble busca una opción similar","description":"El telescopio Swift reentró el 4 de noviembre de 2026 sobre Sumatra, después de casi 22 años en órbita. Su rescate comercial se canceló. NASA pidió ideas a la industria para elevar la órbita de Hubble, aunque aún no hay misión aprobada.","image":["https://www.enigmaciencia.com/img/swift-telescopio-ia.jpg"],"datePublished":"2026-11-15","dateModified":"2026-11-15","author":{"@type":"Organization","name":"Enigma Ciencia"},"publisher":{"@type":"Organization","name":"Enigma Ciencia","email":"enigmaglobal2030@gmail.com"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.enigmaciencia.com/articulo/226-swift-reentrada-fallo-rescate-hubble-siguiente"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"El telescopio Swift de la NASA cayó a la Tierra tras fallar su rescate, y Hubble busca una opción similar","description":"El telescopio Swift reentró el 4 de noviembre de 2026 sobre Sumatra, después de casi 22 años en órbita. Su rescate comercial se canceló. NASA pidió ideas a la industria para elevar la órbita de Hubble, aunque aún no hay misión aprobada.","image":["https://www.enigmaciencia.com/img/swift-telescopio-ia.jpg"],"datePublished":"2026-11-15","dateModified":"2026-11-15","author":{"@type":"Organization","name":"Enigma Ciencia"},"publisher":{"@type":"Organization","name":"Enigma Ciencia","email":"enigmaglobal2030@gmail.com"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.enigmaciencia.com/articulo/226-swift-reentrada-fallo-rescate-hubble-siguiente"}}</script>
 </head>
 <body class="min-h-screen flex flex-col">
 
@@ -100,7 +102,7 @@
       <time datetime="2026-11-15" class="block text-xs font-mono text-slate-500">15 NOV 2026 · Enigma Ciencia</time>
     </header>
     <div class="mb-6"><button type="button" id="escuchar" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-sm font-semibold">Escuchar artículo</button></div>
-    <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://www.enigmaciencia.com/img/swift-telescopio-ia.jpg" alt="El telescopio Swift de la NASA cayó a la Tierra tras fallar su rescate, y Hubble busca una opción similar" class="w-full h-80 object-cover" loading="eager" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=Astronom%C3%ADa%20y%20Espacio'"></div><figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">Representación artística generada con IA (Canva), con fines ilustrativos. No es una fotografía del telescopio Swift ni de su reentrada.</figcaption></figure>
+    <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm"><img src="https://www.enigmaciencia.com/img/swift-telescopio-ia.jpg" alt="El telescopio Swift de la NASA cayó a la Tierra tras fallar su rescate, y Hubble busca una opción similar" class="w-full h-80 object-cover" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" onerror="this.src='https://placehold.co/800x600/f1f5f9/334155?text=Astronom%C3%ADa%20y%20Espacio'"></div><figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">Representación artística generada con IA (Canva), con fines ilustrativos. No es una fotografía del telescopio Swift ni de su reentrada.</figcaption></figure>
     <div class="article-body"><p>El telescopio espacial Swift, de la NASA, cayó a la atmósfera el 4 de noviembre de 2026 sobre el norte de Sumatra, en Indonesia. Había sido diseñado para una misión de dos años, pero operó casi 22. La agencia y la Fuerza Espacial de Estados Unidos confirmaron la reentrada. No se reportaron daños ni heridos.</p>
 <h3>Por qué se intentó rescatarlo</h3>
 <p>La órbita de Swift se degradaba con el tiempo. NASA contrató a la empresa Katalyst para enviar una nave llamada LINK, que intentaría capturarlo y elevarlo a una órbita más alta. La misión se canceló el 19 de agosto de 2026, después de que LINK entrara en un giro incontrolable pocas semanas después de su lanzamiento, en julio.</p>
