@@ -70,6 +70,7 @@ function head({ title, description, canonical, image, type = "website", jsonld =
   <meta property="og:type" content="${type}">
   <meta property="og:url" content="${esc(canonical)}">
   <meta property="og:image" content="${esc(image)}">
+  <link rel="preload" as="image" href="${esc(image)}" fetchpriority="high">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
@@ -111,6 +112,7 @@ function head({ title, description, canonical, image, type = "website", jsonld =
     .article-body strong { color: #0f172a; }
     .article-body a { color: #0284c7; text-decoration: underline; }
     img { max-width: 100%; height: auto; display: block; }
+    .article-card { content-visibility: auto; contain-intrinsic-size: 420px; }
     img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 280px; width: 100%; object-fit: cover; }
     @media (min-width: 768px) { img[src*="/thumb/"], img[src*="placehold.co"], img[src*="upload.wikimedia.org"] { max-height: 420px; } }
   </style>
@@ -122,7 +124,7 @@ function head({ title, description, canonical, image, type = "website", jsonld =
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180.png">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
   <script>document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("theme-toggle");if(!b)return;function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}function sync(){var d=isDark();b.textContent=d?"Modo claro":"Modo oscuro";b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}sync();b.addEventListener("click",function(){var d=isDark();if(d){document.documentElement.removeAttribute("data-theme")}else{document.documentElement.setAttribute("data-theme","dark")}try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()})});</script>
-  ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
+${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
 </head>`;
 }
 
@@ -176,30 +178,30 @@ function footer() {
 </footer>`;
 }
 
-function mediaHtml(a, large = false) {
+function mediaHtml(a, large = false, priority = false) {
   const h = large ? "h-80" : "h-56";
   if (a.isMontage && a.montage) {
     return `<div class="relative w-full ${h} flex overflow-hidden bg-slate-900">
       <div class="w-1/2 h-full relative overflow-hidden border-r-2 border-white/90">
-        <img src="${esc(a.montage.left)}" alt="${esc(a.montage.labelLeft)}" class="w-full h-full object-cover" loading="${large ? "eager" : "lazy"}">
+        <img src="${esc(a.montage.left)}" alt="${esc(a.montage.labelLeft)}" class="w-full h-full object-cover" width="800" height="600" loading="${large || priority ? "eager" : "lazy"}" fetchpriority="${large || priority ? "high" : "auto"}" decoding="async">
         <div class="absolute bottom-2 left-2 bg-slate-950/80 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">${esc(a.montage.labelLeft)}</div>
       </div>
       <div class="w-1/2 h-full relative overflow-hidden">
-        <img src="${esc(a.montage.right)}" alt="${esc(a.montage.labelRight)}" class="w-full h-full object-cover" loading="${large ? "eager" : "lazy"}">
+        <img src="${esc(a.montage.right)}" alt="${esc(a.montage.labelRight)}" class="w-full h-full object-cover" width="800" height="600" loading="${large || priority ? "eager" : "lazy"}" fetchpriority="${large || priority ? "high" : "auto"}" decoding="async">
         <div class="absolute bottom-2 right-2 bg-[#0284c7]/95 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">${esc(a.montage.labelRight)}</div>
       </div>
     </div>`;
   }
-  return `<img src="${esc(a.image)}" alt="${esc(a.title)}" class="w-full ${h} object-cover" loading="${large ? "eager" : "lazy"}" onerror="this.src='${placeholder(a.category)}'">`;
+  return `<img src="${esc(a.image)}" alt="${esc(a.title)}" class="w-full ${h} object-cover" width="800" height="600" loading="${large || priority ? "eager" : "lazy"}" fetchpriority="${large || priority ? "high" : "auto"}" decoding="async" onerror="this.src='${placeholder(a.category)}'">`;
 }
 
-function card(a) {
+function card(a, index = 0) {
   const text = `${a.title} ${a.summary} ${a.category}`.toLowerCase();
   return `
   <article class="article-card bg-white rounded-3xl overflow-hidden border border-slate-200 hover:border-[#0284c7]/50 transition-all group flex flex-col justify-between shadow-sm" data-cat="${esc(a.category)}" data-text="${esc(text)}">
     <a href="${articleUrl(a)}" class="block">
       <div class="relative overflow-hidden h-56 bg-slate-100">
-        ${mediaHtml(a)}
+        ${mediaHtml(a, false, index < 3)}
         <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#0284c7] text-white shadow-md ring-1 ring-white/30 z-10">${esc(a.category)}</span>
       </div>
       <div class="p-6 sm:p-8 space-y-3">
@@ -274,7 +276,7 @@ ${header()}
     <div id="category-filters" class="flex flex-wrap items-center gap-3 pb-2 pt-1">${pills}</div>
     <p id="articles-count" class="text-xs font-mono text-slate-500">Mostrando ${articles.length} artículos</p>
     <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      ${articles.map(card).join("")}
+      ${articles.map((a, i) => card(a, i)).join("")}
     </div>
     <p id="no-results" class="hidden text-center text-slate-500 py-12">No se encontraron artículos con ese criterio.</p>
   </section>
