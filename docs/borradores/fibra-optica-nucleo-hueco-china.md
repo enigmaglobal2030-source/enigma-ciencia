@@ -5,6 +5,8 @@
 **Fecha de referencia:** 21 de noviembre de 2026.  
 **Firma prevista:** Redacción Enigma Ciencia.
 
+![Fibra óptica de núcleo hueco: transmisión de datos a larga distancia](/img/fibra-optica-nucleo-hueco-china.webp)
+
 ## Registro de verificación previo
 
 | Afirmación | Fuente consultada | Estado | Tratamiento editorial |
