@@ -94,7 +94,7 @@ function head({ title, description, canonical, image, type = "website", jsonld =
     html[data-theme="dark"] .text-slate-400 { color: #7f93ad !important; }
     html[data-theme="dark"] .border-slate-200, html[data-theme="dark"] .border-slate-300 { border-color: #1f3a60 !important; }
     html[data-theme="dark"] .article-body p { color: #c3d3e8; }
-    html[data-theme="dark"] .article-body h3, html[data-theme="dark"] .article-body strong { color: #e6f0fb; }
+    html[data-theme="dark"] .article-body h2, html[data-theme="dark"] .article-body h3, html[data-theme="dark"] .article-body strong { color: #e6f0fb; }
     .theme-toggle { border: 1px solid #94a3b8; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; color: #0f172a; background: transparent; cursor: pointer; white-space: nowrap; }
     html[data-theme="dark"] .theme-toggle { color: #e6f0fb; border-color: #3b5a85; }
     html[data-theme="dark"] [class*="text-[#0b1f3a]"], html[data-theme="dark"] [class*="text-[#0f172a]"], html[data-theme="dark"] [class*="text-[#1e1b18]"] { color: #e6f0fb !important; }
@@ -105,7 +105,9 @@ function head({ title, description, canonical, image, type = "website", jsonld =
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     .article-body p { margin-bottom: 1.5rem; line-height: 1.85; font-size: 1.125rem; color: #334155; }
-    .article-body h3 { font-family: 'Lora', serif; font-size: 1.5rem; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
+    .article-body h2, .article-body h3 { font-family: 'Lora', serif; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
+    .article-body h2 { font-size: 1.75rem; }
+    .article-body h3 { font-size: 1.5rem; }
     .article-body strong { color: #0f172a; }
     .article-body a { color: #0284c7; text-decoration: underline; }
     img { max-width: 100%; height: auto; display: block; }
