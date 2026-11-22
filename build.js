@@ -18,15 +18,16 @@ articles.sort((p, q) => (q.date || "").localeCompare(p.date || "") || q.id - p.i
 const CATEGORIES = [
   "Astronomía y Espacio",
   "Física Cuántica",
+  "Oncología",
+  "Diabetes y metabolismo",
+  "Enfermedades autoinmunes",
   "Medicina y Biotecnología",
   "Robótica y Automatización",
-  "Salud",
   "Tecnología",
   "Agricultura y Sostenibilidad",
   "Medioambiente",
   "Neurociencia",
   "Inteligencia Artificial",
-  "Espacio y exploración",
   "Economía",
   "Antropología y Paleontología",
 ];
