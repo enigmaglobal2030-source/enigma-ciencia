@@ -428,6 +428,7 @@ ${header()}
     </header>
     <div class="mb-6"><button type="button" id="escuchar" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#0284c7] hover:text-[#0284c7] text-sm font-semibold">Escuchar artículo</button></div>
     <figure class="mb-8"><div class="rounded-2xl overflow-hidden shadow-sm">${mediaHtml(a, true)}</div>${a.imageCaption ? `<figcaption class="text-slate-500 mt-2" style="font-size:9px;line-height:1.3">${esc(a.imageCaption)}</figcaption>` : ""}</figure>
+    ${a.audio || a.script ? `<section class="mb-8 p-6 bg-sky-50 border border-sky-100 rounded-2xl space-y-4"><h2 class="text-xs uppercase tracking-wider font-bold text-[#0284c7]">Materiales asociados</h2>${a.audio ? `<div><p class="text-sm font-semibold text-slate-700 mb-2">Narración en español latinoamericano</p><audio controls preload="metadata" class="w-full"><source src="${esc(a.audio)}" type="audio/wav">Tu navegador no admite audio HTML5.</audio><a href="${esc(a.audio)}" download class="inline-block mt-2 text-sm font-semibold text-[#0284c7] hover:underline">Descargar audio WAV</a></div>` : ""}${a.script ? `<p><a href="${esc(a.script)}" download class="text-sm font-semibold text-[#0284c7] hover:underline">Descargar guion de narración</a></p>` : ""}</section>` : ""}
     <div class="article-body">${a.content}</div>
     <div class="mt-10 p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
       <h2 class="text-xs uppercase tracking-wider font-bold text-[#0284c7]">Fuentes</h2>
