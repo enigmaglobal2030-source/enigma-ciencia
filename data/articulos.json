@@ -10,8 +10,8 @@
     "sources": "Nature Medicine, START-001, DOI 10.1038/s41591-026-04711-0: https://doi.org/10.1038/s41591-026-04711-0; PubMed PMID 42919963: https://pubmed.ncbi.nlm.nih.gov/42919963/; ClinicalTrials.gov NCT05592626: https://clinicaltrials.gov/study/NCT05592626; NIH/NCI: https://www.nih.gov/news-events/news-releases/precision-t-cell-therapy-stalls-treatment-resistant-cancers-in-clinical-trial; CCR/NCI: https://ccr.cancer.gov/news/article/a-precision-t-cell-therapy-stalls-treatment-resistant-cancers-in-clinical-trial; Marengo Therapeutics, comunicado ESMO 2026 (fuente corporativa): https://www.prnewswire.com/news-releases/marengo-therapeutics-presents-phase-2-start-001-results-at-esmo-2026-demonstrating-tissue-agnostic-single-agent-activity-of-invikafusp-alfa-in-tmb-h-solid-tumors-mostly-unresponsive-to-immune-checkpoint-blockade-302917324.html",
     "image": "/img/invikafusp-start-001.webp",
     "imageCaption": "Ilustración conceptual generada con IA. Representa una inmunoterapia experimental en investigación; no es una imagen clínica ni una fotografía de un paciente.",
-    "publicado": false,
-    "estado": "revisión pendiente"
+    "publicado": true,
+    "estado": "publicado"
   },
   {
     "id": 314,
