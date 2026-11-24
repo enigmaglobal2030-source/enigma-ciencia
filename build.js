@@ -398,7 +398,7 @@ function articlePage(a) {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline: a.title,
-    description: a.summary,
+    description: a.metaDescription || a.summary,
     image: [a.isMontage && a.montage ? a.montage.left : a.image],
     datePublished: a.date,
     dateModified: a.date,
@@ -407,8 +407,8 @@ function articlePage(a) {
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
   };
   return `${head({
-    title: `${a.title} | Enigma Ciencia`,
-    description: a.summary,
+    title: a.metaTitle || `${a.title} | Enigma Ciencia`,
+    description: a.metaDescription || a.summary,
     canonical: url,
     image: a.isMontage && a.montage ? a.montage.left : a.image,
     type: "article",
