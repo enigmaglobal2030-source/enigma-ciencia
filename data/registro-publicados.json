@@ -2,7 +2,7 @@
   "version": 1,
   "generado": "2026-11-24",
   "fuente": "data/articulos.json",
-  "totalArticulos": 122,
+  "totalArticulos": 123,
   "alcance": "Registro de artículos existentes de Enigma Ciencia. No incluye reels ni ENIGMA GLOBAL porque no constan como registros separados en la fuente.",
   "notaEstado": "estadoInvestigacion es una normalización orientativa basada principalmente en título y resumen actuales; requiere revisión específica antes de usarlo como estado científico vigente.",
   "reglaDuplicados": "Antes de proponer un tema nuevo, cruzar temaClave. Repetir solo si existe un dato nuevo verificable y el título indica qué cambió.",
@@ -28,6 +28,22 @@
     ]
   },
   "articulos": [
+    {
+      "id": 320,
+      "titulo": "La FDA aprueba Ekitna, un nuevo tratamiento combinado para tumores gastrointestinales avanzados",
+      "fecha": "2026-11-25",
+      "categoria": "Medicina y Biotecnología",
+      "temaClave": "fda-aprueba-ekitna-bezuclastinib-sunitinib-gist",
+      "estadoInvestigacion": "aprobación FDA; ensayo fase III PEAK; SLP mejorada frente a sunitinib; supervivencia global inmadura; advertencia de hepatotoxicidad",
+      "formato": "artículo médico",
+      "pagina": "Enigma Ciencia",
+      "publicado": true,
+      "estadoEditorial": "publicado con advertencias sobre supervivencia global pendiente y hepatotoxicidad",
+      "temaRepetido": false,
+      "articulosRelacionados": [],
+      "familiaTema": "ekitna-bezuclastinib-gist",
+      "familiaRepetida": false
+    },
     {
       "id": 319,
       "titulo": "Una vacuna experimental contra la malaria logra un 87 % de protección en un ensayo clínico de fase I",
