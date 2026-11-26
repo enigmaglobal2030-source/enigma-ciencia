@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Ilustración de una red de neuronas con un vector que las dirige hacia una zona concreta">
+  <rect width="960" height="600" fill="#0f172a"/>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="480" cy="270" r="280" fill="url(#glow)"/>
+  <!-- conexiones entre neuronas -->
+  <g fill="none" stroke="#a78bfa" stroke-width="3" stroke-opacity="0.55">
+    <path d="M200 190 C 290 150, 330 230, 420 210"/>
+    <path d="M420 210 C 480 160, 560 150, 640 190"/>
+    <path d="M640 190 C 700 230, 760 220, 800 280"/>
+    <path d="M200 190 C 230 280, 300 330, 420 300"/>
+    <path d="M420 300 C 500 250, 560 330, 640 300"/>
+    <path d="M640 300 C 690 360, 740 380, 800 280"/>
+    <path d="M420 300 C 430 370, 500 410, 560 430"/>
+    <path d="M560 430 C 620 420, 660 460, 720 440"/>
+  </g>
+  <!-- neuronas -->
+  <g fill="#4c1d95" stroke="#c4b5fd" stroke-width="3">
+    <circle cx="200" cy="190" r="22"/><circle cx="420" cy="210" r="26"/>
+    <circle cx="640" cy="190" r="22"/><circle cx="800" cy="280" r="20"/>
+    <circle cx="420" cy="300" r="26"/><circle cx="640" cy="300" r="24"/>
+    <circle cx="560" cy="430" r="22"/><circle cx="720" cy="440" r="20"/>
+  </g>
+  <!-- neurona activada por el vector -->
+  <circle cx="540" cy="300" r="34" fill="#22d3ee" fill-opacity="0.25" stroke="#67e8f9" stroke-width="3"/>
+  <circle cx="540" cy="300" r="14" fill="#67e8f9"/>
+  <!-- vector dirigido -->
+  <g stroke="#38bdf8" stroke-width="6" stroke-linecap="round">
+    <line x1="290" y1="120" x2="505" y2="275"/>
+  </g>
+  <polygon points="515,284 490,279 504,260" fill="#38bdf8"/>
+  <circle cx="280" cy="110" r="14" fill="#38bdf8" fill-opacity="0.8"/>
+  <text x="480" y="520" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#f8fafc">Neuronas diseñadas para responder a un fármaco</text>
+  <text x="480" y="558" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#cbd5e1">Ilustración original con fines explicativos</text>
+</svg>
